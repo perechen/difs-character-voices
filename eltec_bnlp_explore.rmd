@@ -1,0 +1,86 @@
+---
+title: "eltec_exploration"
+author: "Artjoms Šeļa"
+date: "4/11/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+### Setup
+
+```{r}
+library(tidyverse)
+library(tidytext)
+```
+
+
+### Getting the info in
+
+```{r}
+files <- list.files("booknlp_results/ENG_ELTEC/",recursive = T,full.names = T)
+
+quotes <- files[str_detect(files,"\\.quotes")][-7] # removing Dickens for now
+coref <- files[str_detect(files, "")][-7] # removing Dickens for now
+
+novels <-list.dirs("booknlp_results/ENG_ELTEC/",recursive = F,full.names = F)[-7]
+
+
+```
+### Getting quotes tables
+
+Few things to note:
+
+- char_id `0` is I, the narrator.  In `ENG18440_Disraeli` gets a lot of narrative, not direct parts in their speech (because, uh, each narrative passage can be modeled as "belonging" to I in the first-person narration. However, still weird that narrative parts are assigned as quotes)  
+- Recheck empty quotes (what is the source?)
+- `ENG_18481_Dickens` produces 0 quote files,  no quotes recognized?
+- Check if current erratic paragraph handling is influencing results
+- Some quotes have "None" at their positions? See `ENG18670_Ouida`
+
+
+
+```{r}
+## be careful about reading .quote files with quotes characters etc.
+all_texts <- lapply(quotes, read.delim, quote="", fill=FALSE)
+
+
+nov_list <- vector(length=length(all_texts), mode = "list")
+
+for(t in 1:length(all_texts)) {
+  x=all_texts[[t]]
+  
+  print(quotes[t])
+  print(t)
+  ## quickly getting character names, relying on char_id here
+  chr_id <- x %>% 
+    group_by(char_id) %>% 
+    filter(quote != "\" \"",
+           mention_start != "None") %>% 
+    # character names = longest string
+    filter(nchar(mention_phrase) == max(nchar(mention_phrase))) %>%
+    select(char_id, mention_phrase) %>%
+    # deduplicate entries by id
+    filter(!duplicated(char_id)) %>% 
+    rename(char_name = mention_phrase) %>% 
+    mutate(char_id = as.integer(char_id))
+  
+  nov_list[[t]] <- all_texts[[t]] %>% 
+    filter(quote != "\" \"",
+           mention_start != "None") %>% 
+    mutate(book_id = novels[t],
+           mention_start = as.integer(mention_start),
+           mention_end = as.integer(mention_end),
+           char_id = as.integer(char_id)) %>% 
+    left_join(chr_id, by="char_id") %>% 
+    as_tibble()
+    
+}
+
+df_all_quotes <- bind_rows(nov_list)
+
+write_tsv(df_all_quotes,"data/all_quotes_novels.tsv")
+```
+
