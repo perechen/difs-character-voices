@@ -1,0 +1,394 @@
+quote_start	quote_end	mention_start	mention_end	mention_phrase	char_id	quote
+457	459	462	492	the farmer he had worked for these seventeen years , dying of a sudden , with a carbuncle on the neck , and the farm to be given up at Michaelmas	110	“ Muster ”
+515	523	513	513	she	112	“ nobbut a caselty sort of body , ”
+581	582	577	578	no one	115	farm—“nary one”—and
+611	615	608	608	Landlords	117	“ took down ; ”
+762	766	761	766	the “ worritin ' childer ”	859	“ worritin ' childer ”
+794	798	792	792	Mary	28	“ married over to Luton”—and
+870	875	864	864	She	26	“ a many year . ”
+1056	1065	1047	1048	a fool	139	“ extemp'ry prayin ' , an ' that , ”
+1103	1106	1097	1097	His	33	“ nassty , ”
+1204	1218	1219	1219	She	31	“ Lor bless yer , there was a many worse folk nor Bessie . ”
+1292	1302	1304	1312	a woman who passed him in the village street	152	“ Well , how 's Eliza , Muster Bolderfield ? ”
+1635	1642	1643	1643	he	24	“ Is she a - goin' ? ”
+1678	1705	1671	1671	she	30	“ No ; she 's asleep . Muster Drew 's been here , and she dropped off while he was a - talkin ' to her . ”
+1713	1720	1706	1707	Mr. Drew	36	“ Did she send for him ? ”
+1721	1751	1752	1752	John	24	“ Yes ; she said she felt her feet a - gettin ' cold , and I must run . But I do n't believe she 's no worse . ”
+1767	1770	1760	1764	the figure in the bed	176	“ John , ”
+1779	1807	1760	1764	the figure in the bed	176	start—“John , Muster Drew says you 'd oughter put it in the bank . You 'll be a fool if yer do n't , ' ee says . ”
+1878	1897	1868	1868	she	177	“ Well , I do n't know as I mind much what ' ee says , ' Liza . ”
+1898	1902	1903	1903	She	177	“ Sit down . ”
+1931	1951	1952	1952	She	177	“ If yer woan't do — what Muster Drew says , John — whatever wull yer do with it ? ”
+2016	2029	2030	2030	he	24	“ I think yer must leave it to me , ' Liza , ”
+2035	2044	2030	2030	he	24	“ I 'll do all for the best . ”
+2045	2053	2055	2057	the dying voice	178	“ No — yer'll not , John , ”
+2059	2093	2055	2057	the dying voice	178	“ You 'd a done a many stupid things — if I ' adn't stopped yer . An ' I 'm a - goin' . You 'll never leave it wi ' Bessie ? ”
+2094	2117	2055	2057	the dying voice	178	“ An ' who ' ud yer ' ave me leave it with ? Ai n't Bessie my own sister 's child ? ”
+2135	2175	2055	2057	the dying voice	178	“ If yer do , John , yer'll repent it . Yer never were a good one at judgin ' folk . Yer doan't consider nothin'—an ' I 'm a - goin' . Leave it with Saunders , John . ”
+2189	2233	2182	2182	John	24	“ Saunders ' as never been a friend o ' mine , since ' ee did me out o ' that bit o ' business with Missus Moulsey . An ' I do n't mean to go makin ' friends with him again . ”
+2302	2329	2290	2290	he	24	“ ' Liza , do n't yer think no more about it . Did Mr. Drew read to yer ? Are yer comfortable in yer mind ? ”
+2395	2409	2389	2391	the old woman	177	“ John — what ' ud you think o ' Mary Anne Waller ? ”
+2430	2458	2459	2459	Eliza	26	“ Why , whatever put Mary Anne into your head , ' Liza ? Yer never thought anythink o ' Mary Anne — no more than me . ”
+2467	2470	2471	2471	she	177	“ P'raps — ”
+2658	2667	2668	2668	he	24	“ Ca n't yer give her no brandy ? ”
+2680	2701	2677	2677	her	28	“ Dr. Murch said we wer'n't to trouble her . She 'll go when the light comes — most like . ”
+2745	2748	2740	2741	a widow	187	“ put upon ”
+2924	2935	2936	2936	she	112	“ Wo n't yer give her a kiss , John ? ”
+2940	2949	2936	2936	she	112	“ She wor a good sister to you . ”
+3726	3734	3747	3748	John Bolderfield	24	“ Bessie 's ' avin ' it . ”
+3751	3754	3747	3748	John Bolderfield	24	“ Borrofull , ”
+3784	3787	3790	3790	Eliza	40	“ poor Eliza ”
+3907	3929	3901	3901	she	41	“ you could n't expeck a man with John Bolderfield 's money to have as many feelin 's as other people . ”
+4206	4216	4217	4217	she	237	“ Well , I thought you 'd be busy , ”
+4224	4250	4217	4217	she	237	“ an ' I came up to lend a hand . Is them the things you 're goin' to leave me to take care on ? ”
+4254	4297	4217	4217	she	237	“ Field 's cart , as takes Louisa 's things to - morrer , is a - goin' to deliver these at your place first . They 're more nor I thought they would be . But you can put 'em anywheres . ”
+4298	4307	4308	4308	She	237	“ Oh , I 'll see to them . ”
+4322	4334	4335	4335	she	237	“ There 's some people as is real ill - natured , ”
+4344	4347	4349	4349	John	24	“ Aye ? ”
+4355	4363	4349	4349	John	24	“ What are they sayin ' now ? ”
+4364	4412	4413	4413	Saunders	37	“ It 's Muster Saunders . ' Ee 's allus sayin ' nassty things about other folks . And there 'd be plenty of fault to be found with ' i m , if onybody was to try . An ' Sally Saunders eggs him on dreadful . ”
+4552	4577	4537	4537	His	24	“ What 's ' ee been sayin ' now ? Though it doan't matter a brass farthin ' to me what ' ee says . ”
+4578	4678	4679	4679	John	24	“ He says you ' aven't got no proper feelin 's about poor Eliza , an ' you 'd ought to have done a great deal more for Louisa . But ' ee says you allus were a mean one with your money — an ' you knew that ' ee knew it — for ' ee'd stopped you takin ' an unfair advantage more nor once . An ' ' ee did n't believe as your money would come to any good ; for now Eliza was gone you would n't know how to take care on it . ”
+4684	4712	4679	4679	John	24	“ Oh ! ' ee says that , do ' ee ? Well , Saunders wor allus a beast — an ' a beast ' ee'll be . ”
+4877	4880	4874	4874	Saunders	37	“ agen him ”
+4887	4897	4899	4899	Bessie	31	“ Oh , an ' then he went on , ”
+4903	4932	4899	4899	Bessie	31	“ about your bein ' too ignorant to put it in the post - office . ' Ee said you 'd think Edwards would go an ' spend it ”
+4942	5034	4899	4899	Bessie	31	“ an ' then he laughed fit to split ' imself . Yer could n't see more nor the length of your own nose , he said , — it was edication you wanted . As for ' i m , ' ee said , ' ee'd have kep ' it for you if you 'd asked him , but you 'd been like a bear with a sore ' ead , ' ee said , ever since Mrs. Moulsey 's affair — so ' ee did n't suppose you would . ”
+5035	5045	5047	5047	John	24	“ Well , ' ee 's about right there , ”
+5051	5092	5093	5093	he	24	“ ' ee 's talkin ' sense for onst when ' ee says that . I 'd dig a hole in the hill and bury it sooner nor I 'd trust it to ' im — I would , by — ”
+5097	5117	5118	5118	He	24	“ A thieving set of magpies is all them Saunders — cadgin ' ' ere and cadgin ' there . ”
+5144	5152	5153	5153	she	31	“ It was just his nassty spite , ”
+5156	5212	5153	5153	she	31	“ He knew ' ee could never ha ' done it — not what you 've done — out o ' your wages . Not unless ' ee got Sally to tie ' i m to the dresser with ropes so as ' ee could n't go a - near the Spotted Deer no more ! ”
+5239	5242	5244	5244	Bessie	31	“ Why , ”
+5248	5331	5244	5244	Bessie	31	“ it was Muster Drew as said to me the other afternoon , as we was walkin ' ' ome from the churchyard , says ' ee , ‘ Mrs. Costrell , I call it splendid what John 's done — I do , ’ ' ee says . ‘ A labourer on fifteen shillin 's a week — why , it 's an example to the county , ’ ' ee says . ‘ ' Ee ought to be showed . ’ ”
+5625	5632	5633	5633	he	24	“ Look ' ere , Bessie , ”
+5637	5658	5633	5633	he	24	“ what ' ud you say if I wor to ask Isaac an ' you to take care on it ? ”
+5713	5716	5709	5709	They	274	“ caselty , ”
+6051	6053	6061	6061	one	282	“ expectations ”
+6116	6124	6125	6125	she	31	“ Well , if you arst me , ”
+6129	6178	6125	6125	she	31	“ of course we think as it 's only nateral you should leave it with Isaac an ' me , as is your own kith and kin . But we was n't goin' to say nothin' ; we did n't want to be pushin ' of ourselves forward . ”
+6217	6225	6226	6226	he	24	“ Where ' ud you put it ? ”
+6229	6272	6226	6226	he	24	“ Yer know that cupboard by the top of the stairs ? It ' ud stand there easy . And the cupboard 's got a good lock to it ; but we 'd ' ave it seen to , to make sure . ”
+6337	6347	6348	6348	he	24	“ Well , let 's get done with it , ”
+6351	6373	6348	6348	he	24	“ I 'm off to - morrer mornin ' , six o'clock . You go and get Isaac to come down . ”
+6374	6379	6381	6381	Bessie	31	“ I 'll run , ”
+6394	6403	6405	6405	she	31	“ He wor just finishin ' his tea . ”
+7186	7195	7196	7196	Bessie	31	“ Oh , it 's just like yer ! ”
+7205	7256	7258	7258	her	31	“ You 're allus the same — a mean - spirited feller , stannin ' in your children 's way ! ' Ow do you know who old John 's going to leave his money to ? ' Ow do you know as he would n't leave it to them poor innercents”—she
+7267	7319	7320	7320	She	31	road—“if we was just a bit nice and friendly with him now ' ee 's gettin ' old ? But you do n't care , not you!—one ' ud think yer were made o ' money — an ' that little one there not got the right use of his legs ! ”
+7369	7382	7383	7383	he	33	“ I tell yer the lock is n't a good ' un ! ”
+7417	7425	7426	7426	she	31	“ Then , if it is n't , ”
+7436	7460	7426	7426	she	31	“ I 'll soon get Flack to see to it — it 's nobbut a step . I 'll run up after supper . ”
+7467	7482	7484	7484	Isaac	33	“ An ' there 's mother 's old box as takes up the cupboard , ”
+7492	7499	7500	7500	she	31	“ Oh ! yer old silly , ”
+7503	7566	7500	7500	she	31	“ As if they could n't stand one top o ' the t'other . Now , do just go , Isaac — there 's a lovey ! ' Ee 's waitin ' for yer . Whatever did make yer so contrairy ? Of course I did n't mean nothin' I said — an ' I do n't mind Timothy , nor nothin' . ”
+7573	7586	7587	7587	he	33	“ Then I s'pose yer want everybody in the village to know ? ”
+7597	7604	7605	7605	she	31	“ No — I — don't — ”
+7607	7615	7605	7605	she	31	undecidedly—“I do n't know what yer mean . ”
+7616	7651	7652	7652	Bessie	31	“ You go back and tell John as I 'll come when it 's dark , an ' , if he 's not a stupid , he wo n't want me to come afore . ”
+7692	7706	7684	7684	John	24	“ Good evenin ' , Isaac . Yer'll take it , will yer ? ”
+7707	7718	7720	7720	Isaac	33	“ If you ca n't do nothin' better with it , ”
+7724	7739	7720	7720	Isaac	33	“ But in gineral I 'm not partial on keeping other folk 's money . ”
+7750	7758	7759	7759	he	24	“ It 'll give yer no trouble , ”
+7762	7784	7759	7759	he	24	“ You lock it up , an ' it 'll be all safe . Now , will yer lend a hand ? ”
+7861	7866	7868	7868	Watson	51	“ Why , Bolderfield , ”
+7873	7886	7868	7868	Watson	51	“ what have you got there ? Do you want a hand ? ”
+7887	7897	7899	7899	John	24	“ No , I don't — thank yer kindly , ”
+7903	7922	7923	7925	The burly policeman	344	“ An ' , if you please , Muster Watson , do n't yer say nothin' to nobody . ”
+7951	7957	7958	7958	he	345	“ Lor ' bless yer , ”
+7965	7987	7958	7958	he	345	“ I 'm safe . Well , good evenin ' to yer , if I ca n't be of any assistance . ”
+8085	8087	8084	8084	His	24	“ money ”
+8412	8419	8420	8420	he	24	“ Let me lie down there , ”
+8437	8450	8420	8420	he	24	“ I 'm lonesome somehow , an ' I 've told Louisa . ”
+8613	8619	8605	8605	Clinton	53	“ sparkling to the moon . ”
+8789	8791	8807	8808	the mystic	376	“ hardness ”
+9177	9193	9168	9169	Mr. Drew	36	“ That was Costrell 's wife , Watson , was n't it , poor thing ? ”
+9194	9202	9204	9204	Watson	51	“ Aye , it wor Mrs. Costrell , ”
+9222	9252	9218	9219	The minister	371	“ It 's terrible the way she 's gone downhill the last three months . I never pass almost but I see her going in there or coming out . ”
+9253	9256	9258	9258	Watson	51	“ No , ”
+9262	9276	9277	9277	he	51	“ no , it 's bad . What I 'd like to know , ”
+9281	9290	9277	9277	he	51	“ is where she gets the money from . ”
+9291	9323	9218	9219	The minister	371	“ Oh , she had a legacy , had n't she , in August ? It seems to have been a curse . She has been a changed woman ever since . ”
+9324	9332	9334	9334	Watson	51	“ Yes , she had a legacy , ”
+9338	9381	9334	9334	Watson	51	“ but I do n't believe it was much . She talked big , of course , and made a lot o ' fuss — she 's that kind o ' woman — just as she did about old John 's money . ”
+9382	9398	9218	9219	The minister	371	“ Old John 's money?—Ah ! did any one ever know what became of that ? ”
+9399	9525	9526	9527	The minister	371	“ Well , there 's many people thinks as Isaac has got it hid in the house somewhere , and there 's others thinks he 's put it in Bedford bank . Edwards told me private he did n't know nothing about it at the post - office , an ' Bessie told my wife as John had given Isaac the keepin ' of it till he come back again ; but he 'd knock her about , she said , if she let on what he 'd done with it . That 's the story she 's allus had , and boastin ' , of course , dreadful , about John 's trustin ' them , and Isaac doin' all his business for him . ”
+9528	9537	9218	9219	The minister	371	reflected.—“And you say the legacy was n't much ? ”
+9538	9575	9218	9219	The minister	371	“ Well , sir , I know some people over at Bedford where her aunt lived as left it her , and they were sure it was n't a great deal ; but you never know . ”
+9576	9582	9218	9219	The minister	371	“ And Isaac never said ? ”
+9583	9634	9218	9219	The minister	371	“ Bless yer , no , sir ! He was never a great one for talking , was n't Isaac ; but you 'd think now as he 'd never learnt how . He 'll set there in the Club of a night and never open his mouth to nobody . ”
+9635	9646	9218	9219	The minister	371	“ Perhaps he 's fretting about his wife , Watson ? ”
+9647	9709	9711	9711	Watson	51	“ Well , I do n't believe as he knows much about her goin's - on — not all , leastways . I 've seen her wait till he was at his work or gone to the Club , and then run down the hill,—tearin'—with her hair flyin'—you'd think she 'd gone silly . Oh , it 's a bad business , ”
+9715	9728	9711	9711	Watson	51	“ an ' uncommon bad business — all them young children too . ”
+9729	9738	9218	9219	The minister	371	“ I never saw her drunk , Watson . ”
+9739	9834	9835	9836	The two	412	“ No — yer would n't . Nor I neither . But she 'll treat half the parish if she gets the chance . I know many young fellers as go to the Spotted Deer just because they know she 'll treat 'em . She 's a - doin' of it now — there 's lots of 'em . And allus changin ' such a queer lot of money too — odd half - crowns,—years and years old — King George the Third , sir . No — it 's strange — very strange . ”
+10073	10091	10093	10103	a consumptive - looking girl in a bedraggled hat and feathers	425	“ Why , there 's another o ' them half - crowns o ' yourn , Bessie , ”
+10115	10122	10106	10107	Mrs. Costrell	46	“ Wheriver do yer get 'em ? ”
+10123	10140	10142	10142	Bessie	31	“ If yer do n't ask no questions , I wo n't tell yer no lies , ”
+10148	10158	10142	10142	Bessie	31	“ Where did you get them hat and feathers ? ”
+10208	10244	10195	10196	the landlord	426	“ Rum , ai n't it ? I niver seed one o ' them pieces in the village afore this winter , an ' I 've been ' ere twenty - two year come April . ”
+10270	10279	10280	10280	he	432	“ Well , then , I ' ave , ”
+10284	10332	10280	10280	he	432	“ I mind well as when I were a lad , sixteen year ago , my fayther borrered a bit o ' money off John Bolderfield , to buy a cow with — an ' there was ' arf of it in them ' arf - crowns . ”
+10366	10374	10375	10375	she	31	“ What 's that yer sayin ' ? ”
+10384	10392	10378	10379	The man	109	“ Well , I dessay there was , ”
+10394	10430	10431	10431	She	31	Bessie—“I dessay there was . I s'pose there 's plenty of 'em . Where do I get ' em?—why , I get 'em at Bedford , of course , when I goes for my money . ”
+10454	10465	10466	10466	she	31	“ Well , give me my change , will yer ? ”
+10473	10483	10466	10466	she	31	“ I ca n't stan ' here all night . ”
+10608	10613	10614	10614	she	31	“ Oh my God ! ”
+10619	10623	10614	10614	she	31	“ My God ! ”
+10636	10642	10643	10643	Bessie	31	“ Have yer seen Isaac ? ”
+10649	10661	10663	10664	the woman	447	“ ' Ee 's at the Club , arn't ' ee ? ”
+10666	10681	10663	10664	the woman	447	“ Well , they wo n't be up yet . Jim tolt me as Muster Perris”—Muster
+10688	10731	10732	10732	Bessie	31	Magna—“'ad got a strange gen'leman stayin ' with ' i m , and was goin' to take him into the Club to - night to speak to 'em . ' Ee 's a bishop , they ses — someun from furrin parts . ”
+11652	11660	11641	11641	He	24	“ laid up bad with the rheumatics , ”
+11833	11835	11810	11810	he	33	“ things ”
+11880	11884	11902	11902	she	31	“ good books , ”
+12364	12368	12360	12361	Mrs. Moulsey	43	“ the shop , ”
+12790	12796	12798	12808	a low , astonished voice at the foot of the stairs	521	“ Wal , I niver ! ”
+12899	12903	12904	12904	he	523	“ By gosh ! ”
+12915	12919	12920	12920	Bessie	31	“ By gosh ! ”
+12927	12934	12935	12935	she	31	“ What are you here for ? ”
+12950	12964	12935	12935	she	31	“ You get off at onst , or I 'll call yer father . ”
+13080	13084	13094	13094	his	523	“ John Bolderfield . ”
+13085	13089	13090	13090	he	523	“ My blazes ! ”
+13102	13118	13090	13090	he	523	“ It 's old John 's money ! So yo've been after it , eh ? ”
+13226	13232	13233	13233	she	31	“ You take yourself off , ”
+13244	13291	13233	13233	she	31	“ That money 's no business o ' yourn . It 's John 's , an ' he 's comin ' back directly . He gave it us to look after , an ' I wor countin ' it . March!—there 's your father comin ' ! ”
+13328	13340	13341	13341	he	523	“ Yo take yer meddlin ' fist out o ' that ! ”
+13344	13369	13370	13370	he	523	“ Father ai n't coming , and if he wor , I ' spect I could manage the two on yer — Keowntin it — ”
+13374	13481	13370	13370	he	523	“ Oh ! yer a precious innercent , ai n't yer ? But I know all about yer . Bless yer , I 've been in at the Spotted Deer to - night , and there worn't nothin' else talked of but yo and yor goin 's on . There wo n't be a tongue in the place to - morrow that wo n't be a - waggin ' about yer — yur a public charickter , yo are — they'll be sendin ' the reporters down on yer for a hinterview . ‘ Where the devil do she get the money ? ’ they says . ”
+13495	13564	13565	13565	He	523	“ Lor , I did n't think I wor going to know quite so soon ! An ' sich queer ' arf - crowns , they ses , as she keeps a - changin ' . Jarge somethin'—an old cove in a wig . An ' ' ere they is , I 'll be blowed,—some on 'em . Well , yer a nice ' un , yer are ! ”
+13590	13620	13577	13577	Bessie	31	“ Tim , if yer'll go away an ' hold yer tongue , I 'll give yer five o ' them suverins , and not tell yer father nothin' . ”
+13621	13626	13627	13627	he	523	“ Five on 'em ? ”
+13632	13639	13627	13627	he	523	“ Five on 'em , eh ? ”
+13706	13716	13717	13717	he	523	“ Noa , I 'll not take 'em all , ”
+13730	13759	13760	13760	He	523	“ That ' ud be playing it rayther too low down on old John . I 'll leave ' i m two — jest two — for luck . ”
+13795	13802	13803	13803	he	523	“ Oh ! yer not hurt , ”
+13806	13853	13803	13803	he	523	“ yer shammin . I advise yer to look sharp with shuttin ' up . Father'll be up the hill in two or three minutes now . Sorry I ca n't ' elp yer , now yer've set me up so comfortabul . Bye - bye ! ”
+13983	13990	13991	13991	She	31	“ Bessie , where are yer ? ”
+14053	14061	14046	14046	his	133	“ Bessie , whatever is the matter ? ”
+14089	14097	14098	14098	she	31	“ I 've ' ad a fall , ”
+14103	14136	14098	14098	she	31	“ I tripped up over my skirt as I wor comin ' up to look at Arthur . My head 's all bleedin ' . Get me some water from over there . ”
+14384	14387	14388	14388	he	133	“ Bessie , ”
+14401	14411	14388	14388	he	133	“ Bessie , had yer been to Dawson 's ? ”
+14435	14438	14429	14429	she	31	“ Yes . ”
+14476	14534	14469	14469	his	133	“ Bessie , yer should n't ; yer must n't do it no more ; it 'll make a bad woman of yer . I know as I 'm not good to live with ; I do n't make things pleasant to yer ; but I 've been thinkin ' ; I 'll try if yo'll try . ”
+14718	14752	14715	14715	Isaac	33	“ I know yer'll try , and I 'll help yer . I 'll be a better husband to yer , I swear I will . Give us a kiss , old woman . ”
+14775	14860	14769	14769	him	33	“ An ' I got a bit o ' news down at the Club as will liven yer up . Parkinson was there ; just come over from Frampton to see his mother ; an ' he says John will be here to - morrer or next day . ' Ee seed him yesterday — pulled down dreadful — quite the old man , ' ee says . An ' John told him as he was comin ' ' ome directly to live comfortable . ”
+14869	14878	14879	14879	she	31	“ To - morrer , did yer say ? ”
+14885	14903	14879	14879	she	31	“ Mos ' like . Now you go to sleep ; I 'll put out the lamp . ”
+14979	14989	14991	14993	one of them	565	“ Well , John , so yer coom back , ”
+15006	15029	14995	14997	an old man	566	“ An ' I ca n't say as yer looks is any credit to Frampton — no , that aa ca n't . ”
+15049	15052	15053	15053	he	24	“ Noa , ”
+15057	15116	15053	15053	he	24	“ it 's a beastly place is Frampton ; a damp , nassty hole as iver I saw — gives yer the rheumaticks to look at it . I 've ' ad a doose of a time , I ' ave , I can tell yer — iver sense I went . But I 'll pull up now . ”
+15117	15125	15127	15128	the other	568	“ Aye , this air'll do yer , ”
+15130	15140	15127	15128	the other	568	“ Where are yer stoppin ' ? Costrells ' ? ”
+15144	15183	15184	15184	He	24	“ They do n't know nothin' about my cousin , but I dessay they 'll find me somethin' to sleep on . I 'll ' ave my own place soon , and some one to look arter it . ”
+15213	15224	15226	15231	the man who had spoken first	571	“ Aye , yer'll be livin ' at your ease , ”
+15233	15246	15226	15231	the man who had spoken first	571	“ When will yo ' give us a drink , yer lardship ? ”
+15251	15259	15261	15263	a younger man	573	“ Where 's your money , John ? ”
+15276	15284	15285	15285	he	24	“ Do n't you talk your nonsense ! ”
+15289	15301	15285	15285	he	24	“ an ' I must be getting on , afore dark . ”
+15991	16020	15984	15984	Watson	51	“ Well , I 'm glad to see yer , John , I 'm sure . An ' now , I spose , you 're back for good ? ”
+16021	16046	15959	15960	the policeman	343	“ Aye . I 'm not going away no more . I 've done my share — I wants a bit o ' rest . ”
+16047	16077	15984	15984	Watson	51	“ Of coorse yer do . You 've been ill , ' aven't yer ? You look like it . An ' yer puttin ' up at Costrells ' ? ”
+16078	16103	16104	16104	Watson	51	“ Yes , till I can turn round a bit . ' Ave yer seen anythin ' ov 'em ? ' Ow 's Bessie ? ”
+16111	16143	16104	16104	Watson	51	“ I 'll walk with yer a bit — I'm in no ' urry . Oh , she 's all right . You ' eard of her bit o ' money ? ”
+16149	16160	16144	16144	John	24	“ Noa , I don ' know as I did . ”
+16161	16180	16104	16104	Watson	51	“ It wor an aunt o ' hers , soa I understan'—quite a good bit o ' money . ”
+16181	16189	16191	16191	John	24	“ Did yer iver hear the name ? ”
+16195	16209	16191	16191	John	24	“ Some one livin ' at Bedford , I did ' ear say . ”
+16237	16246	16247	16247	he	24	“ Oh , that 's old Sophy Clarke , ”
+16250	16374	16247	16247	he	24	“ Her ' usband bought the lease o ' two little ' ouses in Church Street , and they brȧȧt ' er in six shillins a week for years , an ' she allus said she 'd leave it to Bessie if she wor took afore the lease wor up . But the lease ull be up end o ' next year , I know , for I saw the old lady myself last Michaelmas twelvemonth , an ' she told me all about it , though I worn't to tell nobody meself . An ' I did n't know Sophy wor gone . Ah , well ! it 's not much , but it 's ' andy — it 's ' andy . ”
+16375	16381	16383	16383	Watson	51	“ Six shillins a week ! ”
+16389	16420	16386	16386	his	51	“ It 's a nice bit o ' money while it lassts , but I 'd ha ' thought Mrs. Costrell ' ad come into a deal more nor that . ”
+16421	16436	16438	16438	John	24	“ Oh , but she 's sich a one to spend , is Bessie , ”
+16442	16495	16438	16438	John	24	“ It 's surprisin ' ' ow the money runs . It 's sixpence ' ere , an ' sixpence there , allus dribblin ' , an ' dribblin ' , out ov ' er . I 've allus tole ' er as she 'll end ' er days on the parish . ”
+16496	16499	16501	16501	Watson	51	“ Sixpences ! ”
+16507	16563	16564	16564	John	24	“ It 's not sixpences as Mrs. Costrell 's ' ad the spendin ' of this last month or two — it 's suverins — an ' plenty ov 'em . You may be sure you 've got the wrong tale about the money , John ; it wor a deal more nor you say . ”
+16571	16574	16575	16575	his	24	“ sovereigns , ”
+16579	16582	16583	16583	he	24	“ Suverins , ”
+16587	16604	16583	16583	he	24	“ suverins ? Bessie ai n't got no suverins . Isaac arns sixteen shillin a week . ”
+16639	16647	16648	16648	he	51	“ Yo ' are reg'lar used up , ”
+16662	16671	16648	16648	he	51	“ Shall I walk yer up the hill ? ”
+16676	16679	16680	16680	he	51	“ Suverins ! ”
+16689	16706	16680	16680	he	51	“ She ai n't got 'em , I tell yer — she ai n't got 'em ! ”
+16905	16909	16902	16903	Mrs. Moulsey	43	“ the shop , ”
+16958	16969	16970	16970	he	24	“ I must keep my ' edd , I must , ”
+16977	16995	16970	16970	he	24	“ don ' yer be a fool , John Borroful , don ' yer be a fool ! ”
+17071	17079	17081	17081	John	24	“ Arthur , where 's your mother ? ”
+17094	17099	17081	17081	John	24	“ Don ' know . ”
+17100	17108	17122	17123	another child	621	“ When did yer see her lasst ? ”
+17109	17120	17122	17123	another child	621	“ She wor ' ere gettin ' us our tea , ”
+17125	17133	17122	17123	another child	621	“ but she did n't eat nothin' . ”
+17146	17153	17154	17154	he	24	“ You ' old your tongues , ”
+17157	17164	17154	17154	he	24	“ an ' stay ' ere . ”
+17189	17207	17177	17177	Arthur	60	“ Yer ought n't to go up there — mother do n't let any one go there . ”
+17214	17239	17240	17240	He	24	“ Oh , do n't she ! yo ' take your ' ands away , yer little varmint , or I 'll brain yer . ”
+17425	17430	17413	17415	all four children	618	“ Mammy ! mammy ! ”
+17493	17500	17501	17501	she	633	“ It 's at Bessie 's , ”
+17504	17513	17501	17501	she	633	“ whativer 's wrong wi ' the childer ? ”
+17546	17557	17542	17542	his	60	“ What is it , Arthur?—what is it , lammie ? ”
+17558	17580	17581	17581	She	633	“ O Cousin Mary Anne ! Cousin Mary Anne ! It 's Uncle John , an ' ' ee 's dead ! ”
+17607	17618	17581	17581	She	633	“ Where is he , Arthur?—don't take on , honey ! ”
+17705	17713	17714	17714	she	633	“ Where 's your mother , child ? ”
+17722	17727	17729	17730	the boy	325	“ Don ' know , ”
+17734	17750	17729	17730	the boy	325	“ Oh , for goodness ' sake , she 's never at Dawson 's again ! ”
+17757	17785	17729	17730	the boy	325	“ she wor there last night , an ' the night afore that . And her mother 's brother lyin ' like this in ' er house ! ”
+17874	17913	17857	17857	he	24	“ Where 's Bessie , I tell yer ? Where 's the huzzy gone ? I 'll have the law on ' er ! I 'll make ' er give it up — by the Lord I will ! ”
+17914	17924	17926	17927	Mary Anne	75	“ John , what is it?—John , my dear ! ”
+17943	17951	17952	17952	he	24	“ Yo ' ' elp me down , ”
+17956	18004	17952	17952	he	24	“ We 'll find ' er — we'll wring it out ov ' er — the mean , thievin ' vagabond ! Changin ' suverins , ' as she ? we 'll soon know about that — yo ' ' elp me down , I tell yer . ”
+18183	18192	18193	18193	she	31	“ What 's all this about yer money ? ”
+18202	18235	18236	18236	He	24	“ What do I know about yer money ? ' Ow dare yer say such things ? I ' aven't anythin ' to do with it , an ' never ' ad . ”
+18302	18312	18313	18313	he	24	“ Yo ' gi ' me my money back , ”
+18322	18369	18313	18313	he	24	“ Yer ca n't ' ave spent it all—'tain't possible — an ' yer ai n't chucked it out o ' winder . Yer've got it somewhere ' idden , an ' I 'll get it out o ' you if I die for ' t ! ”
+18387	18399	18400	18400	she	31	“ What yer ' aven't got , yer ca n't give , ”
+18403	18472	18400	18400	she	31	“ I don ' know nothin' about it , an ' I 've tole yer . There 's plenty o ' bad people in the world — beside me . Somebody came in o ' nights , I suppose , an ' picked the lock — there 's many as ud think nothin' of it . And it ud be easy done — we all sleeps ' ard . ”
+18473	18476	18478	18479	Mary Anne	75	“ Bessie ! ”
+18488	18498	18499	18499	She	31	“ are n't yer sorry for ' i m ? ”
+18514	18521	18522	18522	she	31	“ Aye , I 'm sorry , ”
+18526	18566	18522	18522	she	31	“ But he should n't fly out at yer without ' earin ' a word . ' Ow should I know anythin ' about his money ? ' Ee locked it up hisself , an ' tuk the keys . ”
+18567	18573	18575	18575	John	24	“ An ' them suverins , ”
+18584	18592	18578	18578	his	24	“ where did yer get them suverins ? ”
+18593	18620	18522	18522	she	31	“ I got 'em from old Sophy Clarke — leastways , from Sophy Clarke 's lawyer . And it ai n't no business o ' yourn . ”
+18704	18715	18716	18716	she	195	“ Let me take ' i m to my place , ”
+18719	18766	18716	18716	she	195	“ it 's no good talkin ' while ' ee 's like ' ee is — not a bit o ' good . John — John dear ! you come along wi ' me . Shall I get Saunders to come an ' speak to yer ? ”
+18800	18803	18804	18804	he	972	“ Aye ! ”
+18810	18824	18804	18804	he	972	“ let 's find Saunders — coom along — let 's find Saunders . ”
+18847	18863	18842	18842	she	75	“ Oh , Bessie , yer did n't do it — say yer did n't ! ”
+18885	18900	18901	18901	she	75	“ Do n't yer be a fool , Mary Anne — that 's all ! ”
+19558	19562	19564	19564	Bessie	31	“ Come in , ”
+19651	19660	19661	19661	Saunders	42	“ May we come in , Mrs. Costrell ? ”
+19670	19676	19678	19678	Bessie	31	“ If yer want to , ”
+19701	19713	19690	19690	Saunders	42	“ Sit down , John . Sit down , Mrs. Waller . ”
+19762	19768	19770	19770	Saunders	42	“ Well , Mrs. Costrell , ”
+19776	19812	19770	19770	Saunders	42	“ you 'll be free to confess , wo n't yer , this is an oogly business — a very oogly business ? Now , will yer let us ask yer a question or two ? ”
+19813	19817	19819	19819	Bessie	31	“ I dessay , ”
+19825	19856	19819	19819	Bessie	31	“ Well , then — to begin reg'lar , Mrs. Costrell — yo ' agree , do n't yer , as Muster Bolderfield put his money in your upstairs cupboard ? ”
+19857	19867	19869	19869	Bessie	31	“ I agree as he put his box there , ”
+19886	19924	19881	19881	Bessie	31	“ ' Ow did any of us know what yer'd got in your box ? Did yer ever show it to me , or Mary Anne there , or any livin soul in Clinton ? Did yer ? ”
+19936	19942	19944	19944	Saunders	42	“ Did yer , John ? ”
+19957	19968	19969	19969	he	42	“ Noa . I niver did — I niver did , ”
+19972	19987	19969	19969	he	42	“ Nobbut to Eliza — an ' she 's gone — she 's gone ! ”
+19988	19996	19998	19998	Saunders	42	“ Keep your ' ead , John , ”
+20006	20037	19998	19998	Saunders	42	“ Let 's get to the bottom o ' this , quiet an ' reg'lar . An ' yer did n't tell any one ' ow much yer ' ad ? ”
+20038	20045	20047	20049	the old man	972	“ Nobbut Eliza — nobbut Eliza ! ”
+20052	20062	20064	20064	Saunders	42	“ Yer did n't tell me , I know , ”
+20166	20174	20175	20175	he	42	“ I understan ' , Mrs. Costrell , ”
+20183	20220	20175	20175	he	42	“ as the cupboard where John put his money is a cupboard hon the stairs ? Not in hany room , but hon the stairs ? Yer'll kindly correck me if I say anythin ' wrong . ”
+20224	20236	20238	20238	John	24	“ Aye — top o ' the stairs — right-'and side , ”
+20240	20254	20255	20255	Saunders	42	“ An ' John locked it hisself , an ' tuk the key ? ”
+20274	20293	20258	20258	John	24	“ An ' there worn't nothin' wrong wi ' the lock when yo ' opened it , John ? ”
+20294	20305	20306	20306	Saunders	37	“ Nothin' , Muster Saunders — I'll take my davy . ”
+20309	20316	20317	20317	he	37	“ Theer 's a cupboard there , ”
+20333	20347	20317	20317	he	37	“ Is't anythin ' like the cupboard on th ' stairs , John ? ”
+20348	20354	20356	20356	John	24	“ Aye , ' tis ! ”
+20362	20371	20372	20372	Saunders	37	“ Aye , ' tis , Muster Saunders ! ”
+20375	20378	20379	20379	he	37	“ Per'aps , ”
+20383	20401	20402	20402	He	37	“ Mrs. Costrell will do us the favour ov lettin ' us hexamine that ' ere cupboard ? ”
+20431	20439	20441	20441	Saunders	37	“ There 's no key ' ere , ”
+20450	20456	20441	20441	Saunders	37	“ Try yours , John . ”
+20469	20481	20482	20482	she	31	“ What are yer meddlin ' with my ' ouse for ? ”
+20486	20535	20482	20482	she	31	“ Just mek yourselves scarce , all the lot o ' yer . I do n't know nothin' about his money , an ' I 'll not have yer insultin ' me in me own place ! Get out o ' my kitchen , if yo ' please ! ”
+20541	20549	20550	20550	he	37	“ Sartinly , Mrs. Costrell , sartinly , ”
+20555	20593	20550	20550	he	37	“ Come along , John . Yer must get Watson and put it in ' is hands . ' Ee 's the law , is Watson . Maybe as Mrs. Costrell ' ull listen to ' i m. ”
+20602	20638	20594	20595	Mary Anne	28	“ Oh , Bessie , Bessie , my dear — don't let 'em get Watson ; let 'em look into ' t theirselves — it'll be better for yer , my dear , it will . ”
+20657	20666	20667	20667	she	31	“ I don ' care what they do , ”
+20674	20701	20667	20667	she	31	“ I 'm not stannin ' in any one 's way , I tell yer . The more they finds out the better I 'm pleased . ”
+20805	20812	20813	20813	he	37	“ H'm ! that 's strange , ”
+20829	20854	20813	20813	he	37	“ Yer did n't think as there were another key in this ' ouse that would open your cupboard , did yer , Bolderfield ? ”
+20878	20887	20888	20888	he	972	“ Yo ' tell her , Muster Saunders , ”
+20891	20982	20888	20888	he	972	“ to gie it me back ! I 'll not ast for all on it , but some on it , Muster Saunders — some on it . She ca n't ' a spent it . She must ' a got it somewhere . Yo ' speak to her , Muster Saunders . It 's a crule thing to rob an old man like me — an ' her own mother 's brother . Yo ' speak to ' er — an ' yo ' , too , Mary Anne . ”
+21012	21114	21004	21004	She	31	“ Oh ! an ' of course it must be me as robs yer ! It could n't be nobody else , could it ? There is n't tramps , an ' thieves , an ' rogues—'undreds of 'em — going about o ' nights ? Nary one , I believe yer ! There is n't another thief in Clinton Magna , nobbut Bessie Costrell , is ther ? But yer'll not blackguard me for nothin' , I can tell yer . Now will yer jest oblige me by takin ' yourselves off ? I shall ' ave to clean up after yer”—she
+21126	21134	21215	21215	she	31	floor—“an ' it 's gettin ' late . ”
+21135	21142	21144	21144	Saunders	37	“ One moment , Mrs. Costrell , ”
+21151	21210	21144	21144	Saunders	37	“ With your leave , John and I ' ull just inspeck the cupboard hupstairs before leavin'—an ' then we 'll clear out double quick . But we 'll ' ave one try if we ca n't ' it on somethin' as ' ull show ' ow the thief got in — with your leave , of coorse . ”
+21231	21237	21238	21238	she	31	“ Go where yer wants , ”
+21271	21277	21278	21278	he	37	“ There 's somethin' rum , ”
+21283	21320	21278	21278	he	37	“ ' Ow did she spend it all ? ' As she been carryin ' on with some one be'ind Isaac 's back , or is Isaac in it too ? It 's one or t'other . ”
+21572	21579	21581	21581	Saunders	37	“ All right , Mrs. Costrell , ”
+21583	21592	21581	21581	Saunders	37	briskly—“all right . We 'll be down directly . ”
+21706	21711	21712	21712	he	33	“ Why , John ! ”
+21716	21720	21712	21712	he	33	amazement—“an ' Saunders ! ”
+21751	21842	21745	21747	the tottering John	24	“ An ' I 'm glad yer come , Isaac , that I am — thankful ! Now yer can tell me what yer wife 's done with my money . D'yer mind that box ? It wor you an ' I carried it across that night as Watson come out on us . An ' yo'll bear me witness as we locked it up , an ' yo ' saw me tie the two keys roun ' my neck — yo ' did , Isaac . An ' now , Isaac”—the
+21847	21899	21900	21900	He	694	tremble—“now there 's two — suverins — left , and one ' arf - crown — out o ' seventy - one pound fower an ' sixpence — seventy - one pound , Isaac ! Yo'll get it out on ' er , Isaac , yer will , wo n't yer ? ”
+22001	22008	22009	22009	he	33	“ Let me see that box , ”
+22013	22018	22009	22009	he	33	“ Put it down . ”
+22182	22190	22191	22191	he	133	“ Now look ' ere , Isaac , ”
+22206	22306	22191	22191	he	133	“ let 's come to business . These ' ere are the facks o ' this case , and ' ow we 're agoin ' to get over 'em , I don ' see . John leaves his money in your cupboard . Yo ' an ' he lock it up , an ' John goes away with ' is keys ' ung roun ' ' is neck . Yo ' agree to that ? Well an ' good . But there 's another key in your ' ouse , Isaac , as opens John 's cupboard . Ah — ”
+22318	22347	22309	22309	his	133	“ I dessay yo ' did n't know nowt about it — that 's noather ' ere nor there . Yo ' try John 's key in that there door”—he
+22354	22436	22437	22437	He	133	fire—“an ' yo'll find it fits ex — act . Then , thinks I , where 's the key as belongs to that ' ere cupboard ? An ' John an ' I goes upstairs to look about us , an ' in noa time at aw , I sees a ' ole in the skirtin ' . I whips in my finger — lor bless yer ! I knew it wor there the moment I sets eyes on the hole . ”
+22465	22471	22477	22477	his	133	“ ' Ere then we ' ave”—he
+22478	22524	22525	22525	Saunders	37	fingers—“box locked up — key in the ' ouse as fits it , unbeknown to John — money tuk out — key ' idden away . But that 's not all — not by long chalks — there 's another side to the affair haltogether . ”
+22543	22565	22540	22540	his	37	“ Per'aps yer don ' know — I'm sartin sure yer don ' know — leastways I 'm hinclined that way,—as Mrs. Costrell”—he
+22571	22816	22540	22540	his	37	Bessie—“'ave been makin ' free with money — fower — five — night a week at the Spotted Deer — fower — five — night a week . She 'd used to treat every young feller , an ' plenty old uns too , as turned up ; an ' there was a many as only went to Dawson 's becos they knew as she 'd treat 'em . Now , she did n't go on tick at Dawson 's ; she 'd pay,—an ' she allus payed in ' arf - crowns . An ' those ' arf - crowns were curious ' alf - crowns ; an ' it came into Dawson 's ' ead as he 'd colleck them ' arf - crowns . ' Ee wanted to see summat , ' ee said — an ' I dessay ' ee did . An ' people began to taak . Last night theer wor a bit of a roompus , it seems , while Mrs. Costrell was a - payin ' another o ' them things , an ' summat as was said come to my ears — an ' come to Watson 's . An ' me an ' Watson ' ave been makin ' inquiries — an ' Mr. Dawson wor obligin ' enough to make me a small loan , ' ee wor . Now , I 've got just one question to ask o ' John Borroful . ”
+22833	22840	22841	22841	John	24	“ Is that yourn , John ? ”
+22849	22921	22922	22922	He	705	“ Aye , Saunders , it 's mine . Look ye ' ere , Isaac , it 's a king 's ' ead . It 's Willum — not Victory . I saved that un up when I wor a lad at Mason 's , an ' look yer , there 's my mark in the corner — every ' arf - crown I ever ' ad I marked like that . ”
+22941	22954	22956	22956	Saunders	37	“ ' Ere 's another , John — two on , 'em , ”
+22978	22981	22983	22983	Saunders	37	“ Then , ”
+22990	23012	23018	23018	Bessie	31	“ theer 's nobbut one more thing to say — an ' sorry I am to say it . Them coins , Isaac”—he
+23026	23069	23018	23018	Bessie	31	involuntarily—“them ' arf - crowns wor paid across the bar lasst night , or the night afore , at Dawson 's , by yor wife , as is now stannin ' there , an ' she 'll deny it if she can ! ”
+23102	23108	23109	23109	he	33	“ Did yer do it ? ”
+23143	23149	23150	23150	she	298	“ Oh , yer brute ! ”
+23173	23177	23150	23150	she	298	“ Yer brute ! ”
+23189	23194	23195	23195	he	33	“ Per'aps yer'll go , ”
+23385	23393	23394	23394	he	33	“ ' Ow did yer spend it ? ”
+23464	23476	23456	23456	her	298	“ I did n't spend it . Saunders wor lyin ' . ”
+23477	23488	23456	23456	her	298	“ ' Ow did yer get them half - crowns ? ”
+23489	23502	23503	23503	Isaac	33	“ I got 'em at Bedford . Mr. Grimstone give 'em me . ”
+23625	23636	23637	23637	he	33	“ When was it as yer opened that box fust ? ”
+23706	23714	23715	23715	he	33	“ Yer'll go to prison for this , ”
+23778	23811	23765	23765	He	33	“ Are yer goin' to tell me when yer took that money , and ' ow yer spent it ? 'Cos , if yer do n't , I shall go to Watson . ”
+23863	23871	23872	23872	he	33	“ I 'll give yer two minutes , ”
+24024	24030	24031	24031	he	33	“ They 've traced yer , ”
+24035	24089	24031	24031	he	33	“ they 've got it up to twenty - six pound , an ' more . Most on it ' ere in Clinton — some on it , Muster Miles o ' Frampton ' ull swear to . Watson ' ull go over to Frampton , for the warrant — to - morrer . ”
+24107	24115	24116	24116	he	33	“ But that 's not ' arf , ”
+24118	24154	24163	24163	he	33	on—“not near ' arf . Do yer ' ear ? What did yer do with the rest ? I 'll not answer for keepin ' my ' ands off yer if yer wo n't tell . ”
+24214	24283	24284	24284	She	298	“ Then I will tell yer — an ' I ' ope it ' ull do yer good . I took thirty - one pound o ' Bolderfield 's money then — but it warn't me took the rest . Some one else tuk it , an ' I stood by an ' saw ' i m. When I tried to stop ' im — look ' ere . ”
+24336	24341	24342	24342	She	298	“ Who was it ? ”
+24345	24362	24342	24342	She	298	“ Well , it wor Timothy , then — yur precious — beautiful son — Timothy ! ”
+24367	24372	24373	24373	he	33	“ Yo're lyin ' , ”
+24376	24414	24373	24373	he	33	“ yer want to throw it off on some one . How cud Timothy ' ave ' ad anythin ' to do with John 's money ? Timothy 's not been near the place this three months . ”
+24415	24421	24422	24422	she	298	“ Not till lasst night , ”
+24428	24497	24422	24422	she	298	“ I 'll grant yer — not till lasst night . But it do ' appen , as lasst night Timothy took forty - one pound o ' John Borroful 's money out o ' that box , an ' got off — clean . I 'm sorry if yer do n't like it — but I ca n't ' elp that ; yo ' listen ' ere . ”
+24598	24607	24608	24608	she	298	“ An ' I ' eard yer coming , ”
+24611	24656	24657	24657	She	298	“ an ' I thought I 'd tell yer — an ' I wor frightened about the ' arf - crowns — people ' ad been talkin ' so at Dawson's — an ' I did n't see no way out — an'—an ' — ”
+24700	24710	24711	24711	he	33	“ An ' there ai n't no way out , ”
+24719	24753	24716	24716	his	33	“ Yer'll be took before the magistrates next week , an ' the assizes ' ull be in February , an ' yer'll get six months — if yer do n't get more . ”
+24768	24776	24777	24777	she	298	“ I 'll not go to jail , ”
+24783	24788	24777	24777	she	298	“ I 'll not — ”
+24797	24808	24809	24809	he	33	“ Yo ' should ha ' thought o ' that , ”
+24812	24977	24809	24809	he	33	“ Yo ' should ha ' thought o ' that . An ' what you 've been sayin ' about Timothy do n't make it a ' aporth the better — not for yo ' ! Yo ' led ' i m into it too — if it ' adn't been for yo ' , ' ee'd never ha ' seen the cursed stuff . Yo've dragged ' i m down worse nor ' ee were — an ' yerself — an ' the childer — an ' me . An ' the drink , an ' the lyin'!—it turns a man 's stomach to think on it . An ' I 've been livin ' with yer — these twelve years . I wish to the Lord I 'd never seen yer — as the children ' ad never been born ! They 'll be known all their life now — as ' avin ' ' ad sich a woman for their mother ! ”
+25471	25476	25477	25477	Isaac	33	“ Shut that door ! ”
+25848	25851	25852	25852	He	33	“ Isaac ! ”
+25910	25919	25900	25900	her	31	“ Isaac , are yer comin ' up ? ”
+25934	25961	25925	25925	He	33	“ Comin ' up ? Noa , I 'm not comin ' up — so now know . Take yerself off , an ' be quick . ”
+25965	25977	25962	25962	She	31	“ Are yer goin' to sleep down ' ere , Isaac ? ”
+25978	26021	26057	26057	she	31	“ Aye , or wherever I likes : it 's no concern o ' yourn . I 'm no ' usband o ' yourn from this day forth . Take yerself off , I say!—I'll ' ave no thief for my wife ! ”
+26045	26056	26057	26057	she	31	“ Isaac , I 'd ha ' put it back , ”
+26061	26237	26057	26057	she	31	“ I wor goin' in to Bedford to see Mr. Grimstone—'ee'd ha ' managed it for me . I 'd a worked extra — I could ha ' done it — if it ' adn't been for Timothy . If you 'll ' elp — an ' you 'd oughter , for yer are my ' usband , whativer yer may say — we could pay John back — some day . Yo ' can go to ' i m , an ' to Watson , an ' say as we 'll pay it back — yo ' could , Isaac . I can take ter the plattin ' again , an ' I can go an ' work for Mrs. Drew — she asked me again lasst week . Mary Anne ' ull see to the childer . Yo ' go to John , Isaac , to - morrer — an'—an'—to Watson . All they wants is the money back . Yer couldn't — yer couldn't — see me took to prison , Isaac . ”
+27182	27191	27192	27192	she	767	“ Well , good - bye , Isaac , ”
+27228	27231	27232	27232	she	767	“ Isaac ! ”
+27241	27244	27232	27232	she	767	“ Isaac ! ”
+27796	27802	27803	27803	he	638	“ Send them all away , ”
+27810	27815	27803	27803	he	638	“ and you stay . ”
+27865	27886	27855	27855	Watson	51	“ John — yer'd better go home , an ' to yer bed — yer ca n't do no good . ”
+27887	27895	27897	27897	John	24	“ I 'll wait for Mary Anne , ”
+27902	27908	27855	27855	Watson	51	whisper—“I'll wait for Mary Anne . ”
+27961	27966	27968	27969	the doctor	638	“ Let us go , ”
+27979	27985	27972	27972	his	638	“ till they have done . ”
+28070	28077	28078	28078	he	51	“ Do n't you destroy it , ”
+28083	28093	28078	28078	he	51	“ it 'll be asked for at the inquest . ”
+28156	28392	28137	28137	he	33	“ Isaac , yer a cruel husband to me , an ' there 's no way fer me but the way I 'm goin' . I did n't mean no ' arm , not at first , but there , wot 's the good of talkin ' ? I ca n't bear the way as you speaks to me an ' looks at me , an ' I 'll never go to prison — no , never . It 's orful — fer the children ull ' ave no mother , an ' I do n't know however Arthur ull manage . But yer woodent shew me no mercy , an ' I ca n't think of anythin ' different . I did love yer an ' the childer , but the drink got holt of me . Yer mus ' see as Arthur is rapped up , an ' Edie 's eyes ull ' ave to be seen to now an ' agen . I 'm sorry , but there 's nothin' else . I wud like yer to kiss me onst , when they bring me in , and jes say , Bessie , I forgive yer . It wo n't do yer no ' arm , an ' p'raps I may ' ear it without your knowin ' . So good - bye , Isaac , from yur lovin' wife , Bessie .... ”
+28533	28535	28528	28529	Mary Anne	28	“ Isaac ”
+28893	28905	28906	28906	she	31	“ If some one do n't look arter ' i m , ”
+28911	28946	28906	28906	she	31	“ ' ee'll go as his father and his brothers went afore him . ' Ee 's got the look on it awready . Wheniver it 's light I 'll go fetch Muster Drew . ”
+29192	29214	29186	29186	She	28	“ What did yer come down for , John ? I 'd ha ' taken yer yer breakfast in yer bed . ”
+29231	29240	29241	29241	he	33	“ I ca n't pay yer for it , ”
+29249	29258	29241	29241	he	33	“ I ca n't pay yer for it . ”
+29314	29317	29318	29318	she	28	“ John , ”
+29325	29416	29322	29322	her	28	“ John , yer sha n't want while I 'm livin ' . I promised Eliza I would n't forget yer , and I wo n't . I can work yet — there 's plenty o ' people want me to work for 'em — an ' maybe , when yer get over this , you 'll work a bit too now and again . We 'll hold together , John — anyways . While I live and keep my ' elth yer sha n't want . An ' yer'll forgive Bessie”—she
+29422	29442	29443	29443	John	24	“ Oh ! I 'll never ' ear a crule word about Bessie in my ' ouse , never ! ”
+29754	29756	29750	29758	those who have the “ grace ” of faith	855	“ grace ”
+29835	29840	29853	29853	her	31	“ the falls of princes ”

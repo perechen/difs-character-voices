@@ -1,0 +1,1124 @@
+quote_start	quote_end	mention_start	mention_end	mention_phrase	char_id	quote
+47	57	59	59	Alice	31	‘ and what is the use of a book , ’
+60	66	59	59	Alice	31	‘ without pictures or conversations ? ’
+159	171	153	154	the Rabbit	12	‘ Oh dear ! Oh dear ! I shall be late ! ’
+479	482	462	462	She	31	‘ ORANGE MARMALADE ’
+523	526	528	528	Alice	31	‘ Well ! ’
+532	580	530	530	herself	31	‘ after such a fall as this , I shall think nothing of tumbling down stairs ! How brave they ’ll all think me at home ! Why , I would n’t say anything about it , even if I fell off the top of the house ! ’
+604	617	618	618	she	31	‘ I wonder how many miles I ’ve fallen by this time ? ’
+622	650	618	618	she	31	‘ I must be getting somewhere near the centre of the earth . Let me see : that would be four thousand miles down , I think — ’
+707	731	757	757	she	31	‘ — yes , that ’s about the right distance — but then I wonder what Latitude or Longitude I ’ve got to ? ’
+761	797	757	757	she	31	‘ I wonder if I shall fall right through the earth ! How funny it ’ll seem to come out among the people that walk with their heads downward ! The Antipathies , I think — ’
+823	854	857	857	she	31	‘ — but I shall have to ask them what the name of the country is , you know . Please , Ma’am , is this New Zealand or Australia ? ’
+869	884	862	862	she	31	’re falling through the air ! Do you think you could manage it ? ) ‘
+916	937	938	938	Dinah’ll	13	’ Down , down , down . There was nothing else to do , so Alice soon began talking again . ‘
+951	959	938	938	Dinah’ll	13	’ ( Dinah was the cat . ) ‘
+996	1026	995	995	I	0	’m afraid , but you might catch a bat , and that ’s very like a mouse , you know . But do cats eat bats , I wonder ? ’
+1050	1061	1041	1041	herself	31	‘ Do cats eat bats ? Do cats eat bats ? ’
+1065	1071	1041	1041	herself	31	‘ Do bats eat cats ? ’
+1127	1144	1111	1111	she	31	‘ Now , Dinah , tell me the truth : did you ever eat a bat ? ’
+1252	1265	1243	1243	it	85	‘ Oh my ears and whiskers , how late it ’s getting ! ’
+1565	1575	1578	1578	Alice	31	‘ and even if my head would go through , ’
+1580	1618	1578	1578	Alice	31	‘ it would be of very little use without my shoulders . Oh , how I wish I could shut up like a telescope ! I think I could , if I only knew how to begin . ’
+1710	1718	1720	1720	Alice	31	‘ which certainly was not here before , ’
+1738	1741	1701	1701	she	31	‘ DRINK ME ’
+1757	1761	1694	1697	people up like telescopes	93	‘ Drink me , ’
+1777	1785	1786	1786	she	31	‘ No , I ’ll look first , ’
+1789	1801	1786	1786	she	31	‘ and see whether it ’s marked “ poison ” or not ’
+1895	1898	1881	1881	she	31	‘ poison , ’
+1919	1922	1970	1970	she	31	‘ poison , ’
+1977	1983	1985	1985	Alice	31	‘ What a curious feeling ! ’
+1987	1997	1985	1985	Alice	31	‘ I must be shutting up like a telescope . ’
+2067	2076	2078	2078	Alice	31	‘ for it might end , you know , ’
+2082	2102	2078	2078	Alice	31	‘ in my going out altogether , like a candle . I wonder what I should be like then ? ’
+2250	2262	2264	2264	Alice	31	‘ Come , there ’s no use in crying like that ! ’
+2271	2281	2264	2264	Alice	31	‘ I advise you to leave off this minute ! ’
+2353	2361	2364	2364	Alice	31	‘ But it ’s no use now , ’
+2366	2389	2364	2364	Alice	31	‘ to pretend to be two people ! Why , there ’s hardly enough of me left to make one respectable person ! ’
+2423	2426	2406	2406	she	31	‘ EAT ME ’
+2433	2441	2443	2443	Alice	31	‘ Well , I ’ll eat it , ’
+2445	2493	2443	2443	Alice	31	‘ and if it makes me grow larger , I can reach the key ; and if it makes me grow smaller , I can creep under the door ; so either way I ’ll get into the garden , and I do n’t care which happens ! ’
+2506	2513	2504	2504	herself	31	‘ Which way ? Which way ? ’
+2613	2618	2620	2620	Alice	31	‘ Curiouser and curiouser ! ’
+2642	2645	2620	2620	Alice	31	‘ now I ’m
+2662	2690	2693	2693	my	0	’ ( for when she looked down at her feet , they seemed to be almost out of sight , they were getting so far off ) . ‘
+2715	2753	2755	2755	Alice	31	’m sure I sha n’t be able ! I shall be a great deal too far off to trouble myself about you : you must manage the best way you can;—but I must be kind to them , ’
+2757	2787	2755	2755	Alice	31	‘ or perhaps they wo n’t walk the way I want to go ! Let me see : I ’ll give them a new pair of boots every Christmas . ’
+2801	2809	2810	2810	she	31	‘ They must go by the carrier , ’
+2813	2843	2810	2810	she	31	‘ and how funny it ’ll seem , sending presents to one ’s own feet ! And how odd the directions will look ! Oh dear , what nonsense I ’m
+2846	2935	2810	2810	she	31	’ Just then her head struck against the roof of the hall : in fact she was now more than nine feet high , and she at once took up the little golden key and hurried off to the garden door . Poor Alice ! It was as much as she could do , lying down on one side , to look through into the garden with one eye ; but to get through was more hopeless than ever : she sat down and began to cry again . ‘
+2944	2948	2936	2936	You	104	’ said Alice , ‘
+2955	2964	2936	2936	You	104	’ ( she might well say this ) , ‘
+2981	3086	2977	2977	I	0	’ But she went on all the same , shedding gallons of tears , until there was a large pool all round her , about four inches deep and reaching half down the hall . After a time she heard a little pattering of feet in the distance , and she hastily dried her eyes to see what was coming . It was the White Rabbit returning , splendidly dressed , with a pair of white kid gloves in one hand and a large fan in the other : he came trotting along in a great hurry , muttering to himself as he came , ‘
+3109	3144	3103	3103	I	0	’ Alice felt so desperate that she was ready to ask help of any one ; so , when the Rabbit came near her , she began , in a low , timid voice , ‘
+3151	3208	3146	3146	you	0	’ The Rabbit started violently , dropped the white kid gloves and the fan , and skurried away into the darkness as hard as he could go . Alice took up the fan and gloves , and , as the hall was very hot , she kept fanning herself all the time she went on talking : ‘
+3270	3295	3297	3297	she	0	’m not the same , the next question is , Who in the world am I ? Ah , that ’s the great puzzle ! ’
+3328	3330	3332	3332	I	0	‘ I ’m
+3333	3337	3338	3338	she	0	’m not Ada , ’
+3341	3363	3338	3338	she	0	‘ for her hair goes in such long ringlets , and mine does n’t go in ringlets at all ; and I ’m
+3399	3503	3395	3395	she	16	’m I , and — oh dear , how puzzling it all is ! I ’ll try if I know all the things I used to know . Let me see : four times five is twelve , and four times six is thirteen , and four times seven is — oh dear ! I shall never get to twenty at that rate ! However , the Multiplication Table does n’t signify : let ’s try Geography . London is the capital of Paris , and Paris is the capital of Rome , and Rome — no , that ’s all wrong , I ’m
+3526	3571	3572	3572	I	0	’ and she crossed her hands on her lap as if she were saying lessons , and began to repeat it , but her voice sounded hoarse and strange , and the words did not come the same as they used to do : — ‘
+3573	3582	3585	3585	Alice	31	’m sure those are not the right words , ’
+3599	3654	3595	3595	she	31	‘ I must be Mabel after all , and I shall have to go and live in that poky little house , and have next to no toys to play with , and oh ! ever so many lessons to learn ! No , I ’ve made up my mind about it ; if I ’m
+3726	3733	3735	3735	Alice	31	’m somebody else”—but , oh dear ! ’
+3744	3766	3735	3735	Alice	31	‘ I do wish they would put their heads down ! I am so very tired of being all alone here ! ’
+3802	3810	3811	3811	she	31	‘ How can I have done that ? ’
+3814	3822	3811	3811	she	31	‘ I must be growing small again . ’
+3894	3901	3903	3903	Alice	31	‘ That was a narrow escape ! ’
+3924	3931	3933	3933	she	31	‘ and now for the garden ! ’
+3969	3977	3979	3981	the poor child	114	‘ and things are worse than ever , ’
+3983	4008	3979	3981	the poor child	114	‘ for I never was so small as this before , never ! And I declare it ’s too bad , that it is ! ’
+4048	4060	4061	4061	she	31	‘ and in that case I can go back by railway , ’
+4156	4166	4168	4168	Alice	31	‘ I wish I had n’t cried so much ! ’
+4182	4222	4168	4168	Alice	31	‘ I shall be punished for it now , I suppose , by being drowned in my own tears ! That will be a queer thing , to be sure ! However , everything is queer to - day . ’
+4289	4299	4301	4301	Alice	31	‘ Would it be of any use , now , ’
+4303	4344	4301	4301	Alice	31	‘ to speak to this mouse ? Everything is so out - of - the - way down here , that I should think very likely it can talk : at any rate , there ’s no harm in trying . ’
+4349	4375	4346	4346	she	31	‘ O Mouse , do you know the way out of this pool ? I am very tired of swimming about here , O Mouse ! ’
+4412	4430	4346	4346	she	31	‘ A mouse — of a mouse — to a mouse — a mouse — O mouse ! ’
+4458	4466	4468	4468	Alice	31	‘ Perhaps it does n’t understand English , ’
+4470	4486	4468	4468	Alice	31	‘ I daresay it ’s a French mouse , come over with William the Conqueror . ’
+4516	4522	4512	4512	she	31	‘ Ou est ma chatte ? ’
+4555	4563	4565	4565	Alice	31	‘ Oh , I beg your pardon ! ’
+4579	4589	4570	4570	she	31	‘ I quite forgot you did n’t like cats . ’
+4590	4595	4597	4598	the Mouse	17	‘ Not like cats ! ’
+4607	4617	4597	4598	the Mouse	17	‘ Would you like cats if you were me ? ’
+4618	4624	4626	4626	Alice	31	‘ Well , perhaps not , ’
+4632	4676	4626	4626	Alice	31	‘ do n’t be angry about it . And yet I wish I could show you our cat Dinah : I think you ’d take a fancy to cats if you could only see her . She is such a dear quiet thing , ’
+4694	4742	4744	4744	Alice	31	‘ and she sits purring so nicely by the fire , licking her paws and washing her face — and she is such a nice soft thing to nurse — and she ’s such a capital one for catching mice — oh , I beg your pardon ! ’
+4767	4782	4758	4758	she	31	‘ We wo n’t talk about her any more if you ’d rather not . ’
+4783	4787	4800	4800	his	17	‘ We indeed ! ’
+4803	4836	4758	4758	she	31	‘ As if I would talk on such a subject ! Our family always hated cats : nasty , low , vulgar things ! Do n’t let me hear the name again ! ’
+4837	4843	4845	4845	Alice	31	‘ I wo n’t indeed ! ’
+4858	4871	4872	4873	The Mouse	17	‘ Are you — are you fond — of — of dogs ? ’
+4884	4993	4995	4995	Alice	31	‘ There is such a nice little dog near our house I should like to show you ! A little bright - eyed terrier , you know , with oh , such long curly brown hair ! And it ’ll fetch things when you throw them , and it ’ll sit up and beg for its dinner , and all sorts of things — I ca n’t remember half of them — and it belongs to a farmer , you know , and he says it ’s so useful , it ’s worth a hundred pounds ! He says it kills all the rats and — oh dear ! ’
+5001	5003	4995	4995	Alice	31	‘ I ’m
+5011	5046	5047	5047	Mouse	17	’ For the Mouse was swimming away from her as hard as it could go , and making quite a commotion in the pool as it went . So she called softly after it , ‘
+5073	5112	5130	5130	you	31	’ When the Mouse heard this , it turned round and swam slowly back to her : its face was quite pale ( with passion , Alice thought ) , and it said in a low trembling voice , ‘
+5142	5314	5122	5122	I	0	’ It was high time to go , for the pool was getting quite crowded with the birds and animals that had fallen into it : there were a Duck and a Dodo , a Lory and an Eaglet , and several other curious creatures . Alice led the way , and the whole party swam to the shore . They were indeed a queer - looking party that assembled on the bank — the birds with draggled feathers , the animals with their fur clinging close to them , and all dripping wet , cross , and uncomfortable . The first question of course was , how to get dry again : they had a consultation about this , and after a few minutes it seemed quite natural to Alice to find herself talking familiarly with them , as if she had known them all her life . Indeed , she had quite a long argument with the Lory , who at last turned sulky , and would only say , ‘
+5325	5379	5122	5122	I	0	’ ; and this Alice would not allow without knowing how old it was , and , as the Lory positively refused to tell its age , there was no more to be said . At last the Mouse , who seemed to be a person of authority among them , called out , ‘
+5400	5448	5392	5392	I	0	’ They all sat down at once , in a large ring , with the Mouse in the middle . Alice kept her eyes anxiously fixed on it , for she felt sure she would catch a bad cold if she did not get dry very soon . ‘
+5451	5460	5462	5462	you	130	’ said the Mouse with an important air , ‘
+5531	5532	5519	5519	Edwin	20	’ ‘
+5535	5544	5519	5519	Edwin	20	’ said the Lory , with a shiver . ‘
+5550	5561	5563	5563	you	130	’ said the Mouse , frowning , but very politely : ‘
+5566	5567	5563	5563	you	130	’ ‘
+5571	5577	5569	5569	I	0	’ said the Lory hastily . ‘
+5583	5588	5590	5590	I	0	’ said the Mouse . ‘
+5624	5625	5611	5611	Stigand	22	’ ‘
+5629	5634	5611	5611	Stigand	22	’ said the Duck . ‘
+5638	5645	5648	5648	you	130	’ the Mouse replied rather crossly : ‘
+5656	5657	5648	5648	you	130	’ ‘
+5674	5679	5669	5669	I	0	’ said the Duck : ‘
+5699	5713	5695	5696	the archbishop	137	’ The Mouse did not notice this question , but hurriedly went on , ‘
+5759	5770	5751	5751	you	130	’ it continued , turning to Alice as it spoke . ‘
+5776	5784	5751	5751	you	130	’ said Alice in a melancholy tone : ‘
+5795	5796	5751	5751	you	130	’ ‘
+5801	5812	5813	5813	I	0	’ said the Dodo solemnly , rising to its feet , ‘
+5829	5830	5813	5813	I	0	’ ‘
+5834	5839	5840	5840	I	0	’ said the Eaglet . ‘
+5866	5887	5858	5858	I	0	’ And the Eaglet bent down its head to hide a smile : some of the other birds tittered audibly . ‘
+5895	5904	5889	5889	I	0	’ said the Dodo in an offended tone , ‘
+5922	5923	5889	5889	I	0	’ ‘
+5931	5968	5889	5889	I	0	’ said Alice ; not that she wanted much to know , but the Dodo had paused as if it thought that somebody ought to speak , and no one else seemed inclined to say anything . ‘
+5971	5976	5889	5889	I	0	’ said the Dodo , ‘
+5988	6033	6244	6244	she	142	’ ( And , as you might like to try the thing yourself , some winter day , I will tell you how the Dodo managed it . ) First it marked out a race - course , in a sort of circle , ( ‘
+6041	6064	6244	6244	she	142	’ it said , ) and then all the party were placed along the course , here and there . There was no ‘
+6074	6128	6244	6244	she	142	’ but they began running when they liked , and left off when they liked , so that it was not easy to know when the race was over . However , when they had been running half an hour or so , and were quite dry again , the Dodo suddenly called out ‘
+6134	6147	6244	6244	she	142	’ and they all crowded round it , panting , and asking , ‘
+6153	6212	6213	6213	Everybody	141	’ This question the Dodo could not answer without a great deal of thought , and it sat for a long time with one finger pressed upon its forehead ( the position in which you usually see Shakespeare , in the pictures of him ) , while the rest waited in silence . At last the Dodo said , ‘
+6223	6224	6213	6213	Everybody	141	’ ‘
+6233	6241	6244	6244	she	142	’ quite a chorus of voices asked . ‘
+6249	6278	6244	6244	she	142	’ said the Dodo , pointing to Alice with one finger ; and the whole party at once crowded round her , calling out in a confused way , ‘
+6283	6340	6244	6244	she	142	’ Alice had no idea what to do , and in despair she put her hand in her pocket , and pulled out a box of comfits , ( luckily the salt water had not got into it ) , and handed them round as prizes . There was exactly one a - piece all round . ‘
+6352	6357	6342	6342	she	142	’ said the Mouse . ‘
+6361	6368	6342	6342	she	142	’ the Dodo replied very gravely . ‘
+6378	6387	6342	6342	she	142	’ he went on , turning to Alice . ‘
+6392	6397	6342	6342	she	142	’ said Alice sadly . ‘
+6403	6426	6342	6342	she	142	’ said the Dodo . Then they all crowded round her once more , while the Dodo solemnly presented the thimble , saying ‘
+6435	6570	6571	6571	You	145	’ ; and , when it had finished this short speech , they all cheered . Alice thought the whole thing very absurd , but they all looked so grave that she did not dare to laugh ; and , as she could not think of anything to say , she simply bowed , and took the thimble , looking as solemn as she could . The next thing was to eat the comfits : this caused some noise and confusion , as the large birds complained that they could not taste theirs , and the small ones choked and had to be patted on the back . However , it was over at last , and they sat down again in a ring , and begged the Mouse to tell them something more . ‘
+6582	6586	6571	6571	You	145	’ said Alice , ‘
+6598	6614	6615	6615	Mine	146	’ she added in a whisper , half afraid that it would be offended again . ‘
+6624	6636	6615	6615	Mine	146	’ said the Mouse , turning to Alice , and sighing . ‘
+6645	6659	6615	6615	Mine	146	’ said Alice , looking down with wonder at the Mouse ’s tail ; ‘
+6668	6695	6663	6663	you	145	’ And she kept on puzzling about it while the Mouse was speaking , so that her idea of the tale was something like this : — ‘
+6701	6709	6663	6663	you	145	’ said the Mouse to Alice severely . ‘
+6716	6717	6712	6712	you	0	’ ‘
+6723	6729	6730	6730	you	145	’ said Alice very humbly : ‘
+6741	6742	6730	6730	you	145	’ ‘
+6747	6757	6743	6743	I	0	’ cried the Mouse , sharply and very angrily . ‘
+6761	6778	6743	6743	I	0	’ said Alice , always ready to make herself useful , and looking anxiously about her . ‘
+6789	6790	6743	6743	I	0	’ ‘
+6799	6810	6811	6811	You	0	’ said the Mouse , getting up and walking away . ‘
+6819	6820	6811	6811	You	0	’ ‘
+6827	6832	6821	6821	I	0	’ pleaded poor Alice . ‘
+6835	6843	6844	6845	The Mouse	17	’re so easily offended , you know ! ’
+6851	6860	6861	6861	Alice	31	‘ Please come back and finish your story ! ’
+6874	6880	6867	6868	the others	147	‘ Yes , please do ! ’
+6896	6905	6907	6908	the Lory	652	‘ What a pity it would n’t stay ! ’
+6932	6951	6921	6923	an old Crab	149	‘ Ah , my dear ! Let this be a lesson to you never to lose your temper ! ’
+6952	6959	6961	6963	the young Crab	151	‘ Hold your tongue , Ma ! ’
+6969	6971	6961	6963	the young Crab	151	‘ You ’re
+6981	6982	6983	6983	I	0	’ ‘
+6996	7006	7007	7007	She	153	’ said Alice aloud , addressing nobody in particular . ‘
+7014	7015	7007	7007	She	153	’ ‘
+7030	7050	7051	7051	Dinah	14	’ said the Lory . Alice replied eagerly , for she was always ready to talk about her pet : ‘
+7099	7131	7086	7086	she	14	’ This speech caused a remarkable sensation among the party . Some of the birds hurried off at once : one old Magpie began wrapping itself up very carefully , remarking , ‘
+7149	7163	7086	7086	she	14	’ and a Canary called out in a trembling voice to its children , ‘
+7180	7196	7197	7197	I	0	’ On various pretexts they all moved off , and Alice was soon left alone . ‘
+7205	7215	7216	7216	Nobody	157	’ she said to herself in a melancholy tone . ‘
+7227	7255	7226	7226	I	0	’m sure she ’s the best cat in the world ! Oh , my dear Dinah ! I wonder if I shall ever see you any more ! ’
+7352	7393	7394	7394	Alice	31	‘ The Duchess ! The Duchess ! Oh my dear paws ! Oh my fur and whiskers ! She ’ll get me executed , as sure as ferrets are ferrets ! Where can I have dropped them , I wonder ? ’
+7487	7520	7472	7472	she	31	‘ Why , Mary Ann , what are you doing out here ? Run home this moment , and fetch me a pair of gloves and a fan ! Quick , now ! ’
+7550	7558	7559	7559	she	31	‘ He took me for his housemaid , ’
+7567	7601	7559	7559	she	31	‘ How surprised he ’ll be when he finds out who I am ! But I ’d better take him his fan and gloves — that is , if I can find them . ’
+7628	7631	7603	7603	she	31	‘ W. RABBIT ’
+7674	7680	7681	7681	Alice	31	‘ How queer it seems , ’
+7686	7705	7681	7681	Alice	31	‘ to be going messages for a rabbit ! I suppose Dinah’ll be sending me on messages next ! ’
+7718	7764	7707	7707	she	31	‘ “ Miss Alice ! Come here directly , and get ready for your walk ! ” “ Coming in a minute , nurse ! But I ’ve got to see that the mouse does n’t get out . ” Only I do n’t think , ’
+7769	7788	7765	7765	Alice	31	‘ that they ’d let Dinah stop in the house if it began ordering people about like that ! ’
+7877	7881	7884	7884	she	31	‘ DRINK ME , ’
+7894	7904	7905	7905	she	31	‘ I know something interesting is sure to happen , ’
+7910	7942	7905	7905	she	31	‘ whenever I eat or drink anything ; so I ’ll just see what this bottle does . I do hope it ’ll make me grow large again , for really I ’m
+7953	8006	7905	7905	she	31	’ It did so indeed , and much sooner than she had expected : before she had drunk half the bottle , she found her head pressing against the ceiling , and had to stoop to save her neck from being broken . She hastily put down the bottle , saying to herself ‘
+8045	8143	8037	8037	I	0	’ Alas ! it was too late to wish that ! She went on growing , and growing , and very soon had to kneel down on the floor : in another minute there was not even room for this , and she tried the effect of lying down with one elbow against the door , and the other arm curled round her head . Still she went on growing , and , as a last resource , she put one arm out of the window , and one foot up the chimney , and said to herself ‘
+8160	8215	8012	8012	I	0	’ Luckily for Alice , the little magic bottle had now had its full effect , and she grew no larger : still it was very uncomfortable , and , as there seemed to be no sort of chance of her ever getting out of the room again , no wonder she felt unhappy . ‘
+8223	8228	8272	8272	you	168	’ thought poor Alice , ‘
+8346	8351	8352	8352	she	0	’m grown up now , ’
+8359	8373	8352	8352	she	0	‘ at least there ’s no room to grow up any more here . ’
+8374	8378	8380	8380	Alice	31	‘ But then , ’
+8382	8428	8352	8352	she	0	‘ shall I never get any older than I am now ? That ’ll be a comfort , one way — never to be an old woman — but then — always to have lessons to learn ! Oh , I should n’t like that ! ’
+8429	8436	8439	8439	herself	31	‘ Oh , you foolish Alice ! ’
+8441	8470	8439	8439	herself	31	‘ How can you learn lessons in here ? Why , there ’s hardly room for you , and no room at all for any lesson - books ! ’
+8511	8518	8520	8521	the voice	169	‘ Mary Ann ! Mary Ann ! ’
+8523	8531	8520	8521	the voice	169	‘ Fetch me my gloves this moment ! ’
+8635	8648	8631	8631	it	171	‘ Then I ’ll go round and get in at the window . ’
+8649	8654	8656	8656	Alice	31	‘ That you wo n’t ’
+8753	8764	8788	8789	the Rabbit	30	’ And then a voice she had never heard before , ‘
+8768	8778	8767	8767	I	0	’m here ! Digging for apples , yer honour ! ’
+8779	8786	8788	8789	the Rabbit	30	‘ Digging for apples , indeed ! ’
+8792	8803	8788	8789	the Rabbit	30	‘ Here ! Come and help me out of this ! ’
+8812	8826	8788	8789	the Rabbit	30	‘ Now tell me , Pat , what ’s that in the window ? ’
+8827	8838	8840	8840	He	30	‘ Sure , it ’s an arm , yer honour ! ’
+8843	8846	8840	8840	He	30	‘ arrum . ’
+8848	8870	8788	8789	the Rabbit	30	‘ An arm , you goose ! Who ever saw one that size ? Why , it fills the whole window ! ’
+8871	8889	8788	8789	the Rabbit	30	‘ Sure , it does , yer honour : but it ’s an arm for all that . ’
+8890	8910	8788	8789	the Rabbit	30	‘ Well , it ’s got no business there , at any rate : go and take it away ! ’
+8932	8950	8788	8789	the Rabbit	30	‘ Sure , I do n’t like it , yer honour , at all , at all ! ’
+8951	8961	8965	8965	she	31	‘ Do as I tell you , you coward ! ’
+8995	9007	9009	9009	Alice	31	‘ What a number of cucumber - frames there must be ! ’
+9011	9036	9009	9009	Alice	31	‘ I wonder what they ’ll do next ! As for pulling me out of the window , I only wish they could ! I ’m
+9049	9087	9009	9009	Alice	31	’ She waited for some time without hearing anything more : at last came a rumbling of little cartwheels , and the sound of a good many voices all talking together : she made out the words : ‘
+9117	9127	9108	9108	Bill	33	‘ em up at this corner — No , tie ‘
+9182	9230	9252	9252	he	33	’ ( a loud crash)—‘Now , who did that?—It was Bill , I fancy — Who ’s to go down the chimney?—Nay , I sha n’t ! You do it!—That I wo n’t , then!—Bill ’s to go down — Here , Bill ! the master says you ’re
+9237	9238	9252	9252	he	33	’ ‘
+9254	9260	9261	9261	Shy	34	’ said Alice to herself . ‘
+9302	9351	9294	9294	I	0	’ She drew her foot as far down the chimney as she could , and waited till she heard a little animal ( she could n’t guess of what sort it was ) scratching and scrambling about in the chimney close above her : then , saying to herself ‘
+9356	9382	9354	9354	Bill	33	’ she gave one sharp kick , and waited to see what would happen next . The first thing she heard was a general chorus of ‘
+9387	9401	9385	9385	Bill	33	’ then the Rabbit ’s voice along—‘Catch him , you by the hedge ! ’
+9440	9451	9415	9415	Brandy	35	’ Last came a little feeble , squeaking voice , ( ‘
+9456	9461	9454	9454	Bill	33	’ thought Alice , ) ‘
+9475	9481	9472	9472	ye	178	’m better now — but I ’m
+9519	9520	9511	9511	I	0	’ ‘
+9528	9533	9522	9522	you	176	’ said the others . ‘
+9541	9558	9522	9522	you	176	’ said the Rabbit ’s voice ; and Alice called out as loud as she could , ‘
+9570	9584	9566	9566	Dinah	14	’ There was a dead silence instantly , and Alice thought to herself , ‘
+9606	9626	9599	9599	they	182	’ After a minute or two , they began moving about again , and Alice heard the Rabbit say , ‘
+9636	9637	9627	9628	A barrowful	183	’ ‘
+9643	9681	9682	9682	I	0	’ thought Alice ; but she had not long to doubt , for the next moment a shower of little pebbles came rattling in at the window , and some of them hit her in the face . ‘
+9690	9700	9682	9682	I	0	’ she said to herself , and shouted out , ‘
+9709	9746	9701	9701	You	176	’ which produced another dead silence . Alice noticed with some surprise that the pebbles were all turning into little cakes as they lay on the floor , and a bright idea came into her head . ‘
+9755	9759	9701	9701	You	176	’ she thought , ‘
+9790	9906	9787	9787	I	0	’ So she swallowed one of the cakes , and was delighted to find that she began shrinking directly . As soon as she was small enough to get through the door , she ran out of the house , and found quite a crowd of little animals and birds waiting outside . The poor little Lizard , Bill , was in the middle , being held up by two guinea - pigs , who were giving it something out of a bottle . They all made a rush at Alice the moment she appeared ; but she ran off as hard as she could , and soon found herself safe in a thick wood . ‘
+9916	9930	9910	9910	I	0	’ said Alice to herself , as she wandered about in the wood , ‘
+9963	10051	9954	9954	I	0	’ It sounded an excellent plan , no doubt , and very neatly and simply arranged ; the only difficulty was , that she had not the smallest idea how to set about it ; and while she was peering about anxiously among the trees , a little sharp bark just over her head made her look up in a great hurry . An enormous puppy was looking down at her with large round eyes , and feebly stretching out one paw , trying to touch her . ‘
+10056	10358	9954	9954	I	0	’ said Alice , in a coaxing tone , and she tried hard to whistle to it ; but she was terribly frightened all the time at the thought that it might be hungry , in which case it would be very likely to eat her up in spite of all her coaxing . Hardly knowing what she did , she picked up a little bit of stick , and held it out to the puppy ; whereupon the puppy jumped into the air off all its feet at once , with a yelp of delight , and rushed at the stick , and made believe to worry it ; then Alice dodged behind a great thistle , to keep herself from being run over ; and the moment she appeared on the other side , the puppy made another rush at the stick , and tumbled head over heels in its hurry to get hold of it ; then Alice , thinking it was very like having a game of play with a cart - horse , and expecting every moment to be trampled under its feet , ran round the thistle again ; then the puppy began a series of short charges at the stick , running a very little way forwards each time and a long way back , and barking hoarsely all the while , till at last it sat down a good way off , panting , with its tongue hanging out of its mouth , and its great eyes half shut . This seemed to Alice a good opportunity for making her escape ; so she set off at once , and ran till she was quite tired and out of breath , and till the puppy ’s bark sounded quite faint in the distance . ‘
+10369	10392	10393	10393	I	0	’ said Alice , as she leant against a buttercup to rest herself , and fanned herself with one of the leaves : ‘
+10464	10655	10444	10444	I	0	’ The great question certainly was , what ? Alice looked all round her at the flowers and the blades of grass , but she did not see anything that looked like the right thing to eat or drink under the circumstances . There was a large mushroom growing near her , about the same height as herself ; and when she had looked under it , and on both sides of it , and behind it , it occurred to her that she might as well look and see what was on the top of it . She stretched herself up on tiptoe , and peeped over the edge of the mushroom , and her eyes immediately met those of a large caterpillar , that was sitting on the top with its arms folded , quietly smoking a long hookah , and taking not the smallest notice of her or of anything else . The Caterpillar and Alice looked at each other for some time in silence : at last the Caterpillar took the hookah out of its mouth , and addressed her in a languid , sleepy voice . ‘
+10660	10681	10682	10682	I	0	’ said the Caterpillar . This was not an encouraging opening for a conversation . Alice replied , rather shyly , ‘
+10721	10722	10709	10709	I	0	’ ‘
+10730	10736	10738	10738	yourself	0	’ said the Caterpillar sternly . ‘
+10740	10741	10738	10738	yourself	0	’ ‘
+10749	10753	10755	10755	Alice	31	’m afraid , sir ’
+10757	10760	10762	10762	myself	0	‘ because I ’m
+10767	10768	10769	10769	I	0	’ ‘
+10774	10779	10780	10780	I	0	’ said the Caterpillar . ‘
+10781	10791	10792	10792	Alice	31	’m afraid I ca n’t put it more clearly , ’
+10797	10822	10792	10792	Alice	31	‘ for I ca n’t understand it myself to begin with ; and being so many different sizes in a day is very confusing . ’
+10823	10828	10830	10831	the Caterpillar	36	‘ It is n’t , ’
+10833	10845	10847	10847	Alice	31	‘ Well , perhaps you have n’t found it so yet , ’
+10849	10891	10847	10847	Alice	31	‘ but when you have to turn into a chrysalis — you will some day , you know — and then after that into a butterfly , I should think you ’ll feel it a little queer , wo n’t you ? ’
+10892	10897	10899	10900	the Caterpillar	36	‘ Not a bit , ’
+10902	10912	10914	10914	Alice	31	‘ Well , perhaps your feelings may be different , ’
+10916	10930	10914	10914	Alice	31	‘ all I know is , it would feel very queer to me . ’
+10931	10934	10936	10937	the Caterpillar	36	‘ You ! ’
+10940	10945	10936	10937	the Caterpillar	36	‘ Who are you ? ’
+10984	10999	10974	10974	she	31	‘ I think , you ought to tell me who you are , first . ’
+11000	11003	11005	11006	the Caterpillar	36	‘ Why ? ’
+11044	11048	11049	11050	the Caterpillar	36	‘ Come back ! ’
+11055	11063	11049	11050	the Caterpillar	36	‘ I ’ve something important to say ! ’
+11077	11082	11084	11085	the Caterpillar	694	‘ Keep your temper , ’
+11087	11092	11094	11094	Alice	31	‘ Is that all ? ’
+11106	11109	11111	11112	the Caterpillar	36	‘ No , ’
+11171	11176	11180	11180	you	31	‘ So you think you ’re
+11182	11183	11184	11184	I	0	’ ‘
+11185	11192	11194	11194	Alice	31	’m afraid I am , sir , ’
+11196	11219	11194	11194	Alice	31	‘ I ca n’t remember things as I used — and I do n’t keep the same size for ten minutes together ! ’
+11220	11227	11229	11230	the Caterpillar	36	‘ Ca n’t remember what things ? ’
+11232	11255	11256	11256	Alice	31	‘ Well , I ’ve tried to say “ How doth the little busy bee , ” but it all came different ! ’
+11264	11276	11278	11279	the Caterpillar	36	‘ Repeat , “ You are old , Father William , ” ’
+11290	11297	11299	11300	the Caterpillar	36	‘ That is not said right , ’
+11302	11308	11299	11300	the Caterpillar	36	‘ Not quite right , I ’m
+11311	11317	11299	11300	the Caterpillar	36	’ said Alice , timidly ; ‘
+11326	11327	11299	11300	the Caterpillar	36	’ ‘
+11336	11358	11409	11410	the Caterpillar	36	’ said the Caterpillar decidedly , and there was silence for some minutes . The Caterpillar was the first to speak . ‘
+11367	11371	11409	11410	the Caterpillar	36	’ it asked . ‘
+11375	11382	11383	11383	Alice	31	’m not particular as to size , ’
+11387	11400	11383	11383	Alice	31	‘ only one does n’t like changing so often , you know . ’
+11401	11407	11409	11410	the Caterpillar	36	‘ I do n’t know , ’
+11438	11444	11446	11447	the Caterpillar	694	‘ Are you content now ? ’
+11449	11469	11471	11471	Alice	31	‘ Well , I should like to be a little larger , sir , if you would n’t mind , ’
+11473	11484	11471	11471	Alice	31	‘ three inches is such a wretched height to be . ’
+11485	11494	11496	11497	the Caterpillar	694	‘ It is a very good height indeed ! ’
+11515	11518	11471	11471	Alice	31	‘ But I ’m
+11524	11539	11540	11540	I	0	’ pleaded poor Alice in a piteous tone . And she thought of herself , ‘
+11551	11552	11542	11543	the creatures	191	’ ‘
+11562	11637	11553	11553	You	31	’ said the Caterpillar ; and it put the hookah into its mouth and began smoking again . This time Alice waited patiently until it chose to speak again . In a minute or two the Caterpillar took the hookah out of its mouth and yawned once or twice , and shook itself . Then it got down off the mushroom , and crawled away in the grass , merely remarking as it went , ‘
+11656	11657	11553	11553	You	31	’ ‘
+11669	11675	11553	11553	You	31	’ thought Alice to herself . ‘
+11680	11771	11553	11553	You	31	’ said the Caterpillar , just as if she had asked it aloud ; and in another moment it was out of sight . Alice remained looking thoughtfully at the mushroom for a minute , trying to make out which were the two sides of it ; and as it was perfectly round , she found this a very difficult question . However , at last she stretched her arms round it as far as they would go , and broke off a bit of the edge with each hand . ‘
+11778	11900	11553	11553	You	31	’ she said to herself , and nibbled a little of the right - hand bit to try the effect : the next moment she felt a violent blow underneath her chin : it had struck her foot ! She was a good deal frightened by this very sudden change , but she felt that there was no time to be lost , as she was shrinking rapidly ; so she set to work at once to eat some of the other bit . Her chin was pressed so closely against her foot , that there was hardly room to open her mouth ; but she did it at last , and managed to swallow a morsel of the lefthand bit . ‘
+11910	11976	11553	11553	You	31	’ said Alice in a tone of delight , which changed into alarm in another moment , when she found that her shoulders were nowhere to be found : all she could see , when she looked down , was an immense length of neck , which seemed to rise like a stalk out of a sea of green leaves that lay far below her . ‘
+11985	11989	11553	11553	You	31	’ said Alice . ‘
+12014	12159	12160	12160	Serpent	38	’ She was moving them about as she spoke , but no result seemed to follow , except a little shaking among the distant green leaves . As there seemed to be no chance of getting her hands up to her head , she tried to get her head down to them , and was delighted to find that her neck would bend about easily in any direction , like a serpent . She had just succeeded in curving it down into a graceful zigzag , and was going to dive in among the leaves , which she found to be nothing but the tops of the trees under which she had been wandering , when a sharp hiss made her draw back in a hurry : a large pigeon had flown into her face , and was beating her violently with its wings . ‘
+12162	12167	12160	12160	Serpent	38	’ screamed the Pigeon . ‘
+12169	12174	12176	12176	Alice	31	’m not a serpent ! ’
+12179	12184	12176	12176	Alice	31	‘ Let me alone ! ’
+12185	12192	12194	12195	the Pigeon	39	‘ Serpent , I say again ! ’
+12212	12226	12194	12195	the Pigeon	39	‘ I ’ve tried every way , and nothing seems to suit them ! ’
+12227	12236	12176	12176	Alice	31	‘ I have n’t the least idea what you ’re
+12240	12244	12176	12176	Alice	31	’ said Alice . ‘
+12265	12276	12260	12260	I	0	’ the Pigeon went on , without attending to her ; ‘
+12287	12312	12361	12361	I	0	’ Alice was more and more puzzled , but she thought there was no use in saying anything more till the Pigeon had finished . ‘
+12324	12329	12361	12361	I	0	’ said the Pigeon ; ‘
+12359	12360	12361	12361	I	0	’ ‘
+12362	12370	12372	12372	Alice	31	’m very sorry you ’ve been annoyed , ’
+12382	12396	12398	12399	the Pigeon	39	‘ And just as I ’d taken the highest tree in the wood , ’
+12408	12438	12398	12399	the Pigeon	39	‘ and just as I was thinking I should be free of them at last , they must needs come wriggling down from the sky ! Ugh , Serpent ! ’
+12439	12442	12398	12399	the Pigeon	39	‘ But I ’m
+12451	12455	12447	12447	I	0	’ said Alice . ‘
+12457	12463	12402	12402	its	39	’m a — I’m a — ’
+12464	12471	12473	12474	the Pigeon	39	‘ Well ! What are you ? ’
+12476	12481	12473	12474	the Pigeon	39	‘ I can see you ’re
+12487	12488	12489	12489	I	0	’ ‘
+12496	12517	12492	12494	a little girl	194	’ said Alice , rather doubtfully , as she remembered the number of changes she had gone through that day . ‘
+12523	12535	12536	12536	I	0	’ said the Pigeon in a tone of the deepest contempt . ‘
+12563	12590	12562	12562	You	0	’re a serpent ; and there ’s no use denying it . I suppose you ’ll be telling me next that you never tasted an egg ! ’
+12591	12599	12601	12601	Alice	31	‘ I have tasted eggs , certainly , ’
+12610	12626	12601	12601	Alice	31	‘ but little girls eat eggs quite as much as serpents do , you know . ’
+12627	12634	12636	12637	the Pigeon	701	‘ I do n’t believe it , ’
+12639	12648	12636	12637	the Pigeon	701	‘ but if they do , why then they ’re
+12661	12691	12692	12692	You	31	’ This was such a new idea to Alice , that she was quite silent for a minute or two , which gave the Pigeon the opportunity of adding , ‘
+12693	12713	12692	12692	You	31	’re looking for eggs , I know that well enough ; and what does it matter to me whether you ’re
+12721	12722	12692	12692	You	31	’ ‘
+12731	12736	12692	12692	You	31	’ said Alice hastily ; ‘
+12739	12767	12692	12692	You	31	’m not looking for eggs , as it happens ; and if I was , I should n’t want yours : I do n’t like them raw . ’
+12768	12776	12778	12779	the Pigeon	39	‘ Well , be off , then ! ’
+12927	12946	12922	12922	herself	31	‘ Come , there ’s half my plan done now ! How puzzling all these changes are ! I ’m
+12951	12995	12950	12950	I	0	’m going to be , from one minute to another ! However , I ’ve got back to my right size : the next thing is , to get into that beautiful garden — how is that to be done , I wonder ? ’
+13020	13025	13027	13027	Alice	31	‘ Whoever lives there , ’
+13029	13052	13027	13027	Alice	31	‘ it ’ll never do to come upon them this size : why , I should frighten them out of their wits ! ’
+13249	13263	13235	13235	he	210	‘ For the Duchess . An invitation from the Queen to play croquet . ’
+13286	13300	13264	13267	The Frog - Footman	212	‘ From the Queen . An invitation for the Duchess to play croquet . ’
+13380	13390	13392	13393	the Footman	214	‘ There ’s no sort of use in knocking , ’
+13395	13406	13392	13393	the Footman	214	‘ and that for two reasons . First , because I ’m
+13422	13436	13421	13421	they	208	’re making such a noise inside , no one could possibly hear you . ’
+13476	13481	13483	13483	Alice	31	‘ Please , then , ’
+13485	13493	13483	13483	Alice	31	‘ how am I to get in ? ’
+13494	13504	13505	13506	the Footman	214	‘ There might be some sense in your knocking , ’
+13514	13545	13546	13546	He	214	‘ if we had the door between us . For instance , if you were inside , you might knock , and I could let you out , you know . ’
+13567	13576	13577	13577	she	31	‘ But perhaps he ca n’t help it , ’
+13582	13610	13611	13611	she	31	‘ his eyes are so very nearly at the top of his head . But at any rate he might answer questions.—How am I to get in ? ’
+13616	13622	13623	13624	the Footman	214	‘ I shall sit here , ’
+13627	13631	13623	13624	the Footman	214	‘ till tomorrow — ’
+13675	13683	13684	13685	the Footman	214	‘ — or next day , maybe , ’
+13699	13707	13709	13709	Alice	31	‘ How am I to get in ? ’
+13717	13726	13728	13729	the Footman	214	‘ Are you to get in at all ? ’
+13731	13741	13728	13729	the Footman	214	‘ That ’s the first question , you know . ’
+13758	13764	13765	13765	she	31	‘ It ’s really dreadful , ’
+13770	13786	13765	13765	she	31	‘ the way all the creatures argue . It ’s enough to drive one crazy ! ’
+13804	13810	13811	13811	he	214	‘ I shall sit here , ’
+13814	13824	13811	13811	he	214	‘ on and off , for days and days . ’
+13825	13833	13835	13835	Alice	31	‘ But what am I to do ? ’
+13837	13842	13844	13845	the Footman	214	‘ Anything you like , ’
+13851	13863	13865	13865	Alice	31	‘ Oh , there ’s no use in talking to him , ’
+13868	13874	13865	13865	Alice	31	‘ he ’s perfectly idiotic ! ’
+13943	13954	13955	13955	Alice	31	‘ There ’s certainly too much pepper in that soup ! ’
+14035	14042	14044	14044	Alice	31	‘ Please would you tell me , ’
+14067	14075	14044	14044	Alice	31	‘ why your cat grins like that ? ’
+14076	14083	14085	14086	the Duchess	106	‘ It ’s a Cheshire cat , ’
+14088	14096	14097	14097	She	106	‘ and that ’s why . Pig ! ’
+14141	14164	14131	14131	she	31	‘ I did n’t know that Cheshire cats always grinned ; in fact , I did n’t know that cats could grin . ’
+14165	14170	14172	14173	the Duchess	106	‘ They all can , ’
+14175	14179	14172	14173	the Duchess	106	‘ and most of ‘
+14183	14184	14172	14173	the Duchess	106	’ ‘
+14194	14210	14185	14185	I	0	’ Alice said very politely , feeling quite pleased to have got into a conversation . ‘
+14217	14222	14211	14211	You	31	’ said the Duchess ; ‘
+14229	14351	14357	14357	you	106	’ Alice did not at all like the tone of this remark , and thought it would be as well to introduce some other subject of conversation . While she was trying to fix on one , the cook took the cauldron of soup off the fire , and at once set to work throwing everything within her reach at the Duchess and the baby — the fire - irons came first ; then followed a shower of saucepans , plates , and dishes . The Duchess took no notice of them even when they hit her ; and the baby was howling so much already , that it was quite impossible to say whether the blows hurt it or not . ‘
+14358	14361	14363	14363	Alice	31	’re doing ! ’
+14375	14383	14363	14363	Alice	31	‘ Oh , there goes his precious nose ’
+14402	14410	14411	14412	the Duchess	106	‘ If everybody minded their own business , ’
+14419	14432	14411	14412	the Duchess	106	‘ the world would go round a deal faster than it does . ’
+14433	14441	14443	14443	Alice	31	‘ Which would not be an advantage , ’
+14462	14493	14443	14443	Alice	31	‘ Just think of what work it would make with the day and night ! You see the earth takes twenty - four hours to turn round on its axis — ’
+14494	14499	14501	14502	the Duchess	106	‘ Talking of axes , ’
+14504	14510	14501	14502	the Duchess	106	‘ chop off her head ! ’
+14551	14567	14546	14546	she	31	‘ Twenty - four hours , I think ; or is it twelve ? I — ’
+14568	14576	14578	14579	the Duchess	106	‘ Oh , do n’t bother me , ’
+14581	14588	14578	14579	the Duchess	106	‘ I never could abide figures ! ’
+14662	14676	14677	14678	the Duchess	106	‘ Here ! you may nurse it a bit , if you like ! ’
+14692	14706	14708	14708	she	106	‘ I must go and get ready to play croquet with the Queen , ’
+14764	14772	14774	14774	Alice	31	‘ just like a star - fish , ’
+14884	14896	14898	14898	Alice	31	‘ If I do n’t take this child away with me , ’
+14900	14902	14898	14898	Alice	31	‘ they ’re
+14923	14950	14915	14915	it	249	’ She said the last words out loud , and the little thing grunted in reply ( it had left off sneezing by this time ) . ‘
+14955	14959	14915	14915	it	249	’ said Alice ; ‘
+14972	15044	14915	14915	it	249	’ The baby grunted again , and Alice looked very anxiously into its face to see what was the matter with it . There could be no doubt that it had a very turn - up nose , much more like a snout than a real nose ; also its eyes were getting extremely small for a baby : altogether Alice did not like the look of the thing at all . ‘
+15052	15078	15080	15080	you	250	’ she thought , and looked into its eyes again , to see if there were any tears . No , there were no tears . ‘
+15081	15092	15094	15094	Alice	31	’re going to turn into a pig , my dear , ’
+15098	15112	15094	15094	Alice	31	‘ I ’ll have nothing more to do with you . Mind now ! ’
+15150	15167	15141	15141	Alice	31	‘ Now , what am I to do with this creature when I get it home ? ’
+15245	15252	15253	15253	she	31	‘ If it had grown up , ’
+15258	15279	15253	15253	she	31	‘ it would have made a dreadfully ugly child : but it makes rather a handsome pig , I think . ’
+15305	15317	15303	15303	herself	31	‘ if one only knew the right way to change them — ’
+15383	15387	15388	15388	she	31	‘ Cheshire Puss , ’
+15417	15426	15431	15431	she	31	‘ Come , it ’s pleased so far , ’
+15435	15452	15431	15431	she	31	‘ Would you tell me , please , which way I ought to go from here ? ’
+15453	15467	15469	15470	the Cat	41	‘ That depends a good deal on where you want to get to , ’
+15472	15480	15482	15482	Alice	31	‘ I do n’t much care where — ’
+15484	15495	15497	15498	the Cat	41	‘ Then it does n’t matter which way you go , ’
+15500	15509	15510	15510	Alice	31	‘ — so long as I get somewhere , ’
+15516	15520	15510	15510	Alice	31	‘ Oh , you ’re
+15526	15531	15510	15510	Alice	31	’ said the Cat , ‘
+15539	15555	15497	15498	the Cat	41	’ Alice felt that this could not be denied , so she tried another question . ‘
+15564	15565	15559	15559	people	681	’ ‘
+15570	15581	15583	15584	a Hatter	256	’ the Cat said , waving its right paw round , ‘
+15591	15597	15599	15601	a March Hare	257	’ waving the other paw , ‘
+15609	15613	15608	15608	they	258	’re both mad . ’
+15614	15626	15627	15627	Alice	31	‘ But I do n’t want to go among mad people , ’
+15630	15639	15641	15642	the Cat	735	‘ Oh , you ca n’t help that , ’
+15644	15646	15608	15608	they	258	‘ we ’re
+15652	15656	15680	15681	the Cat	735	’m mad . You ’re
+15659	15660	15651	15651	I	0	’ ‘
+15666	15669	15671	15671	Alice	31	’m mad ? ’
+15673	15678	15680	15681	the Cat	735	‘ You must be , ’
+15683	15692	15680	15681	the Cat	735	‘ or you would n’t have come here . ’
+15708	15716	15705	15705	she	31	‘ And how do you know that you ’re
+15719	15720	15705	15705	she	31	’ ‘
+15725	15730	15705	15705	she	31	’ said the Cat , ‘
+15741	15742	15737	15737	You	31	’ ‘
+15747	15751	15737	15737	You	31	’ said Alice . ‘
+15756	15762	15763	15763	you	31	’ the Cat went on , ‘
+15788	15797	15737	15737	You	31	’m pleased , and wag my tail when I ’m
+15802	15805	15737	15737	You	31	’m mad . ’
+15806	15815	15817	15817	Alice	31	‘ I call it purring , not growling , ’
+15819	15826	15828	15829	the Cat	41	‘ Call it what you like , ’
+15831	15843	15828	15829	the Cat	41	‘ Do you play croquet with the Queen to - day ? ’
+15844	15852	15854	15854	Alice	31	‘ I should like it very much , ’
+15856	15865	15854	15854	Alice	31	‘ but I have n’t been invited yet . ’
+15866	15873	15875	15876	the Cat	735	‘ You ’ll see me there , ’
+15916	15929	15931	15932	the Cat	41	‘ By - the - bye , what became of the baby ? ’
+15934	15942	15931	15932	the Cat	41	‘ I ’d nearly forgotten to ask . ’
+15943	15950	15951	15951	Alice	31	‘ It turned into a pig , ’
+15967	15973	15975	15976	the Cat	735	‘ I thought it would , ’
+16022	16029	16030	16030	she	31	‘ I ’ve seen hatters before , ’
+16035	16070	16030	16030	she	31	‘ the March Hare will be much the most interesting , and perhaps as this is May it wo n’t be raving mad — at least not so mad as it was in March . ’
+16095	16104	16106	16107	the Cat	735	‘ Did you say pig , or fig ? ’
+16109	16114	16116	16116	Alice	31	‘ I said pig , ’
+16118	16138	16116	16116	Alice	31	‘ and I wish you would n’t keep appearing and vanishing so suddenly : you make one quite giddy . ’
+16139	16143	16145	16146	the Cat	735	‘ All right , ’
+16182	16195	16197	16197	Alice	31	‘ Well ! I ’ve often seen a cat without a grin , ’
+16199	16220	16197	16197	Alice	31	‘ but a grin without a cat ! It ’s the most curious thing I ever saw in my life ! ’
+16314	16336	16303	16303	she	31	‘ Suppose it should be raving mad after all ! I almost wish I ’d gone to see the Hatter instead ! ’
+16398	16405	16407	16407	Alice	31	‘ Very uncomfortable for the Dormouse , ’
+16409	16424	16407	16407	Alice	31	‘ only , as it ’s asleep , I suppose it does n’t mind . ’
+16445	16452	16453	16453	they	274	‘ No room ! No room ! ’
+16462	16469	16471	16471	Alice	31	‘ There ’s plenty of room ! ’
+16491	16496	16475	16475	she	31	‘ Have some wine , ’
+16522	16530	16531	16531	she	31	‘ I do n’t see any wine , ’
+16534	16540	16542	16544	the March Hare	45	‘ There is n’t any , ’
+16546	16559	16561	16561	Alice	31	‘ Then it was n’t very civil of you to offer it , ’
+16564	16579	16581	16583	the March Hare	45	‘ It was n’t very civil of you to sit down without being invited , ’
+16585	16595	16597	16597	Alice	31	‘ I did n’t know it was your table , ’
+16599	16611	16597	16597	Alice	31	‘ it ’s laid for a great many more than three . ’
+16612	16618	16620	16621	the Hatter	275	‘ Your hair wants cutting , ’
+16643	16653	16654	16654	Alice	31	‘ You should learn not to make personal remarks , ’
+16660	16666	16654	16654	Alice	31	‘ it ’s very rude . ’
+16684	16695	16680	16680	he	43	‘ Why is a raven like a writing - desk ? ’
+16696	16706	16708	16708	Alice	31	‘ Come , we shall have some fun now ! ’
+16710	16712	16680	16680	he	43	‘ I ’m
+16725	16730	16720	16720	I	0	’ she added aloud . ‘
+16746	16752	16732	16732	you	31	’ said the March Hare . ‘
+16756	16760	16732	16732	you	31	’ said Alice . ‘
+16769	16776	16766	16766	you	31	’ the March Hare went on . ‘
+16780	16785	16777	16777	I	0	’ Alice hastily replied ; ‘
+16806	16807	16794	16794	I	0	’ ‘
+16815	16820	16821	16821	You	31	’ said the Hatter . ‘
+16848	16849	16850	16850	You	31	’ ‘
+16857	16863	16850	16850	You	31	’ added the March Hare , ‘
+16885	16886	16887	16887	You	31	’ ‘
+16894	16908	16887	16887	You	31	’ added the Dormouse , who seemed to be talking in his sleep , ‘
+16930	16931	16923	16923	I	0	’ ‘
+16940	16990	16938	16938	you	31	’ said the Hatter , and here the conversation dropped , and the party sat silent for a minute , while Alice thought over all she could remember about ravens and writing - desks , which was n’t much . The Hatter was the first to break the silence . ‘
+16999	17046	16938	16938	you	31	’ he said , turning to Alice : he had taken his watch out of his pocket , and was looking at it uneasily , shaking it every now and then , and holding it to his ear . Alice considered a little , and then said ‘
+17050	17051	16938	16938	you	31	’ ‘
+17056	17061	17062	17062	I	0	’ sighed the Hatter . ‘
+17072	17082	17062	17062	I	0	’ he added looking angrily at the March Hare . ‘
+17089	17096	17062	17062	I	0	’ the March Hare meekly replied . ‘
+17109	17114	17062	17062	I	0	’ the Hatter grumbled : ‘
+17128	17171	17115	17115	you	31	’ The March Hare took the watch and looked at it gloomily : then he dipped it into his cup of tea , and looked at it again : but he could think of nothing better to say than his first remark , ‘
+17181	17193	17178	17178	you	31	’ Alice had been looking over his shoulder with some curiosity . ‘
+17199	17203	17178	17178	you	31	’ she remarked . ‘
+17221	17222	17178	17178	you	31	’ ‘
+17227	17232	17178	17178	you	31	’ muttered the Hatter . ‘
+17243	17244	17178	17178	you	31	’ ‘
+17249	17255	17178	17178	you	31	’ Alice replied very readily : ‘
+17272	17273	17178	17178	you	31	’ ‘
+17282	17313	17178	17178	you	31	’ said the Hatter . Alice felt dreadfully puzzled . The Hatter ’s remark seemed to have no sort of meaning in it , and yet it was certainly English . ‘
+17321	17331	17314	17314	I	0	’ she said , as politely as she could . ‘
+17338	17369	17332	17333	The Dormouse	44	’ said the Hatter , and he poured a little hot tea upon its nose . The Dormouse shook its head impatiently , and said , without opening its eyes , ‘
+17385	17386	17383	17383	myself	0	’ ‘
+17394	17404	17388	17388	you	31	’ the Hatter said , turning to Alice again . ‘
+17412	17416	17407	17407	I	0	’ Alice replied : ‘
+17422	17423	17424	17424	I	0	’ ‘
+17431	17436	17424	17424	I	0	’ said the Hatter . ‘
+17440	17450	17438	17438	I	0	’ said the March Hare . Alice sighed wearily . ‘
+17462	17466	17424	17424	I	0	’ she said , ‘
+17478	17479	17453	17453	you	0	’ ‘
+17490	17495	17496	17496	you	31	’ said the Hatter , ‘
+17508	17509	17506	17506	him	277	’ ‘
+17518	17522	17510	17510	I	0	’ said Alice . ‘
+17529	17539	17525	17525	you	31	’ the Hatter said , tossing his head contemptuously . ‘
+17550	17551	17543	17543	you	31	’ ‘
+17555	17560	17543	17543	you	31	’ Alice cautiously replied : ‘
+17574	17575	17564	17564	I	0	’ ‘
+17583	17588	17589	17589	He	277	’ said the Hatter . ‘
+17665	17667	17668	17668	I	0	’ ( ‘
+17674	17686	17668	17668	I	0	’ the March Hare said to itself in a whisper . ) ‘
+17694	17699	17668	17668	I	0	’ said Alice thoughtfully : ‘
+17714	17715	17703	17703	I	0	’ ‘
+17722	17727	17703	17703	I	0	’ said the Hatter : ‘
+17744	17745	17729	17729	you	31	’ ‘
+17753	17764	17766	17766	I	0	’ Alice asked . The Hatter shook his head mournfully . ‘
+17768	17772	17766	17766	I	0	’ he replied . ‘
+17787	17800	17776	17776	March	45	’ ( pointing with his tea spoon at the March Hare , ) ‘
+17827	17828	17820	17820	You	31	’ ‘
+17836	17840	17829	17829	I	0	’ said Alice . ‘
+17848	17853	17845	17845	you	31	’ the Hatter continued , ‘
+17871	17880	17860	17861	the Dormouse	280	‘ Twinkle , twinkle , twinkle , twinkle — ’
+17897	17908	17910	17911	the Hatter	43	‘ Well , I ’d hardly finished the first verse , ’
+17913	17936	17910	17911	the Hatter	43	‘ when the Queen jumped up and bawled out , “ He ’s murdering the time ! Off with his head ! ” ’
+17937	17942	17944	17944	Alice	31	‘ How dreadfully savage ! ’
+17946	17952	17953	17954	the Hatter	43	‘ And ever since that , ’
+17962	17979	17953	17954	the Hatter	43	‘ he wo n’t do a thing I ask ! It ’s always six o’clock now . ’
+17989	18004	18005	18005	she	31	‘ Is that the reason so many tea - things are put out here ? ’
+18008	18015	18017	18018	the Hatter	43	‘ Yes , that ’s it , ’
+18023	18043	18017	18018	the Hatter	43	‘ it ’s always tea - time , and we ’ve no time to wash the things between whiles . ’
+18044	18054	18056	18056	Alice	31	‘ Then you keep moving round , I suppose ? ’
+18058	18062	18064	18065	the Hatter	43	‘ Exactly so , ’
+18067	18075	18064	18065	the Hatter	43	‘ as the things get used up . ’
+18076	18088	18089	18089	Alice	31	‘ But what happens when you come to the beginning again ? ’
+18094	18101	18089	18089	Alice	31	‘ Suppose we change the subject , ’
+18109	18111	18102	18104	the March Hare	263	‘ I ’m
+18127	18128	18129	18129	I	0	’ ‘
+18130	18138	18140	18140	Alice	31	’m afraid I do n’t know one , ’
+18148	18154	18155	18155	they	283	‘ Then the Dormouse shall ! ’
+18159	18165	18155	18155	they	283	‘ Wake up , Dormouse ! ’
+18183	18189	18190	18190	he	43	‘ I was n’t asleep , ’
+18199	18209	18190	18190	he	43	‘ I heard every word you fellows were saying . ’
+18210	18216	18218	18220	the March Hare	45	‘ Tell us a story ! ’
+18222	18228	18230	18230	Alice	31	‘ Yes , please do ! ’
+18232	18239	18241	18242	the Hatter	275	‘ And be quick about it , ’
+18244	18256	18241	18242	the Hatter	275	‘ or you ’ll be asleep again before it ’s done . ’
+18257	18268	18190	18190	he	43	‘ Once upon a time there were three little sisters , ’
+18277	18299	18269	18270	the Dormouse	44	‘ and their names were Elsie , Lacie , and Tillie ; and they lived at the bottom of a well — ’
+18300	18307	18309	18309	Alice	31	‘ What did they live on ? ’
+18324	18330	18332	18333	the Dormouse	44	‘ They lived on treacle , ’
+18342	18353	18354	18354	Alice	31	‘ They could n’t have done that , you know , ’
+18358	18365	18354	18354	Alice	31	‘ they ’d have been ill . ’
+18366	18371	18373	18374	the Dormouse	44	‘ So they were , ’
+18376	18380	18373	18374	the Dormouse	44	‘ very ill . ’
+18410	18423	18406	18406	she	31	‘ But why did they live at the bottom of a well ? ’
+18424	18430	18431	18433	the March Hare	45	‘ Take some more tea , ’
+18441	18448	18449	18449	Alice	31	‘ I ’ve had nothing yet , ’
+18456	18464	18449	18449	Alice	31	‘ so I ca n’t take more . ’
+18465	18474	18476	18477	the Hatter	275	‘ You mean you ca n’t take less , ’
+18479	18490	18476	18477	the Hatter	275	‘ it ’s very easy to take more than nothing . ’
+18491	18497	18499	18499	Alice	31	‘ Nobody asked your opinion , ’
+18501	18509	18510	18511	the Hatter	275	‘ Who ’s making personal remarks now ? ’
+18552	18564	18527	18527	she	31	‘ Why did they live at the bottom of a well ? ’
+18582	18590	18565	18566	The Dormouse	44	‘ It was a treacle - well . ’
+18591	18598	18599	18599	Alice	31	‘ There ’s no such thing ! ’
+18613	18618	18620	18621	the Dormouse	280	‘ Sh ! sh ! ’
+18625	18642	18620	18621	the Dormouse	280	‘ If you ca n’t be civil , you ’d better finish the story for yourself . ’
+18643	18650	18651	18651	Alice	31	‘ No , please go on ! ’
+18656	18671	18651	18651	Alice	31	‘ I wo n’t interrupt again . I dare say there may be one . ’
+18672	18677	18679	18680	the Dormouse	44	‘ One , indeed ! ’
+18691	18708	18651	18651	Alice	31	‘ And so these three little sisters — they were learning to draw , you know — ’
+18709	18715	18717	18717	Alice	31	‘ What did they draw ? ’
+18724	18727	18729	18730	the Dormouse	44	‘ Treacle , ’
+18739	18746	18748	18749	the Hatter	43	‘ I want a clean cup , ’
+18751	18760	18761	18761	He	43	‘ let ’s all move one place on . ’
+18852	18867	18847	18847	she	31	‘ But I do n’t understand . Where did they draw the treacle from ? ’
+18868	18880	18882	18883	the Hatter	43	‘ You can draw water out of a water - well , ’
+18885	18905	18882	18883	the Hatter	43	‘ so I should think you could draw treacle out of a treacle - well — eh , stupid ? ’
+18906	18914	18915	18915	Alice	31	‘ But they were in the well , ’
+18929	18934	18937	18938	the Dormouse	44	‘ Of course they were ’
+18940	18945	18937	18938	the Dormouse	44	‘ — well in . ’
+18967	18974	18954	18954	she	31	‘ They were learning to draw , ’
+18993	19009	18975	18976	the Dormouse	44	‘ and they drew all manner of things — everything that begins with an M — ’
+19010	19016	19018	19018	Alice	31	‘ Why with an M ? ’
+19020	19024	19026	19028	the March Hare	45	‘ Why not ? ’
+19074	19122	19058	19059	the Hatter	275	‘ — that begins with an M , such as mouse - traps , and the moon , and memory , and muchness — you know you say things are “ much of a muchness”—did you ever see such a thing as a drawing of a muchness ? ’
+19123	19131	19133	19133	Alice	31	‘ Really , now you ask me , ’
+19139	19145	19133	19133	Alice	31	‘ I do n’t think — ’
+19146	19153	19155	19156	the Hatter	43	‘ Then you should n’t talk , ’
+19234	19245	19247	19247	Alice	31	‘ At any rate I ’ll never go there again ! ’
+19257	19274	19247	19247	Alice	31	‘ It ’s the stupidest tea - party I ever was at in all my life ! ’
+19296	19302	19303	19303	she	31	‘ That ’s very curious ! ’
+19306	19324	19303	19303	she	31	‘ But everything ’s curious today . I think I may as well go in at once . ’
+19348	19358	19359	19359	she	31	‘ Now , I ’ll manage better this time , ’
+19509	19526	19504	19506	one of them	305	‘ Look out now , Five ! Do n’t go splashing paint over me like that ! ’
+19527	19534	19536	19536	Five	49	‘ I could n’t help it , ’
+19543	19549	19536	19536	Five	49	‘ Seven jogged my elbow . ’
+19558	19572	19552	19552	Seven	50	‘ That ’s right , Five ! Always lay the blame on others ! ’
+19573	19580	19582	19582	Five	49	‘ You ’d better not talk ! ’
+19584	19598	19582	19582	Five	49	‘ I heard the Queen say only yesterday you deserved to be beheaded ! ’
+19599	19603	19605	19610	the one who had spoken first	306	‘ What for ? ’
+19612	19622	19624	19624	Seven	50	‘ That ’s none of your business , Two ! ’
+19626	19634	19636	19636	Five	49	‘ Yes , it is his business ! ’
+19638	19658	19636	19636	Five	49	‘ and I ’ll tell him — it was for bringing the cook tulip - roots instead of onions . ’
+19669	19678	19662	19662	his	50	‘ Well , of all the unjust things — ’
+19713	19719	19721	19721	Alice	31	‘ Would you tell me , ’
+19727	19735	19721	19721	Alice	31	‘ why you are painting those roses ? ’
+19754	19816	19747	19747	Two	51	‘ Why the fact is , you see , Miss , this here ought to have been a red rose - tree , and we put a white one in by mistake ; and if the Queen was to find it out , we should all have our heads cut off , you know . So you see , Miss , we ’re
+19827	19844	19845	19846	The Queen	711	’ At this moment Five , who had been anxiously looking across the garden , called out ‘
+19851	20082	19848	19849	The Queen	711	’ and the three gardeners instantly threw themselves flat upon their faces . There was a sound of many footsteps , and Alice looked round , eager to see the Queen . First came ten soldiers carrying clubs ; these were all shaped like the three gardeners , oblong and flat , with their hands and feet at the corners : next the ten courtiers ; these were ornamented all over with diamonds , and walked two and two , as the soldiers did . After these came the royal children ; there were ten of them , and the little dears came jumping merrily along hand in hand , in couples : they were all ornamented with hearts . Next came the guests , mostly Kings and Queens , and among them Alice recognised the White Rabbit : it was talking in a hurried nervous manner , smiling at everything that was said , and went by without noticing her . Then followed the Knave of Hearts , carrying the King ’s crown on a crimson velvet cushion ; and , last of all this grand procession , came THE KING AND QUEEN OF HEARTS . Alice was rather doubtful whether she ought not to lie down on her face like the three gardeners , but she could not remember ever having heard of such a rule at processions ; ‘
+20095	20099	20215	20215	your	317	’ thought she , ‘
+20119	20152	20113	20113	they	681	’ So she stood still where she was , and waited . When the procession came opposite to Alice , they all stopped and looked at her , and the Queen said severely ‘
+20157	20175	20176	20176	Idiot	315	’ She said it to the Knave of Hearts , who only bowed and smiled in reply . ‘
+20178	20198	20176	20176	Idiot	315	’ said the Queen , tossing her head impatiently ; and , turning to Alice , she went on , ‘
+20206	20207	20204	20204	child	316	’ ‘
+20218	20231	20211	20211	Alice	31	’ said Alice very politely ; but she added , to herself , ‘
+20235	20253	20234	20234	they	319	’re only a pack of cards , after all . I need n’t be afraid of them ! ’
+20254	20260	20262	20263	the Queen	711	‘ And who are these ? ’
+20328	20334	20336	20336	Alice	31	‘ How should I know ? ’
+20344	20352	20336	20336	Alice	31	‘ It ’s no business of mine . ’
+20375	20383	20353	20354	The Queen	711	‘ Off with her head ! Off — ’
+20384	20387	20389	20389	Alice	31	‘ Nonsense ! ’
+20414	20426	20402	20403	The King	775	‘ Consider , my dear : she is only a child ! ’
+20440	20445	20446	20447	The Knave	54	‘ Turn them over ! ’
+20458	20462	20464	20465	the Queen	711	‘ Get up ! ’
+20500	20505	20507	20508	the Queen	711	‘ Leave off that ! ’
+20510	20516	20507	20508	the Queen	711	‘ You make me giddy . ’
+20531	20539	20527	20527	she	711	‘ What have you been doing here ? ’
+20540	20547	20549	20549	Two	51	‘ May it please your Majesty , ’
+20566	20571	20549	20549	Two	51	‘ we were trying — ’
+20572	20576	20578	20579	the Queen	711	‘ I see ! ’
+20589	20595	20578	20579	the Queen	711	‘ Off with their heads ! ’
+20621	20628	20630	20630	Alice	31	‘ You sha n’t be beheaded ! ’
+20670	20676	20678	20679	the Queen	711	‘ Are their heads off ? ’
+20681	20693	20694	20695	the soldiers	767	‘ Their heads are gone , if it please your Majesty ! ’
+20700	20705	20707	20708	the Queen	711	‘ That ’s right ! ’
+20710	20716	20707	20708	the Queen	711	‘ Can you play croquet ? ’
+20736	20739	20741	20741	Alice	31	‘ Yes ! ’
+20743	20749	20751	20752	the Queen	711	‘ Come on , then ! ’
+20768	20778	20787	20787	She	31	‘ It’s — it ’s a very fine day ! ’
+20803	20806	20808	20808	Alice	31	‘ Very , ’
+20810	20817	20808	20808	Alice	31	‘ — where ’s the Duchess ? ’
+20818	20823	20825	20826	the Rabbit	352	‘ Hush ! Hush ! ’
+20861	20869	20852	20852	his	352	‘ She ’s under sentence of execution . ’
+20870	20874	20876	20876	Alice	31	‘ What for ? ’
+20878	20889	20890	20891	the Rabbit	352	‘ Did you say “ What a pity ! ” ? ’
+20894	20901	20903	20903	Alice	31	‘ No , I did n’t , ’
+20905	20924	20903	20903	Alice	31	‘ I do n’t think it ’s at all a pity . I said “ What for ? ” ’
+20925	20933	20934	20935	the Rabbit	352	‘ She boxed the Queen ’s ears — ’
+20946	20951	20952	20953	the Rabbit	352	‘ Oh , hush ! ’
+20960	20980	20952	20953	the Rabbit	352	‘ The Queen will hear you ! You see , she came rather late , and the Queen said — ’
+20981	20987	20989	20990	the Queen	711	‘ Get to your places ! ’
+21314	21320	21299	21300	the Queen	711	‘ Off with his head ! ’
+21322	21328	21299	21300	the Queen	711	‘ Off with her head ! ’
+21368	21372	21374	21374	she	31	‘ and then , ’
+21376	21384	21374	21374	she	31	‘ what would become of me ? They ’re
+21405	21469	21472	21474	the Cheshire Cat	41	’ She was looking about for some way of escape , and wondering whether she could get away without being seen , when she noticed a curious appearance in the air : it puzzled her very much at first , but , after watching it a minute or two , she made it out to be a grin , and she said to herself ‘
+21485	21486	21480	21480	somebody	74	’ ‘
+21493	21522	21489	21489	you	31	’ said the Cat , as soon as there was mouth enough for it to speak with . Alice waited till the eyes appeared , and then nodded . ‘
+21531	21535	21523	21523	It	368	’ she thought , ‘
+21549	21607	21608	21608	I	0	’ In another minute the whole head appeared , and then Alice put down her flamingo , and began an account of the game , feeling very glad she had someone to listen to her . The Cat seemed to think that there was enough of it now in sight , and no more of it appeared . ‘
+21618	21628	21630	21630	they	369	’ Alice began , in rather a complaining tone , ‘
+21727	21728	21731	21731	you	0	’ ‘
+21736	21745	21731	21731	you	0	’ said the Cat in a low voice . ‘
+21750	21754	21731	21731	you	0	’ said Alice : ‘
+21760	21780	21755	21755	she	711	’ Just then she noticed that the Queen was close behind her , listening : so she went on , ‘
+21796	21804	21755	21755	she	711	’ The Queen smiled and passed on . ‘
+21811	21832	21807	21807	you	0	’ said the King , going up to Alice , and looking at the Cat ’s head with great curiosity . ‘
+21844	21848	21807	21807	you	0	’ said Alice : ‘
+21855	21856	21857	21857	I	0	’ ‘
+21868	21873	21857	21857	I	0	’ said the King : ‘
+21885	21886	21887	21887	I	0	’ ‘
+21892	21897	21887	21887	I	0	’ the Cat remarked . ‘
+21903	21908	21887	21887	I	0	’ said the King , ‘
+21918	21927	21887	21887	I	0	’ He got behind Alice as he spoke . ‘
+21936	21940	21928	21929	A cat	377	’ said Alice . ‘
+21956	21957	21950	21950	I	0	’ ‘
+21965	21985	21986	21987	My dear	82	’ said the King very decidedly , and he called the Queen , who was passing at the moment , ‘
+21998	22014	21991	21991	you	82	’ The Queen had only one way of settling all difficulties , great or small . ‘
+22020	22029	21991	21991	you	82	’ she said , without even looking round . ‘
+22037	22232	22030	22030	I	0	’ said the King eagerly , and he hurried off . Alice thought she might as well go back , and see how the game was going on , as she heard the Queen ’s voice in the distance , screaming with passion . She had already heard her sentence three of the players to be executed for having missed their turns , and she did not like the look of things at all , as the game was in such confusion that she never knew whether it was her turn or not . So she went in search of her hedgehog . The hedgehog was engaged in a fight with another hedgehog , which seemed to Alice an excellent opportunity for croqueting one of them with the other : the only difficulty was , that her flamingo was gone across to the other side of the garden , where Alice could see it trying in a helpless sort of way to fly up into a tree . By the time she had caught the flamingo and brought it back , the fight was over , and both the hedgehogs were out of sight : ‘
+22240	22244	21991	21991	you	82	’ thought Alice , ‘
+22258	22525	21991	21991	you	82	’ So she tucked it away under her arm , that it might not escape again , and went back for a little more conversation with her friend . When she got back to the Cheshire Cat , she was surprised to find quite a large crowd collected round it : there was a dispute going on between the executioner , the King , and the Queen , who were all talking at once , while all the rest were quite silent , and looked very uncomfortable . The moment Alice appeared , she was appealed to by all three to settle the question , and they repeated their arguments to her , though , as they all spoke at once , she found it very hard indeed to make out exactly what they said . The executioner ’s argument was , that you could n’t cut off a head unless there was a body to cut it off from : that he had never had to do such a thing before , and he was n’t going to begin at his time of life . The King ’s argument was , that anything that had a head could be beheaded , and that you were n’t to talk nonsense . The Queen ’s argument was , that if something was n’t done about it in less than no time she ’d have everybody executed , all round . ( It was this last remark that had made the whole party look so grave and anxious . ) Alice could think of nothing else to say but ‘
+22540	22541	22536	22536	her	106	’ ‘
+22547	22555	22536	22536	her	106	’ the Queen said to the executioner : ‘
+22560	22628	22536	22536	her	106	’ And the executioner went off like an arrow . The Cat ’s head began fading away the moment he was gone , and , by the time he had come back with the Duchess , it had entirely disappeared ; so the King and the executioner ran wildly up and down looking for it , while the rest of the party went back to the game . ‘
+22647	22705	22642	22642	you	106	’ said the Duchess , as she tucked her arm affectionately into Alice ’s , and they walked off together . Alice was very glad to find her in such a pleasant temper , and thought to herself that perhaps it was only the pepper that had made her so savage when they met in the kitchen . ‘
+22708	22712	22713	22713	she	0	’m a Duchess , ’
+22728	22759	22760	22760	she	0	‘ I wo n’t have any pepper in my kitchen at all . Soup does very well without — Maybe it ’s always pepper that makes people hot - tempered , ’
+22777	22828	22760	22760	she	0	‘ and vinegar that makes them sour — and camomile that makes them bitter — and — and barley - sugar and such things that make children sweet - tempered . I only wish people knew that : then they would n’t be so stingy about it , you know — ’
+22854	22856	22847	22847	her	106	‘ You ’re
+22895	22896	22887	22887	I	0	’ ‘
+22903	22909	22887	22887	I	0	’ Alice ventured to remark . ‘
+22916	22921	22914	22914	child	316	’ said the Duchess . ‘
+22935	23017	22914	22914	child	316	’ And she squeezed herself up closer to Alice ’s side as she spoke . Alice did not much like keeping so close to her : first , because the Duchess was very ugly ; and secondly , because she was exactly the right height to rest her chin upon Alice ’s shoulder , and it was an uncomfortably sharp chin . However , she did not like to be rude , so she bore it as well as she could . ‘
+23027	23041	22914	22914	child	316	’ she said , by way of keeping up the conversation a little . ‘
+23042	23046	23048	23049	the Duchess	106	’ Tis so , ’
+23051	23059	23124	23124	she	106	‘ and the moral of that is—“Oh , ‘
+23063	23075	23124	23124	she	106	‘ tis love , that makes the world go round ! ” ’
+23076	23080	23081	23081	Alice	31	‘ Somebody said , ’
+23084	23096	23081	23081	Alice	31	‘ that it ’s done by everybody minding their own business ! ’
+23097	23109	23111	23112	the Duchess	106	‘ Ah , well ! It means much the same thing , ’
+23127	23149	23124	23124	she	106	‘ and the moral of that is—“Take care of the sense , and the sounds will take care of themselves . ” ’
+23150	23161	23162	23162	Alice	31	‘ How fond she is of finding morals in things ! ’
+23167	23172	23162	23162	Alice	31	‘ I dare say you ’re
+23185	23193	23124	23124	she	106	’ the Duchess said after a pause : ‘
+23200	23215	23162	23162	Alice	31	’m doubtful about the temper of your flamingo . Shall I try the experiment ? ’
+23216	23221	23222	23222	Alice	31	‘ He might bite , ’
+23237	23241	23243	23244	the Duchess	106	‘ Very true , ’
+23246	23266	23243	23244	the Duchess	106	‘ flamingoes and mustard both bite . And the moral of that is—“Birds of a feather flock together . ” ’
+23267	23275	23276	23276	Alice	31	‘ Only mustard is n’t a bird , ’
+23279	23285	23287	23288	the Duchess	106	‘ Right , as usual , ’
+23290	23301	23287	23288	the Duchess	106	‘ what a clear way you have of putting things ! ’
+23302	23311	23313	23313	Alice	31	‘ It ’s a mineral , I think , ’
+23315	23321	23323	23324	the Duchess	106	‘ Of course it is , ’
+23337	23368	23323	23324	the Duchess	106	‘ there ’s a large mustard - mine near here . And the moral of that is—“The more there is of mine , the less there is of yours . ” ’
+23369	23375	23377	23377	Alice	31	‘ Oh , I know ! ’
+23388	23405	23377	23377	Alice	31	‘ it ’s a vegetable . It does n’t look like one , but it is . ’
+23406	23413	23415	23416	the Duchess	106	‘ I quite agree with you , ’
+23418	23478	23415	23416	the Duchess	106	‘ and the moral of that is—“Be what you would seem to be”—or if you ’d like it put more simply—“Never imagine yourself not to be otherwise than what it might appear to others that what you were or might have been was not otherwise than what you had been would have appeared to them to be otherwise . ” ’
+23479	23488	23489	23489	Alice	31	‘ I think I should understand that better , ’
+23494	23514	23489	23489	Alice	31	‘ if I had it written down : but I ca n’t quite follow it as you say it . ’
+23515	23528	23529	23530	the Duchess	106	‘ That ’s nothing to what I could say if I chose , ’
+23538	23552	23554	23554	Alice	31	‘ Pray do n’t trouble yourself to say it any longer than that , ’
+23556	23565	23567	23568	the Duchess	106	‘ Oh , do n’t talk about trouble ! ’
+23570	23584	23567	23568	the Duchess	106	‘ I make you a present of everything I ’ve said as yet . ’
+23585	23592	23594	23594	Alice	31	‘ A cheap sort of present ! ’
+23596	23598	23594	23594	Alice	31	‘ I ’m
+23609	23621	23594	23594	Alice	31	’ But she did not venture to say it out loud . ‘
+23625	23639	23594	23594	Alice	31	’ the Duchess asked , with another dig of her sharp little chin . ‘
+23647	23662	23594	23594	Alice	31	’ said Alice sharply , for she was beginning to feel a little worried . ‘
+23669	23674	23594	23594	Alice	31	’ said the Duchess , ‘
+23685	23710	23594	23594	Alice	31	’ But here , to Alice ’s great surprise , the Duchess ’s voice died away , even in the middle of her favourite word ‘
+23713	23750	23594	23594	Alice	31	’ and the arm that was linked into hers began to tremble . Alice looked up , and there stood the Queen in front of them , with her arms folded , frowning like a thunderstorm . ‘
+23758	23769	23755	23756	your Majesty	318	’ the Duchess began in a low , weak voice . ‘
+23778	23791	23772	23772	I	0	’ shouted the Queen , stamping on the ground as she spoke ; ‘
+23813	23827	23810	23810	your	31	’ The Duchess took her choice , and was gone in a moment . ‘
+23836	23933	23810	23810	your	31	’ the Queen said to Alice ; and Alice was too much frightened to say a word , but slowly followed her back to the croquet - ground . The other guests had taken advantage of the Queen ’s absence , and were resting in the shade : however , the moment they saw her , they hurried back to the game , the Queen merely remarking that a moment ’s delay would cost them their lives . All the time they were playing the Queen never left off quarrelling with the other players , and shouting ‘
+23939	23941	23810	23810	your	31	’ or ‘
+23947	24030	24054	24056	a Mock Turtle	399	’ Those whom she sentenced were taken into custody by the soldiers , who of course had to leave off being arches to do this , so that by the end of half an hour or so there were no arches left , and all the players , except the King , the Queen , and Alice , were in custody and under sentence of execution . Then the Queen left off , quite out of breath , and said to Alice , ‘
+24039	24040	24032	24032	you	398	’ ‘
+24043	24047	24032	24032	you	398	’ said Alice . ‘
+24059	24060	24054	24056	a Mock Turtle	399	’ ‘
+24072	24077	24065	24067	Mock Turtle Soup	55	’ said the Queen . ‘
+24088	24092	24078	24078	I	0	’ said Alice . ‘
+24098	24103	24105	24105	he	55	’ said the Queen , ‘
+24112	24134	24105	24105	he	55	’ As they walked off together , Alice heard the King say in a low voice , to the company generally , ‘
+24140	24141	24135	24135	You	398	’ ‘
+24150	24204	24207	24208	lazy thing	400	’ she said to herself , for she had felt quite unhappy at the number of executions the Queen had ordered . They very soon came upon a Gryphon , lying fast asleep in the sun . ( If you do n’t know what a Gryphon is , look at the picture . ) ‘
+24210	24215	24207	24208	lazy thing	400	’ said the Queen , ‘
+24245	24323	24242	24242	I	0	’ ; and she walked off , leaving Alice alone with the Gryphon . Alice did not quite like the look of the creature , but on the whole she thought it would be quite as safe to stay with it as to go after that savage Queen : so she waited . The Gryphon sat up and rubbed its eyes : then it watched the Queen till she was out of sight : then it chuckled . ‘
+24327	24340	24242	24242	I	0	’ said the Gryphon , half to itself , half to Alice . ‘
+24346	24350	24353	24353	she	0	’ said Alice . ‘
+24355	24360	24353	24353	she	0	’ said the Gryphon . ‘
+24380	24381	24382	24382	Everybody	141	’ ‘
+24391	24402	24382	24382	Everybody	141	’ thought Alice , as she went slowly after it : ‘
+24416	24467	24403	24403	I	0	’ They had not gone far before they saw the Mock Turtle in the distance , sitting sad and lonely on a little ledge of rock , and , as they came nearer , Alice could hear him sighing as if his heart would break . She pitied him deeply . ‘
+24473	24493	24497	24497	his	406	’ she asked the Gryphon , and the Gryphon answered , very nearly in the same words as before , ‘
+24515	24540	24543	24544	young lady	407	’ So they went up to the Mock Turtle , who looked at them with large eyes full of tears , but said nothing . ‘
+24546	24551	24552	24552	she	407	’ said the Gryphon , ‘
+24563	24564	24560	24560	she	407	’ ‘
+24571	24583	24569	24569	her	407	’ said the Mock Turtle in a deep , hollow tone : ‘
+24602	24620	24621	24621	I	0	’ So they sat down , and nobody spoke for some minutes . Alice thought to herself , ‘
+24637	24643	24621	24621	I	0	’ But she waited patiently . ‘
+24646	24659	24621	24621	I	0	’ said the Mock Turtle at last , with a deep sigh , ‘
+24666	24684	24660	24660	I	0	’ These words were followed by a very long silence , broken only by an occasional exclamation of ‘
+24687	24711	24621	24621	I	0	’ from the Gryphon , and the constant heavy sobbing of the Mock Turtle . Alice was very nearly getting up and saying , ‘
+24722	24744	24718	24718	your	409	’ but she could not help thinking there must be more to come , so she sat still and said nothing . ‘
+24750	24771	24772	24772	we	411	’ the Mock Turtle went on at last , more calmly , though still sobbing a little now and then , ‘
+24794	24795	24783	24785	an old Turtle	415	’ ‘
+24809	24813	24798	24798	you	409	’ Alice asked . ‘
+24823	24830	24819	24819	he	687	’ said the Mock Turtle angrily : ‘
+24837	24838	24832	24832	you	409	’ ‘
+24853	24889	24845	24845	yourself	409	’ added the Gryphon ; and then they both sat silent and looked at poor Alice , who felt ready to sink into the earth . At last the Gryphon said to the Mock Turtle , ‘
+24904	24913	24845	24845	yourself	409	’ and he went on in these words : ‘
+24931	24932	24845	24845	yourself	409	’ ‘
+24940	24944	24945	24945	You	409	’ interrupted Alice . ‘
+24948	24954	24945	24945	You	409	’ said the Mock Turtle . ‘
+24959	24976	24956	24956	your	0	’ added the Gryphon , before Alice could speak again . The Mock Turtle went on . ‘
+24994	24995	24977	24977	We	411	’ ‘
+25007	25011	25012	25012	you	409	’ said Alice ; ‘
+25022	25023	25012	25012	you	409	’ ‘
+25027	25036	25012	25012	you	409	’ asked the Mock Turtle a little anxiously . ‘
+25039	25043	25012	25012	you	409	’ said Alice , ‘
+25050	25051	25012	25012	you	409	’ ‘
+25055	25061	25012	25012	you	409	’ said the Mock Turtle . ‘
+25065	25070	25012	25012	you	409	’ said Alice indignantly . ‘
+25082	25094	25074	25074	yours	0	’ said the Mock Turtle in a tone of great relief . ‘
+25118	25119	25120	25120	You	409	’ ‘
+25128	25132	25120	25120	You	409	’ said Alice ; ‘
+25141	25142	25120	25120	You	409	’ ‘
+25151	25160	25143	25143	I	0	’ said the Mock Turtle with a sigh . ‘
+25168	25169	25143	25143	I	0	’ ‘
+25174	25178	25181	25181	Writhing	58	’ inquired Alice . ‘
+25190	25196	25181	25181	Writhing	58	’ the Mock Turtle replied ; ‘
+25214	25215	25216	25216	I	0	’ ‘
+25224	25230	25216	25216	I	0	’ Alice ventured to say . ‘
+25235	25246	25216	25216	I	0	’ The Gryphon lifted up both its paws in surprise . ‘
+25254	25258	25216	25216	I	0	’ it exclaimed . ‘
+25269	25270	25266	25266	I	0	’ ‘
+25273	25278	25216	25216	I	0	’ said Alice doubtfully : ‘
+25290	25291	25216	25216	I	0	’ ‘
+25296	25302	25216	25216	I	0	’ the Gryphon went on , ‘
+25318	25342	25315	25316	a simpleton	421	’ Alice did not feel encouraged to ask any more questions about it , so she turned to the Mock Turtle , and said ‘
+25350	25351	25405	25405	he	422	’ ‘
+25358	25372	25405	25405	he	422	’ the Mock Turtle replied , counting off the subjects on his flappers , ‘
+25417	25418	25405	25405	he	422	’ ‘
+25424	25428	25405	25405	he	422	’ said Alice . ‘
+25439	25445	25446	25446	I	0	’ the Mock Turtle said : ‘
+25447	25458	25497	25499	the Mock Turtle	424	’m too stiff . And the Gryphon never learnt it . ’
+25459	25464	25466	25467	the Gryphon	56	‘ Had n’t time , ’
+25469	25488	25466	25467	the Gryphon	56	‘ I went to the Classics master , though . He was an old crab , he was . ’
+25489	25496	25497	25499	the Mock Turtle	424	‘ I never went to him , ’
+25505	25517	25497	25499	the Mock Turtle	424	‘ he taught Laughing and Grief , they used to say . ’
+25518	25527	25529	25530	the Gryphon	56	‘ So he did , so he did , ’
+25547	25559	25561	25561	Alice	31	‘ And how many hours a day did you do lessons ? ’
+25571	25578	25580	25582	the Mock Turtle	55	‘ Ten hours the first day , ’
+25584	25593	25580	25582	the Mock Turtle	55	‘ nine the next , and so on . ’
+25594	25600	25602	25602	Alice	31	‘ What a curious plan ! ’
+25604	25610	25602	25602	Alice	31	‘ That ’s the reason they ’re
+25614	25619	25602	25602	Alice	31	’ the Gryphon remarked : ‘
+25628	25652	25602	25602	Alice	31	’ This was quite a new idea to Alice , and she thought it over a little before she made her next remark . ‘
+25663	25664	25602	25602	Alice	31	’ ‘
+25670	25676	25602	25602	Alice	31	’ said the Mock Turtle . ‘
+25686	25692	25602	25602	Alice	31	’ Alice went on eagerly . ‘
+25699	25709	25602	25602	Alice	31	’ the Gryphon interrupted in a very decided tone : ‘
+25718	25757	25761	25761	he	55	’ The Mock Turtle sighed deeply , and drew the back of one flapper across his eyes . He looked at Alice , and tried to speak , but for a minute or two sobs choked his voice . ‘
+25769	25812	25761	25761	he	55	’ said the Gryphon : and it set to work shaking him and punching him in the back . At last the Mock Turtle recovered his voice , and , with tears running down his cheeks , he went on again : — ‘
+25823	25825	25813	25813	You	31	’ ( ‘
+25830	25843	25845	25845	Alice	31	’ said Alice)—‘and perhaps you were never even introduced to a lobster — ’
+25849	25854	25845	25845	Alice	31	‘ I once tasted — ’
+25862	25866	25857	25857	herself	31	‘ No , never ’
+25868	25885	25893	25893	Alice	31	‘ — so you can have no idea what a delightful thing a Lobster Quadrille is ! ’
+25886	25891	25893	25893	Alice	31	‘ No , indeed , ’
+25895	25904	25893	25893	Alice	31	‘ What sort of a dance is it ? ’
+25905	25908	25910	25911	the Gryphon	56	‘ Why , ’
+25913	25926	25910	25911	the Gryphon	56	‘ you first form into a line along the sea - shore — ’
+25927	25931	25933	25935	the Mock Turtle	55	‘ Two lines ! ’
+25937	25964	25933	25935	the Mock Turtle	55	‘ Seals , turtles , salmon , and so on ; then , when you ’ve cleared all the jelly - fish out of the way — ’
+25965	25972	25974	25975	the Gryphon	56	‘ That generally takes some time , ’
+25977	25983	25974	25975	the Gryphon	56	‘ — you advance twice — ’
+25984	25993	25995	25996	the Gryphon	56	‘ Each with a lobster as a partner ! ’
+25998	26002	25995	25996	the Gryphon	56	‘ Of course , ’
+26008	26016	26003	26005	the Mock Turtle	55	‘ advance twice , set to partners — ’
+26017	26028	26030	26031	the Gryphon	56	‘ — change lobsters , and retire in same order , ’
+26033	26039	26040	26042	the Mock Turtle	55	‘ Then , you know , ’
+26046	26051	26040	26042	the Mock Turtle	55	‘ you throw the — ’
+26052	26056	26058	26059	the Gryphon	56	‘ The lobsters ! ’
+26068	26079	26058	26059	the Gryphon	56	‘ — as far out to sea as you can — ’
+26080	26085	26087	26088	the Gryphon	56	‘ Swim after them ! ’
+26090	26098	26100	26102	the Mock Turtle	55	‘ Turn a somersault in the sea ! ’
+26108	26113	26115	26116	the Gryphon	56	‘ Change lobsters again ! ’
+26124	26138	26140	26142	the Mock Turtle	55	‘ Back to land again , and that ’s all the first figure , ’
+26179	26188	26190	26190	Alice	31	‘ It must be a very pretty dance , ’
+26193	26204	26206	26208	the Mock Turtle	55	‘ Would you like to see a little of it ? ’
+26210	26215	26217	26217	Alice	31	‘ Very much indeed , ’
+26219	26229	26231	26233	the Mock Turtle	55	‘ Come , let ’s try the first figure ! ’
+26238	26252	26235	26236	the Gryphon	56	‘ We can do without lobsters , you know . Which shall sing ? ’
+26253	26259	26261	26262	the Gryphon	56	‘ Oh , you sing , ’
+26264	26271	26261	26262	the Gryphon	56	‘ I ’ve forgotten the words . ’
+26318	26331	26333	26333	Alice	31	‘ Thank you , it ’s a very interesting dance to watch , ’
+26345	26358	26333	26333	Alice	31	‘ and I do so like that curious song about the whiting ! ’
+26359	26367	26369	26371	the Mock Turtle	55	‘ Oh , as to the whiting , ’
+26373	26383	26369	26371	the Mock Turtle	55	‘ they — you’ve seen them , of course ? ’
+26384	26387	26389	26389	Alice	31	‘ Yes , ’
+26391	26400	26401	26401	she	31	‘ I ’ve often seen them at dinn — ’
+26406	26416	26418	26420	the Mock Turtle	55	‘ I do n’t know where Dinn may be , ’
+26422	26438	26418	26420	the Mock Turtle	55	‘ but if you ’ve seen them so often , of course you know what they ’re
+26441	26442	26443	26443	I	0	’ ‘
+26447	26452	26443	26443	I	0	’ Alice replied thoughtfully . ‘
+26463	26468	26443	26443	I	0	’re all over crumbs . ’
+26469	26471	26462	26462	they	429	‘ You ’re
+26477	26483	26443	26443	I	0	’ said the Mock Turtle : ‘
+26507	26525	26526	26526	he	55	’ here the Mock Turtle yawned and shut his eyes.—‘Tell her about the reason and all that , ’
+26532	26537	26539	26540	the Gryphon	881	‘ The reason is , ’
+26542	26594	26539	26540	the Gryphon	881	‘ that they would go with the lobsters to the dance . So they got thrown out to sea . So they had to fall a long way . So they got their tails fast in their mouths . So they could n’t get them out again . That ’s all . ’
+26595	26599	26601	26601	Alice	31	‘ Thank you , ’
+26603	26619	26601	26601	Alice	31	‘ it ’s very interesting . I never knew so much about a whiting before . ’
+26620	26633	26635	26636	the Gryphon	56	‘ I can tell you more than that , if you like , ’
+26638	26649	26635	26636	the Gryphon	56	‘ Do you know why it ’s called a whiting ? ’
+26650	26657	26659	26659	Alice	31	‘ I never thought about it , ’
+26661	26664	26659	26659	Alice	31	‘ Why ? ’
+26665	26673	26674	26675	the Gryphon	56	‘ It does the boots and shoes , ’
+26685	26692	26693	26693	she	31	‘ Does the boots and shoes ! ’
+26700	26710	26712	26713	the Gryphon	56	‘ Why , what are your shoes done with ? ’
+26715	26725	26712	26713	the Gryphon	56	‘ I mean , what makes them so shiny ? ’
+26742	26744	26737	26737	she	31	‘ They ’re
+26752	26753	26749	26749	I	0	’ ‘
+26761	26771	26737	26737	she	31	’ the Gryphon went on in a deep voice , ‘
+26782	26783	26779	26779	you	31	’ ‘
+26791	26801	26779	26779	you	31	’ Alice asked in a tone of great curiosity . ‘
+26809	26816	26779	26779	you	31	’ the Gryphon replied rather impatiently : ‘
+26825	26826	26779	26779	you	31	’ ‘
+26834	26847	26848	26848	I	0	’ said Alice , whose thoughts were still running on the song , ‘
+26871	26872	26873	26873	They	432	’ ‘
+26882	26888	26873	26873	They	432	’ the Mock Turtle said : ‘
+26899	26900	26889	26891	no wise fish	436	’ ‘
+26906	26916	26889	26891	no wise fish	436	’ said Alice in a tone of great surprise . ‘
+26921	26927	26889	26891	no wise fish	436	’ said the Mock Turtle : ‘
+26955	26956	26946	26946	I	0	’ ‘
+26965	26969	26959	26959	you	0	’ said Alice . ‘
+26976	26990	26973	26973	I	0	’ the Mock Turtle replied in an offended tone . And the Gryphon added ‘
+27001	27002	26973	26973	I	0	’ ‘
+27015	27022	27003	27003	I	0	’ said Alice a little timidly : ‘
+27041	27042	26973	26973	I	0	’ ‘
+27047	27053	26973	26973	I	0	’ said the Mock Turtle . ‘
+27062	27071	26973	26973	I	0	’ said the Gryphon in an impatient tone : ‘
+27079	27156	27157	27157	You	440	’ So Alice began telling them her adventures from the time when she first saw the White Rabbit . She was a little nervous about it just at first , the two creatures got so close to her , one on each side , and opened their eyes and mouths so very wide , but she gained courage as she went on . Her listeners were perfectly quiet till she got to the part about her repeating ‘
+27164	27188	27161	27162	Father William	37	’ to the Caterpillar , and the words all coming different , and then the Mock Turtle drew a long breath , and said ‘
+27194	27195	27161	27162	Father William	37	’ ‘
+27207	27212	27161	27162	Father William	37	’ said the Gryphon . ‘
+27218	27225	27231	27231	her	441	’ the Mock Turtle repeated thoughtfully . ‘
+27243	27262	27239	27239	her	441	’ He looked at the Gryphon as if he thought it had some kind of authority over Alice . ‘
+27268	27277	27279	27280	the Gryphon	56	‘ Tis the voice of the sluggard , ” ’
+27282	27296	27298	27298	Alice	31	‘ How the creatures order one about , and make one repeat lessons ! ’
+27300	27311	27298	27298	Alice	31	‘ I might as well be at school at once . ’
+27353	27369	27371	27372	the Gryphon	56	‘ That ’s different from what I used to say when I was a child , ’
+27374	27383	27385	27387	the Mock Turtle	55	‘ Well , I never heard it before , ’
+27389	27396	27385	27387	the Mock Turtle	55	‘ but it sounds uncommon nonsense . ’
+27424	27433	27435	27437	the Mock Turtle	55	‘ I should like to have it explained , ’
+27439	27446	27448	27449	the Gryphon	56	‘ She ca n’t explain it , ’
+27452	27460	27448	27449	the Gryphon	56	‘ Go on with the next verse . ’
+27461	27467	27468	27470	the Mock Turtle	55	‘ But about his toes ? ’
+27473	27487	27468	27470	the Mock Turtle	55	‘ How could he turn them out with his nose , you know ? ’
+27488	27497	27498	27498	Alice	31	‘ It ’s the first position in dancing . ’
+27517	27525	27526	27527	the Gryphon	56	‘ Go on with the next verse , ’
+27531	27542	27526	27527	the Gryphon	56	‘ it begins “ I passed by his garden . ” ’
+27570	27581	27561	27561	she	31	‘ What is the use of repeating all that stuff , ’
+27587	27611	27582	27584	the Mock Turtle	55	‘ if you do n’t explain it as you go on ? It ’s by far the most confusing thing I ever heard ! ’
+27612	27623	27625	27626	the Gryphon	56	‘ Yes , I think you ’d better leave off , ’
+27638	27649	27650	27651	the Gryphon	56	‘ Shall we try another figure of the Lobster Quadrille ? ’
+27655	27669	27650	27651	the Gryphon	56	‘ Or would you like the Mock Turtle to sing you a song ? ’
+27670	27687	27688	27688	Alice	31	‘ Oh , a song , please , if the Mock Turtle would be so kind , ’
+27704	27725	27694	27695	the Gryphon	56	‘ Hm ! No accounting for tastes ! Sing her “ Turtle Soup , ” will you , old fellow ? ’
+27748	27752	27754	27755	the Gryphon	56	‘ Chorus again ! ’
+27772	27778	27754	27755	the Gryphon	56	‘ The trial ’s beginning ! ’
+27785	27789	27791	27792	the Gryphon	881	‘ Come on ! ’
+27815	27821	27822	27822	Alice	31	‘ What trial is it ? ’
+27833	27837	27829	27830	the Gryphon	56	‘ Come on ! ’
+27991	27995	27984	27984	they	444	’ she thought , ‘
+28002	28065	28068	28069	the judge	452	’ But there seemed to be no chance of this , so she began looking at everything about her , to pass away the time . Alice had never been in a court of justice before , but she had read about them in books , and she was quite pleased to find that she knew the name of nearly everything there . ‘
+28071	28077	28068	28069	the judge	452	’ she said to herself , ‘
+28084	28137	28068	28069	the judge	452	’ The judge , by the way , was the King ; and as he wore his crown over the wig , ( look at the frontispiece if you want to see how he did it , ) he did not look at all comfortable , and it was certainly not becoming . ‘
+28146	28150	28068	28069	the judge	452	’ thought Alice , ‘
+28156	28163	28068	28069	the judge	452	’ ( she was obliged to say ‘
+28166	28183	28068	28069	the judge	452	’ you see , because some of them were animals , and some were birds , ) ‘
+28191	28237	28186	28186	they	453	’ She said this last word two or three times over to herself , being rather proud of it : for she thought , and rightly too , that very few little girls of her age knew the meaning of it at all . However , ‘
+28241	28260	28263	28263	they	453	’ would have done just as well . The twelve jurors were all writing very busily on slates . ‘
+28266	28273	28274	28274	They	453	’ Alice whispered to the Gryphon . ‘
+28290	28291	28292	28292	They	453	’ ‘
+28293	28299	28274	28274	They	453	’re putting down their names , ’
+28306	28320	28300	28301	the Gryphon	56	‘ for fear they should forget them before the end of the trial . ’
+28321	28325	28326	28326	Alice	31	‘ Stupid things ! ’
+28347	28353	28341	28343	the White Rabbit	12	‘ Silence in the court ! ’
+28395	28399	28389	28391	all the jurors	457	‘ stupid things ! ’
+28420	28423	28389	28391	all the jurors	457	‘ stupid , ’
+28436	28450	28452	28452	Alice	31	‘ A nice muddle their slates’ll be in before the trial ’s over ! ’
+28566	28573	28575	28576	the King	775	‘ Herald , read the accusation ! ’
+28603	28608	28609	28610	the King	775	‘ Consider your verdict , ’
+28616	28623	28624	28625	the Rabbit	352	‘ Not yet , not yet ! ’
+28629	28640	28624	28625	the Rabbit	352	‘ There ’s a great deal to come before that ! ’
+28641	28647	28649	28650	the King	775	‘ Call the first witness , ’
+28667	28671	28653	28655	the White Rabbit	12	‘ First witness ! ’
+28701	28709	28710	28710	he	275	‘ I beg pardon , your Majesty , ’
+28713	28733	28710	28710	he	275	‘ for bringing these in : but I had n’t quite finished my tea when I was sent for . ’
+28734	28741	28743	28744	the King	775	‘ You ought to have finished , ’
+28746	28752	28743	28744	the King	775	‘ When did you begin ? ’
+28778	28788	28789	28789	he	43	‘ Fourteenth of March , I think it was , ’
+28792	28795	28797	28799	the March Hare	45	‘ Fifteenth , ’
+28801	28804	28806	28807	the Dormouse	44	‘ Sixteenth , ’
+28809	28814	28815	28816	the King	775	‘ Write that down , ’
+28850	28856	28857	28858	the King	775	‘ Take off your hat , ’
+28864	28870	28872	28873	the Hatter	43	‘ It is n’t mine , ’
+28875	28878	28879	28880	the King	775	‘ Stolen ! ’
+28897	28904	28905	28906	the Hatter	275	‘ I keep them to sell , ’
+28912	28921	28922	28923	a hatter	256	‘ I ’ve none of my own . I ’m
+28925	28947	28905	28906	the Hatter	275	’ Here the Queen put on her spectacles , and began staring at the Hatter , who turned pale and fidgeted . ‘
+28952	28957	28949	28949	your	43	’ said the King ; ‘
+28974	29091	29092	29092	I	0	’ This did not seem to encourage the witness at all : he kept shifting from one foot to the other , looking uneasily at the Queen , and in his confusion he bit a large piece out of his teacup instead of the bread - and - butter . Just at this moment Alice felt a very curious sensation , which puzzled her a good deal until she made out what it was : she was beginning to grow larger again , and she thought at first she would get up and leave the court ; but on second thoughts she decided to remain where she was as long as there was room for her . ‘
+29100	29112	29094	29094	you	482	’ said the Dormouse , who was sitting next to her . ‘
+29118	29119	29094	29094	you	482	’ ‘
+29126	29132	29133	29133	I	0	’ said Alice very meekly : ‘
+29134	29137	29094	29094	you	482	’m growing . ’
+29138	29147	29149	29150	the Dormouse	44	‘ You ’ve no right to grow here , ’
+29152	29158	29160	29160	Alice	31	‘ Do n’t talk nonsense , ’
+29164	29168	29160	29160	Alice	31	‘ you know you ’re
+29172	29173	29160	29160	Alice	31	’ ‘
+29184	29189	29094	29094	you	482	’ said the Dormouse : ‘
+29196	29249	29094	29094	you	482	’ And he got up very sulkily and crossed over to the other side of the court . All this time the Queen had never left off staring at the Hatter , and , just as the Dormouse crossed the court , she said to one of the officers of the court , ‘
+29262	29279	29094	29094	you	482	’ on which the wretched Hatter trembled so , that he shook both his shoes off . ‘
+29284	29290	29292	29292	I	0	’ the King repeated angrily , ‘
+29300	29305	29094	29094	you	482	’re nervous or not . ’
+29306	29308	29313	29313	your	0	‘ I ’m
+29316	29326	29313	29314	your Majesty	318	’ the Hatter began , in a trembling voice , ‘
+29363	29364	29313	29314	your Majesty	318	’ ‘
+29371	29376	29313	29314	your Majesty	318	’ said the King . ‘
+29383	29388	29313	29314	your Majesty	318	’ the Hatter replied . ‘
+29397	29403	29405	29405	you	0	’ said the King sharply . ‘
+29415	29416	29417	29417	I	0	’ ‘
+29418	29423	29424	29425	the Hatter	275	’m a poor man , ’
+29429	29443	29424	29425	the Hatter	275	‘ and most things twinkled after that — only the March Hare said — ’
+29444	29449	29450	29452	the March Hare	263	‘ I did n’t ! ’
+29459	29463	29465	29466	the Hatter	43	‘ You did ! ’
+29468	29473	29475	29477	the March Hare	45	‘ I deny it ! ’
+29479	29484	29486	29487	the King	775	‘ He denies it , ’
+29489	29495	29486	29487	the King	775	‘ leave out that part . ’
+29496	29507	29508	29509	the Hatter	275	‘ Well , at any rate , the Dormouse said — ’
+29535	29539	29541	29542	the Hatter	43	‘ After that , ’
+29544	29555	29541	29542	the Hatter	43	‘ I cut some more bread - and - butter — ’
+29556	29564	29565	29568	one of the jury	490	‘ But what did the Dormouse say ? ’
+29571	29578	29580	29581	the Hatter	43	‘ That I ca n’t remember , ’
+29583	29588	29590	29591	the King	775	‘ You must remember , ’
+29593	29601	29590	29591	the King	775	‘ or I ’ll have you executed . ’
+29622	29624	29625	29627	a poor man	484	‘ I ’m
+29632	29636	29625	29627	a poor man	484	’ he began . ‘
+29638	29644	29646	29647	the King	775	’re a very poor speaker , ’
+29724	29726	29728	29728	I	0	‘ I ’m
+29734	29738	29728	29728	I	0	’ thought Alice . ‘
+29784	29785	29775	29775	I	0	’ ‘
+29800	29805	29806	29806	I	0	’ continued the King . ‘
+29813	29818	29819	29819	I	0	’ said the Hatter : ‘
+29820	29829	29806	29806	I	0	’m on the floor , as it is . ’
+29830	29837	29838	29839	the King	775	‘ Then you may sit down , ’
+29854	29864	29866	29866	Alice	31	‘ Come , that finished the guinea - pigs ! ’
+29868	29876	29866	29866	Alice	31	‘ Now we shall get on better . ’
+29877	29885	29887	29888	the Hatter	275	‘ I ’d rather finish my tea , ’
+29906	29911	29913	29914	the King	775	‘ You may go , ’
+29933	29943	29944	29945	the Queen	711	‘ — and just take his head off outside , ’
+29969	29975	29977	29978	the King	775	‘ Call the next witness ! ’
+30028	30033	30035	30036	the King	775	‘ Give your evidence , ’
+30038	30042	30044	30045	the cook	225	‘ Sha n’t , ’
+30063	30073	30114	30114	he	775	‘ Your Majesty must cross - examine this witness . ’
+30074	30084	30085	30086	the King	775	‘ Well , if I must , I must , ’
+30121	30128	30114	30114	he	775	‘ What are tarts made of ? ’
+30129	30134	30136	30137	the cook	225	‘ Pepper , mostly , ’
+30139	30142	30114	30114	he	775	‘ Treacle , ’
+30150	30155	30114	30114	he	775	‘ Collar that Dormouse , ’
+30161	30184	30156	30157	the Queen	711	‘ Behead that Dormouse ! Turn that Dormouse out of court ! Suppress him ! Pinch him ! Off with his whiskers ! ’
+30217	30221	30223	30224	the King	775	‘ Never mind ! ’
+30233	30239	30241	30241	he	775	‘ Call the next witness . ’
+30250	30272	30241	30241	he	775	‘ Really , my dear , you must cross - examine the next witness . It quite makes my forehead ache ! ’
+30298	30309	30310	30310	she	31	‘ — for they have n’t got much evidence yet , ’
+30337	30340	30330	30330	his	158	‘ Alice ! ’
+30341	30344	30346	30346	Alice	31	‘ Here ! ’
+30427	30435	30436	30436	she	31	‘ Oh , I beg your pardon ! ’
+30498	30505	30507	30508	the King	775	‘ The trial can not proceed , ’
+30515	30529	30530	30530	he	775	‘ until all the jurymen are back in their proper places — all , ’
+30603	30610	30611	30611	she	31	‘ not that it signifies much , ’
+30616	30637	30611	30611	she	31	‘ I should think it would be quite as much use in the trial one way up as the other . ’
+30712	30721	30722	30723	the King	775	‘ What do you know about this business ? ’
+30728	30731	30733	30733	Alice	31	‘ Nothing , ’
+30735	30739	30741	30742	the King	775	‘ Nothing whatever ? ’
+30744	30748	30750	30750	Alice	31	‘ Nothing whatever , ’
+30752	30758	30759	30760	the King	775	‘ That ’s very important , ’
+30786	30796	30797	30797	he	12	‘ Unimportant , your Majesty means , of course , ’
+30816	30825	30826	30827	the King	775	‘ Unimportant , of course , I meant , ’
+30840	30849	30852	30852	he	775	‘ important — unimportant — unimportant — important — ’
+30867	30870	30852	30852	he	775	‘ important , ’
+30873	30876	30852	30852	he	775	‘ unimportant . ’
+30893	30902	30903	30903	she	31	‘ but it does n’t matter a bit , ’
+30930	30933	30938	30938	his	775	‘ Silence ! ’
+30941	30959	30938	30938	his	775	‘ Rule Forty - two . All persons more than a mile high to leave the court . ’
+30965	30967	30960	30960	Everybody	141	‘ I ’m
+30973	30977	30978	30978	You	31	’ said Alice . ‘
+30981	30986	30978	30978	You	31	’ said the King . ‘
+30992	30997	30978	30978	You	31	’ added the Queen . ‘
+31009	31013	31000	31000	I	0	’ said Alice : ‘
+31029	31030	31023	31023	you	775	’ ‘
+31040	31045	31023	31023	you	775	’ said the King . ‘
+31054	31071	30978	30978	You	31	’ said Alice . The King turned pale , and shut his note - book hastily . ‘
+31076	31090	31073	31073	your	550	’ he said to the jury , in a low , trembling voice . ‘
+31103	31116	31100	31101	your Majesty	318	’ said the White Rabbit , jumping up in a great hurry ; ‘
+31125	31126	31100	31101	your Majesty	318	’ ‘
+31132	31137	31138	31138	I	0	’ said the Queen . ‘
+31145	31151	31138	31138	I	0	’ said the White Rabbit , ‘
+31169	31170	31167	31167	somebody	74	’ ‘
+31177	31182	31167	31167	somebody	74	’ said the King , ‘
+31198	31199	31188	31188	nobody	157	’ ‘
+31206	31213	31188	31188	nobody	157	’ said one of the jurymen . ‘
+31221	31227	31188	31188	nobody	157	’ said the White Rabbit ; ‘
+31239	31250	31293	31295	the White Rabbit	12	’ He unfolded the paper as he spoke , and added ‘
+31267	31268	31293	31295	the White Rabbit	12	’ ‘
+31277	31284	31287	31287	they	556	’ asked another of the jurymen . ‘
+31288	31291	31293	31295	the White Rabbit	12	’re not , ’
+31297	31307	31293	31295	the White Rabbit	12	‘ and that ’s the queerest thing about it . ’
+31316	31326	31328	31329	the King	775	‘ He must have imitated somebody else ’s hand , ’
+31340	31345	31347	31348	the Knave	447	‘ Please your Majesty , ’
+31350	31374	31347	31348	the Knave	447	‘ I did n’t write it , and they ca n’t prove I did : there ’s no name signed at the end . ’
+31375	31383	31385	31386	the King	775	‘ If you did n’t sign it , ’
+31388	31416	31385	31386	the King	775	‘ that only makes the matter worse . You must have meant some mischief , or else you ’d have signed your name like an honest man . ’
+31441	31447	31449	31450	the Queen	711	‘ That proves his guilt , ’
+31452	31460	31462	31462	Alice	31	‘ It proves nothing of the sort ! ’
+31464	31474	31462	31462	Alice	31	‘ Why , you do n’t even know what they ’re
+31477	31478	31434	31435	the King	775	’ ‘
+31482	31495	31434	31435	the King	775	’ said the King . The White Rabbit put on his spectacles . ‘
+31505	31509	31434	31435	the King	775	’ he asked . ‘
+31515	31521	31434	31435	the King	775	’ the King said gravely , ‘
+31535	31546	31434	31435	the King	775	’ These were the verses the White Rabbit read : — ‘
+31560	31569	31434	31435	the King	775	’ said the King , rubbing his hands ; ‘
+31576	31577	31573	31574	the jury	466	’ ‘
+31587	31614	31573	31574	the jury	466	’ said Alice , ( she had grown so large in the last few minutes that she was n’t a bit afraid of interrupting him , ) ‘
+31634	31644	31621	31621	I	0	’ The jury all wrote down on their slates , ‘
+31658	31669	31645	31645	She	570	’ but none of them attempted to explain the paper . ‘
+31678	31683	31645	31645	She	570	’ said the King , ‘
+31710	31731	31705	31705	I	0	’ he went on , spreading out the verses on his knee , and looking at them with one eye ; ‘
+31761	31777	31753	31753	you	572	’ he added , turning to the Knave . The Knave shook his head sadly . ‘
+31784	31802	31753	31753	you	572	’ he said . ( Which he certainly did not , being made entirely of cardboard . ) ‘
+31809	31825	31753	31753	you	572	’ said the King , and he went on muttering over the verses to himself : ‘
+31867	31868	31858	31858	he	575	’ ‘
+31884	31888	31858	31858	he	575	’ said Alice . ‘
+31895	31909	31892	31892	they	576	’ said the King triumphantly , pointing to the tarts on the table . ‘
+31936	31943	31925	31925	you	572	’ he said to the Queen . ‘
+31946	32011	31925	31925	you	572	’ said the Queen furiously , throwing an inkstand at the Lizard as she spoke . ( The unfortunate little Bill had left off writing on his slate with one finger , as he found it made no mark ; but he now hastily began again , using the ink , that was trickling down his face , as long as it lasted . ) ‘
+32020	32039	32018	32018	you	572	’ said the King , looking round the court with a smile . There was a dead silence . ‘
+32045	32058	32060	32061	the jury	466	’ the King added in an offended tone , and everybody laughed , ‘
+32066	32079	32060	32061	the jury	466	’ the King said , for about the twentieth time that day . ‘
+32084	32089	32060	32061	the jury	466	’ said the Queen . ‘
+32096	32097	32060	32061	the jury	466	’ ‘
+32102	32107	32060	32061	the jury	466	’ said Alice loudly . ‘
+32116	32117	32060	32061	the jury	466	’ ‘
+32122	32130	32119	32119	your	572	’ said the Queen , turning purple . ‘
+32135	32139	32142	32142	her	579	’ said Alice . ‘
+32145	32159	32142	32142	her	579	’ the Queen shouted at the top of her voice . Nobody moved . ‘
+32165	32182	32183	32183	You	572	’ said Alice , ( she had grown to her full size by this time . ) ‘
+32184	32192	32183	32183	You	572	’re nothing but a pack of cards ! ’
+32269	32276	32278	32279	her sister	65	‘ Wake up , Alice dear ! ’
+32281	32292	32278	32279	her sister	65	‘ Why , what a long sleep you ’ve had ! ’
+32293	32304	32306	32306	Alice	31	‘ Oh , I ’ve had such a curious dream ! ’
+32350	32374	32338	32338	she	31	‘ It was a curious dream , dear , certainly : but now run in to your tea ; it ’s getting late . ’
