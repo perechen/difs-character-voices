@@ -5,8 +5,10 @@ date: "4/11/2022"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE,message=FALSE}
+library(tidyverse)
 knitr::opts_chunk$set(echo = TRUE)
+theme_set(theme_minimal())
 
 ```
 
@@ -36,6 +38,8 @@ Few things to note:
 
 - char_id `0` is I, the narrator.  In `ENG18440_Disraeli` gets a lot of narrative, not direct parts in their speech (because, uh, each narrative passage can be modeled as "belonging" to I in the first-person narration. However, still weird that narrative parts are assigned as quotes)  
 - Recheck empty quotes (what is the source?)
+Note: the [Narrator], char_id `0`, characters have huge amount of quotes usually (is the whole narrative part assigned to them?)
+- `ENG18460_Reynolds` - Is it a huge novel with many characters or something is terribly wrong?
 - `ENG_18481_Dickens` produces 0 quote files,  no quotes recognized?
 - Check if current erratic paragraph handling is influencing results
 - Some quotes have "None" at their positions? See `ENG18670_Ouida`
@@ -52,8 +56,8 @@ nov_list <- vector(length=length(all_texts), mode = "list")
 for(t in 1:length(all_texts)) {
   x=all_texts[[t]]
   
-  print(quotes[t])
-  print(t)
+  #print(quotes[t])
+  #print(t)
   ## quickly getting character names, relying on char_id here
   chr_id <- x %>% 
     group_by(char_id) %>% 
@@ -82,5 +86,73 @@ for(t in 1:length(all_texts)) {
 df_all_quotes <- bind_rows(nov_list)
 
 write_tsv(df_all_quotes,"data/all_quotes_novels.tsv")
+```
+
+
+
+```{r}
+char_speech <- df_all_quotes %>%
+  group_by(book_id, char_id,char_name) %>%
+  summarise(spoken=paste(quote, collapse="\n")) %>%
+  ungroup()
+
+char_tokenized <- char_speech %>%
+  filter(char_id != 0) %>%
+  group_by(book_id, char_id, char_name) %>%
+  unnest_tokens(input = spoken, output=word,token = "words")  
+
+char_count <- char_tokenized %>% count(char_id)
+
+write_tsv(char_tokenized,"data/char_tokenized_no_narrators.tsv")
+
+
+```
+
+### Some plots / distributions
+
+Number of words uttered: the expected long tail
+
+```{r}
+char_count %>% ggplot(aes(n)) + geom_histogram(bins=100)
+```
+
+
+How many characters speak more than 2000 words per novel?
+
+
+
+```{r}
+char_count %>%
+  filter(n > 2000) %>%
+  group_by(book_id) %>% 
+  count(book_id) %>% 
+  ggplot(aes(n)) + geom_histogram()
+```
+What is the novel with 60 characters??
+
+```{r}
+char_count %>%
+  filter(n > 2000) %>%
+  group_by(book_id) %>% 
+  count(book_id,sort=T) %>% 
+  head()
+
+
+
+```
+
+There are `86` books with at least 2 characters having more than 1k words.  
+There are `69` books with at least 2 characters having more than 2k words  
+
+```{r}
+## 69
+char_count %>%
+  filter(n > 2000) %>%
+  group_by(book_id) %>% 
+  count(book_id,sort=T) %>% 
+  filter(n>=2) %>% 
+  pull(book_id) %>% 
+  unique() %>% 
+  length()
 ```
 

@@ -1,0 +1,179 @@
+---
+title: "eltec_exploration"
+author: "Artjoms Šeļa"
+date: "4/11/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+
+knitr::opts_chunk$set(echo = TRUE,message=F,warning=F,error=F)
+theme_set(theme_minimal())
+
+```
+
+
+### Setup
+
+```{r}
+library(tidyverse)
+library(tidytext)
+library(e1071)
+source("src/sampler.R")
+source("src/sample_constructor.R")
+source("src/char_cv.R")
+
+## load pre-tokenized table without narrators
+char_tokenized <- read_tsv("data/char_tokenized_no_narrators.tsv") %>% 
+  mutate(char_unique=paste(book_id, char_id, sep="_"))
+
+
+```
+
+
+
+### Initialize 
+
+```{r}
+## variable setup
+n_size <- 800 # n words per character
+n_char <- 2 # at least how many characters
+n_samples <- 3 # at least how many samples per character
+mfw_len <- 50
+n_resamples=10 # how many redraws/reclassify for character
+
+
+## character/novels by words filter
+char_count <- char_tokenized %>%
+  count(book_id,char_unique) %>%
+  filter(n>n_size*n_samples) %>%
+  count(book_id) %>%
+  filter(n>=n_char)
+
+novels <- char_count$book_id %>% unique()
+
+```
+
+```{r}
+char_fin <- char_tokenized %>%
+  filter(book_id %in% novels) %>%
+  group_by(char_unique) %>% 
+  mutate(n_uttered = max(row_number(word))) %>%
+  filter(n_uttered>n_size)
+
+## words in MFW order
+w=char_tokenized %>% count(word,sort=T)
+
+## for later
+stop_w <- c("she", "her", "hers", "he", "his", "him", "they", "them", "my", "me", "I")
+
+
+```
+
+```{r}
+## empty df for results
+df_res <- NULL
+
+for (n in novels) {
+
+## reset mfw length
+mfw_length <- mfw_len
+## sampling
+n1 <- char_fin %>% filter(book_id==n)
+## characters of 3 and more samples
+v_c <- n1 %>% ungroup() %>% filter(n_uttered>n_size*n_char) %>% pull(char_unique) %>% unique()
+
+## split by characters
+c_list <- n1 %>% group_by(char_unique) %>% group_split()
+
+## empty list
+s_list = vector("list",length(c_list))
+
+## resampling
+for(samp in 1:n_resamples) {
+
+  
+for(c in 1:length(c_list)) {
+  
+  df_char <- c_list[[c]]
+  ## get sample ids for available words without replacement
+  v_samples = sample_bag(nrow(df_char),sample_words = n_size)
+  
+  s_list[[c]] <- df_char %>%
+    mutate(sample_no = v_samples) %>% 
+    filter(!is.na(sample_no)) %>% # get rid of words not in the sample
+    mutate(sample_id = paste(char_unique, sample_no,sep="_"))
+  
+}
+
+
+freqs <- s_list %>%
+  bind_rows() %>%
+  group_by(char_unique,sample_id) %>%
+  count(word) %>%
+  pivot_wider(names_from = word,values_from = n, values_fill =0)
+
+
+## character / sample vectors
+v_id <- freqs$sample_id
+v_ch <- freqs$char_unique
+
+freqs <- freqs[,-c(1,2)]
+## arrange by frequency
+mfw_list <- colnames(freqs) %in% w$word[1:mfw_length]
+freqs <- freqs[,mfw_list]
+
+mfw_length <- ncol(freqs)
+#### Iterate over character ####
+for (c in v_c) {
+  
+message(paste0("Now at: ", n, ". Character: ", c))
+
+df_class <- construct_samples(c,
+                              char_set=v_ch,
+                              frequencies=freqs,
+                              mfw=mfw_length)
+
+
+
+## leave-one-out cross validation
+## each character-sample participates as a test set
+df_pred <- char_cross_v(c,
+                   df=df_class,
+                   mfw=mfw_length,
+                   novel=n,
+                   s=samp)
+
+
+## combine in overall table
+df_res <- bind_rows(df_res, df_pred)
+
+
+  } # character END of loop
+
+} # resample END of loop
+
+} # novel END of loop
+```
+
+### Results exploration
+
+```{r}
+df_res %>% group_by(chr,book_id,char_samples,sample_id) %>% summarise(acc = mean(pred)) %>% mutate(author=str_replace(book_id, ".*?_(.*)", "\\1")) %>% ggplot(aes(reorder(author,-acc), acc)) + geom_boxplot() + geom_hline(aes(yintercept=0.5),color="red") + theme(axis.text.x = element_text(angle=90))
+```
+
+
+```{r}
+df_res %>% group_by(chr,book_id,char_samples,sample_id) %>% summarise(acc = mean(pred)) %>% ggplot(aes(char_samples,acc)) + geom_point() + geom_smooth(method="lm")
+```
+
+
+```{r}
+df_res %>% group_by(chr,book_id,char_samples,sample_id) %>% filter(char_samples>10) %>% summarise(acc = mean(pred)) %>% group_by(chr,book_id,char_samples) %>%  summarise(acc=mean(acc)) %>% mutate(year = as.integer(str_extract(book_id,"[0-9]{4}"))) %>% ggplot(aes(year, acc)) + geom_point(alpha=0.5) + geom_boxplot(aes(group=book_id)) + geom_smooth(method="lm")
+```
+
+```{r}
+saveRDS(df_res,"data/res_temp.rds")
+```
+
