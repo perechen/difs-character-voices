@@ -115,7 +115,7 @@ freqs <- s_list %>%
   group_by(chrt,sample_id) %>%
   count(word) %>%
   pivot_wider(names_from = word,values_from = n, values_fill =0)
-freqs
+
 ## words in MFW order
 w=colSums(freqs[,-c(1,2)])
 top_w <- tibble(n=w, word=names(w)) %>% arrange(-n)
@@ -208,7 +208,7 @@ df_res %>%
   ## plotting
   ggplot(aes(chr,mean_acc)) +
   geom_col() + 
-  theme_minimal() + 
+  theme_bw() + 
   facet_wrap(~play,scales = "free_x") + 
   geom_hline(aes(yintercept=0.5),color="red") + 
   labs(title="Accuracy in predicting character", subtitle=paste0("Leave-one-out cross-validation\nOne vs. all classification. \nWhite numbers = available no. of samples per character\n",mfw_length," MFW, sample size = ", n_size)) + geom_text(aes(label=char_samples),nudge_y = -0.2,color="white")

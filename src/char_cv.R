@@ -1,31 +1,50 @@
 char_cross_v <- function(x,df,mfw,novel,s) {
 	chrt <- x
 	df_res <- NULL
+	v_predicted <- NULL
 
 	# character sample positions
 	ch_pool <- which(df$classes == chrt)
 	# other sample positions
 	other_pool <- which(df$classes != chrt)
 
-	for (i in ch_pool) {
+
+	# remove no variation dimensions
+
+	variance <- lapply(df,function(x) length(unique(x)))
+	zerovar <- which(variance < 1)
+	if(length(zerovar) > 0) {
+
+		df <- df[,-zerovar]
+
+	}
+	
+
+
+
+
+
+	for (i in 1:nrow(df)) {
 
 		## data for train vs. test (one vector)
-		train <- df[c(ch_pool[-i],other_pool),]
-		test <- df[ch_pool[i],]
+		train <- df[-i,]
+		test <- df[i,]
+		
+	
+
+	
 
 		## fit SVM with linear kernel 
 		m <- svm(as.factor(classes) ~., kernel="linear",data = train)
 
 		## predict the `test` character sample (remove the class column in the end)
-		pr <- predict(m,test[,-(mfw+1)]) %>% table()
-
-		df_pred <- tibble(pred=pr[chrt],
-                  chr =chrt,
-                  book_id=novel,
-                  char_samples=length(df_class$classes==c),
-                  sample_id=s)
+		pr <- predict(m,test[,-ncol(test)]) %>% table()
 		
-		df_res <- bind_rows(df_res, df_pred)
+		v_predicted <- c(v_predicted,names(which(pr == 1)))
+
+
+		
+	
 
 
 
@@ -33,9 +52,19 @@ char_cross_v <- function(x,df,mfw,novel,s) {
 
 
 
+	} 
+	
+	
+	v_expected = df$classes
+	cmatrix=caret::confusionMatrix(factor(v_predicted),factor(v_expected))
+	
 
-	}
+	df_pred <- tibble(acc=cmatrix$overall[1],
+	                  chr=chrt,
+	                  book_id=novel,
+	                  char_samples=length(df$classes==c),
+	                  sample_id=s)
 
 
-	return(df_res)
+	return(df_pred)
 }

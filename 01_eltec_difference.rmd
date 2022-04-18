@@ -35,6 +35,13 @@ char_tokenized <- read_tsv("data/char_tokenized_no_narrators.tsv") %>%
 
 ### Initialize 
 
+Current problems:
+
+- Removing constants before SVM-ing
+- True cross-validation that *includes* performance for "Others"
+- Rethinking sampling strategies (esp. what represents "the other")
+- Redoing analysis without pronouns(?)
+
 ```{r}
 ## variable setup
 n_size <- 800 # n words per character
@@ -82,7 +89,7 @@ mfw_length <- mfw_len
 ## sampling
 n1 <- char_fin %>% filter(book_id==n)
 ## characters of 3 and more samples
-v_c <- n1 %>% ungroup() %>% filter(n_uttered>n_size*n_char) %>% pull(char_unique) %>% unique()
+v_c <- n1 %>% ungroup() %>% filter(n_uttered>n_size*n_samples) %>% pull(char_unique) %>% unique()
 
 ## split by characters
 c_list <- n1 %>% group_by(char_unique) %>% group_split()
@@ -91,6 +98,7 @@ c_list <- n1 %>% group_by(char_unique) %>% group_split()
 s_list = vector("list",length(c_list))
 
 ## resampling
+
 for(samp in 1:n_resamples) {
 
   
@@ -137,6 +145,9 @@ df_class <- construct_samples(c,
 
 
 
+
+df_class
+
 ## leave-one-out cross validation
 ## each character-sample participates as a test set
 df_pred <- char_cross_v(c,
@@ -170,7 +181,7 @@ df_res %>% group_by(chr,book_id,char_samples,sample_id) %>% summarise(acc = mean
 
 
 ```{r}
-df_res %>% group_by(chr,book_id,char_samples,sample_id) %>% filter(char_samples>10) %>% summarise(acc = mean(pred)) %>% group_by(chr,book_id,char_samples) %>%  summarise(acc=mean(acc)) %>% mutate(year = as.integer(str_extract(book_id,"[0-9]{4}"))) %>% ggplot(aes(year, acc)) + geom_point(alpha=0.5) + geom_boxplot(aes(group=book_id)) + geom_smooth(method="lm")
+df_res %>% group_by(chr,book_id,char_samples,sample_id) %>% filter(char_samples>10) %>% summarise(acc = mean(pred)) %>% group_by(chr,book_id,char_samples) %>%  summarise(acc=mean(acc)) %>% mutate(year = as.integer(str_extract(book_id,"[0-9]{4}"))) %>% ggplot(aes(year, acc)) + geom_point(alpha=0.5) + geom_boxplot(aes(group=chr)) + geom_smooth(method="lm")
 ```
 
 ```{r}
