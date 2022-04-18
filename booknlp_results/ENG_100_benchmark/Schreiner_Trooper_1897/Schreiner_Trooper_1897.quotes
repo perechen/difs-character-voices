@@ -1,0 +1,531 @@
+quote_start	quote_end	mention_start	mention_end	mention_phrase	char_id	quote
+11	14	35	38	A GREAT GOOD MAN	94	" DREAMS , "
+15	22	35	38	A GREAT GOOD MAN	94	" DREAM LIFE AND REAL LIFE , "
+23	31	35	38	A GREAT GOOD MAN	94	" THE STORY OF AN AFRICAN FARM , "
+101	120	121	122	OLIVE SCHREINER	39	" Our low life was the level 's and the night 's ; He 's for the morning . "
+1747	1751	1738	1738	she	124	" Little Simon , "
+2159	2169	2190	2190	they	174	" The Peter Halket Gold Mining Company , Limited . "
+2299	2308	2291	2291	his	42	" Always sell out at the right time . "
+2496	2516	2492	2492	they	180	" It 's the shares that you sell , not the shares you keep , that make the money . "
+2558	2571	2572	2572	He	42	" The British Government ca n't let British share - holders suffer . "
+3729	3734	3725	3725	he	49	" Who is there ? "
+3745	3749	3750	3751	Peter Halket	42	" A friend . "
+3788	3794	3795	3795	he	49	" What do you want ? "
+3896	3901	3902	3902	he	42	" Are you alone ? "
+3905	3912	3902	3902	he	42	" Yes , I am alone . "
+3922	3930	3931	3931	he	42	" Lost your way , I suppose ? "
+3940	3959	3931	3931	he	42	" No ; I have come to ask whether I may sit beside your fire for a while . "
+3960	3965	3967	3967	Peter	42	" Certainly , certainly ! "
+3989	4022	3967	3967	Peter	42	" I 'm confoundedly glad of any company . It 's a beastly night for anyone to be out alone . Wonder you find your way . Sit down ! sit down ! "
+4082	4098	4100	4100	Peter	42	" One of the Soudanese Rhodes brought with him from the north , I suppose ? "
+4107	4122	4124	4125	the stranger	239	" No ; Cecil Rhodes has had nothing to do with my coming here , "
+4127	4129	4131	4131	Peter	42	" Oh "
+4133	4180	4131	4131	Peter	42	" You did n't perhaps happen to come across a company of men to - day , twelve white men and seven coloured , with three cart loads of provisions ? We were taking them to the big camp , and I got parted from my troop this
+4202	4202	4193	4193	I	0	"
+4219	4233	4234	4234	he	239	" They are camped at the foot of those hills to - night , "
+4248	4264	4234	4234	he	239	" To - morrow early they will be here , before the sun has risen . "
+4265	4276	4278	4278	Peter	42	" Oh , you 've met them , have you ! "
+4281	4298	4278	4278	Peter	42	" that 's why you were n't surprised at finding me here . Take a drop ! "
+4312	4330	4299	4299	He	42	" I 'm sorry there 's so little , but a drop will keep the cold out . "
+4377	4383	4385	4385	Peter	42	" Are you a Jew ? "
+4400	4408	4385	4385	Peter	42	" Yes ; I am a Jew . "
+4409	4412	4414	4414	Peter	42	" Ah , "
+4416	4429	4414	4414	Peter	42	" that 's why I was n't able to make out at first what
+4441	4449	4453	4453	I	0	" Then he stopped , and said , "
+4469	4469	4465	4467	a Spanish Jew	249	"
+4470	4478	4439	4439	you	239	" I am a Jew of Palestine . "
+4479	4482	4484	4484	Peter	42	" Ah ! "
+4486	4535	4484	4484	Peter	42	" I have n't seen many from that part yet . I came out with a lot on board ship ; and I 've seen Barnato and Beit ; but they 're not very much like you . I suppose it 's coming from Palestine makes the difference . "
+4547	4555	4556	4556	he	42	" Come a little nearer the fire , "
+4559	4561	4556	4556	he	42	" you must
+4580	4602	4603	4603	I	0	" Peter Halket pushed his gun a little further away from him ; and threw another large log on the fire . "
+4665	4676	4658	4658	you	239	" said Peter cheerfully , warming his hands at the blaze .
+4677	4683	4685	4686	the stranger	239	" Forty days and nights , "
+4688	4696	4698	4698	Peter	42	" Forty days ! Ph e ew ! "
+4700	4737	4698	4698	Peter	42	" You must have have had a lot to drink , or you would n't have stood it . I was feeling blue enough when you turned up , but I 'm better now , warmer . "
+4749	4761	4763	4763	Peter	42	" In the employ of the Chartered Company , I suppose ? "
+4773	4776	4778	4779	the stranger	239	" No , "
+4781	4792	4778	4779	the stranger	239	" I have nothing to do with the Chartered Company . "
+4793	4796	4798	4798	Peter	42	" Oh , "
+4800	4811	4798	4798	Peter	42	" I do n't wonder , then , that things are n't
+4922	4922	4923	4923	Peter	42	"
+4964	5003	5005	5005	Peter	42	" It was n't such a bad life , though . I only wish I was back there again . I had two huts to myself , and a couple of nigger girls . It 's better fun , "
+5011	5056	5005	5005	Peter	42	" having these black women than whites . The whites you 've got to support , but the niggers support you ! And when you 've done with them you can just get rid of them . I 'm all for the nigger gals . "
+5072	5078	5080	5080	Peter	42	" You got any girls ? "
+5082	5087	5080	5080	Peter	42	" Care for niggers ? "
+5088	5094	5096	5097	the stranger	239	" I love all women , "
+5106	5115	5117	5117	Peter	42	" Oh , you do , do you ? "
+5119	5136	5137	5137	he	42	" Well , I 'm pretty sick of them . I had bother enough with mine , "
+5170	5224	5226	5226	Peter	42	" One girl was only fifteen ; I got her cheap from a policeman who was living with her , and she was n't much . But the other , by Gad ! I never saw another nigger like her ; well set up , I tell you , and as straight as that "
+5236	5297	5226	5226	Peter	42	" She was thirty if she was a day . Fellows do n't generally fancy women that age ; they like slips of girls . But I set my heart on her the day I saw her . She belonged to the chap I was with . He got her up north . There was a devil of a row about his
+5443	5453	5456	5456	his	0	" vatjeí of Old Dop as high as that , "
+5465	5507	5456	5456	his	0	" and the other fellow wanted to buy it from me . I knew two of that . I said I wanted it for myself . He offered me this , and he offered me that . At last I said , "
+5519	5521	5523	5523	you	0	" vatje "
+5664	5664	5643	5643	She	279	"
+5690	5808	5683	5683	himself	42	" Well , I came home to the huts one day , rather suddenly , you know , to fetch something ; and what did I find ? She , talking at the hut door with a nigger man . Now it was my strict orders they were neither to speak a word to a nigger man at all ; so I asked what it was . And she answers , as cool as can be , that he was a stranger going past on the road , and asked her to give him a drink of water . Well , I just ordered him off . I did n't think anything more about it . But I remember
+5948	6054	5940	5940	I	0	" Well , when I heard that the Company was going to have a row with the Matabele , I thought I 'd volunteer . They said there was lots of loot to be got , and land to be given out , and that sort of thing , and I thought I 'd only be gone about three months . So I went . I left those women there , and a lot of stuff in the garden and some sugar and rice , and I told them not to leave till I came back ; and I asked the other man to keep an eye
+6119	6128	6130	6130	Peter	42	" Well , I left those women there , "
+6139	6169	6130	6130	Peter	42	" Mind you , I 'd treated those women really well . I 'd never given either of them one touch all the time I had them . I was the
+6395	6401	6403	6403	Peter	42	" And do you know , "
+6419	6482	6483	6483	Peter	42	" what I 'm as sure of as that I 'm sitting here ? It 's that that nigger I caught at my hut , that day , was her nigger husband ! He 'd come to fetch her that time ; and when she saw she could n't get away without our catching her , she got the cartridges for him ! "
+6490	6510	6483	6483	Peter	42	" And now she 's gone back to him . It 's for him she 's taken that ammunition ! "
+6529	6535	6537	6537	Peter	42	" I tell you what , "
+6539	6540	6537	6537	Peter	42	" if
+6584	6661	6564	6564	I	0	" Peter looked triumphantly at the stranger . This was his only story ; and he had told it a score of times round the camp fire for the benefit of some new - comer . When this point was reached , a low murmur of applause and sympathy always ran round the group : to - night there was quiet ; the stranger 's large dark eyes watched the fire almost as though he heard nothing .
+6662	6671	6673	6673	Peter	42	" I should n't have minded so much , "
+6678	6789	6673	6673	Peter	42	" though no man likes to have his woman taken away from him ; but she was going to have a kid in a month or two and so was the little one for anything I know ; she looked like it ! I expect they did away with it before it came ; they 've no hearts , these niggers ; they 'd think nothing of doing that with a white man 's child . They 've no hearts ; they 'd rather go back to a black man , however well you 've treated them . It 's all right if you get them quite young and keep them away
+6922	6929	6930	6930	him	0	" Peter Halket paused . It seemed to
+6959	6965	6967	6967	Peter	42	" You look awfully tired , "
+6969	6996	6967	6967	Peter	42	" would n't you like to lie down and sleep ? You could put your head down on that stone , and I 'd keep watch . "
+6997	7005	7006	7007	the stranger	239	" I have no need of sleep , "
+7010	7017	7006	7007	the stranger	239	" I will watch with you . "
+7018	7031	7033	7033	Peter	42	" You 've been in the wars , too , I see , "
+7048	7055	7033	7033	Peter	42	" By God ! Both of them !
+7070	7070	7060	7060	You	239	"
+7071	7078	7080	7081	the stranger	239	" It was very long ago , "
+7093	7098	7099	7099	he	42	" Do you know , "
+7102	7189	7099	7099	he	42	" I 've been wondering ever since you came , who it was you reminded me of . It 's my mother ! You 're not like her in the face , but when your eyes look at me it seems to me as if it was she looking at me . Curious , is n't it ? I do n't know you from Adam , and you 've hardly spoken a word since you came ; and yet I seem as if I 'd known you all
+7193	7201	7099	7099	he	42	" Peter moved a little nearer him . "
+7245	7256	7258	7258	Peter	42	" It 's all right.í Curious , is n't it ? "
+7260	7330	7258	7258	Peter	42	" I do n't know you from Adam , but if you were to take up my gun and point it at me , I would n't move ! I 'd lie down here and go to sleep with my head at your feet ; curious , is n't it , when I do n't know you from Adam ? My name 's Peter Halket . What 's yours ? "
+7360	7372	7374	7374	Peter	42	" By gad ! how they burn when you arrange them ! "
+7390	7409	7387	7387	Peter	42	" Did you see any niggers about yesterday ? I have n't come across any in this part . "
+7410	7414	7416	7417	the stranger	239	" There is , "
+7422	7443	7420	7420	himself	239	" an old woman in a cave over yonder , and there is one man in the bush , ten miles from
+7515	7515	7502	7502	His	239	"
+7516	7523	7525	7525	Peter	42	" Did you speak to him ? "
+7527	7553	7525	7525	Peter	42	" I took him down to the water where a large pool was . The bank was too high for the man to descend alone . "
+7554	7562	7525	7525	Peter	42	" It 's a lucky thing for you our
+7569	7573	7574	7574	Our	339	" said Peter . "
+7614	7614	7607	7607	you	335	"
+7615	7625	7627	7628	the stranger	239	" The young ravens have meat given to them , "
+7634	7646	7627	7628	the stranger	239	" and the lions go down to the streams to drink . "
+7647	7650	7652	7652	Peter	42	" Ah yes "
+7654	7665	7652	7652	Peter	42	" but that 's because we ca n't help it ! "
+7690	7695	7676	7676	Peter	42	" Did you hear of the
+7838	7838	7824	7824	they	346	"
+7839	7844	7846	7847	the stranger	239	" I was there , "
+7849	7855	7857	7857	Peter	42	" Oh , you were ? "
+7859	7893	7857	7857	Peter	42	" I saw a photograph of the niggers hanging , and our fellows standing round smoking ; but I did n't see you in it . I suppose you 'd just gone away ? "
+7894	7905	7907	7908	the stranger	239	" I was beside the men when they were hung , "
+7910	7919	7921	7921	Peter	42	" Oh , you were , were you ? "
+7923	7944	7921	7921	Peter	42	" I do n't much care about seeing that sort of thing myself . Some fellows think it 's the best fun
+7971	7993	8018	8018	I	0	" said Peter , quickly , anxious to remove any adverse impression as to his courage which the stranger might form ; "
+8206	8208	8209	8209	his	0	" Peter put
+8221	8243	8209	8209	his	0	" I 'll shoot as many as you like if they 'll run , but they must n't be tied up . "
+8244	8254	8256	8257	the stranger	239	" I was there when that man was shot , "
+8259	8269	8271	8271	Peter	42	" Why , you seem to have been everywhere , "
+8273	8280	8271	8271	Peter	42	" Have you seen Cecil Rhodes ? "
+8281	8289	8291	8292	the stranger	239	" Yes , I have seen him , "
+8294	8302	8304	8305	Peter Halket	42	" Now he 's death on niggers , "
+8314	8333	8304	8305	Peter Halket	42	" they say when he was Prime Minister down in the Colony he tried to pass a law that would
+8393	8453	8390	8390	They	1336	" If we get the British Government here , they 'll be giving the niggers land to live on ; and let them have the vote , and get civilised and educated , and all that sort of thing ; but Cecil Rhodes , he 'll keep their noses to the grindstone.í I prefer land to niggers , he says .
+8576	8582	8583	8583	they	388	" said Peter , meditating ; "
+8644	8644	8636	8636	you	384	"
+8667	8672	8674	8674	Peter	42	" What is it ? "
+8676	8682	8674	8674	Peter	42	" do you hear anything ? "
+8683	8689	8691	8692	the stranger	239	" I hear far off , "
+8694	8701	8691	8692	the stranger	239	" the sound of weeping , and the
+8719	8719	8714	8714	women	394	"
+8724	8731	8732	8732	he	42	" I do n't hear anything ! "
+8735	8751	8732	8732	he	42	" It must be in your head . I sometimes get a noise in mine . "
+8756	8770	8752	8752	He	42	" No , there 's nothing . It 's all so deadly still . "
+8778	8783	8785	8786	the stranger	239	" Peter Simon Halket , "
+8799	8818	8791	8791	he	60	" if it should come to pass that you should obtain those lands you have desired , and you should
+8839	8842	8844	8844	fools	401	" Peter started "
+8911	8911	8892	8892	their	407	"
+8912	8915	8916	8917	Peter Halket	60	" Profit ! "
+8920	8933	8916	8917	Peter Halket	60	" Why , it would profit everything . What makes Beit and Rhodes and
+8944	8944	8892	8892	their	407	"
+8945	8964	8966	8967	the stranger	239	" Peter Simon Halket , which of those souls you have seen on earth is to you greatest ? "
+8969	8977	8966	8967	the stranger	239	" Which soul is to you fairest ? "
+8978	8981	8983	8983	Peter	60	" Ah , "
+8985	9049	8983	8983	Peter	60	" but we were n't talking of souls at all ; we were talking of money . Of course if it comes to souls , my mother 's the best person I 've ever seen . But what does it help her ? She 's got to stand washing clothes for those stuck - up nincompoops of fine ladies ! Wait till I 've got
+9060	9060	9055	9056	somebody else	409	"
+9061	9065	9067	9068	the stranger	239	" Peter Halket , "
+9070	9085	9067	9068	the stranger	239	" who is the greatest ; he who serves or he who is served ? "
+9102	9105	9106	9106	he	60	" Oh , "
+9109	9178	9106	9106	he	60	" if it comes to that , what 's anything ! You might as well say , sitting there in your old linen shirt , that you were as great as Rhodes or Beit or Barnato , or a king . Of course a man 's just the same whatever he 's got on or whatever he has ; but he is n't the same to other people . "
+9179	9188	9190	9191	the stranger	239	" There have kings been born in stables , "
+9204	9222	9223	9223	he	60	" It must have been a long time ago ; they do n't get born there now , "
+9226	9256	9223	9223	he	60	" Why , if God Almighty came to this country , and had n't half - a - million in shares , they would n't think much of Him . "
+9275	9282	9283	9284	the stranger	239	" Who gave you your land ? "
+9287	9296	9298	9298	Peter	60	" Mine ! Why , the Chartered Company , "
+9308	9316	9317	9317	he	239	" And who gave it to them ? "
+9321	9363	9317	9317	he	239	" Why , England , of course . She gave them the land to far beyond the Zambesi to do what they liked with , and make as much money out of as they could , and she 'd back 'em . "
+9364	9377	9379	9380	the stranger	239	" Who gave the land to the men and women of England ? "
+9383	9401	9403	9403	Peter	60	" Why , the devil ! They said it was theirs , and of course it was , "
+9405	9421	9403	9403	Peter	60	" And the people of the land : did England give you the people also ? "
+9431	9454	9422	9422	Peter	60	" Yes , of course , she gave us the people ; what use would the land have been to us otherwise ? "
+9455	9482	9484	9485	the stranger	239	" And who gave her the people , the living flesh and blood , that she might give them away , into the hands of others ? "
+9499	9536	9538	9538	Peter	60	" Well , what could she do with a lot of miserable niggers , if she did n't give them to us ? A lot of good - for - nothing rebels they are , too , "
+9540	9546	9548	9549	the stranger	239	" What is a rebel ? "
+9551	9555	9557	9557	Peter	60	" My Gawd ! "
+9559	9629	9557	9557	Peter	60	" you must have lived out of the world if you do n't know what a rebel is ! A rebel is a man who fights against his king and his country . These bloody niggers here are rebels because they are fighting against us . They do n't want the Chartered Company to have them . But they 'll have to . We 'll teach them a lesson , "
+9697	9761	9693	9693	he	239	" I have seen a land far from here . In that land are men of two kinds who live side by side . Well nigh a thousand years ago one conquered the other ; they have lived together since . To - day the one people seeks to drive forth the other who conquered them . Are these men rebels , too ? "
+9762	9765	9767	9767	Peter	60	" Well , "
+9775	9786	9693	9693	he	239	" that all depends who they are , you know ! "
+9787	9800	9802	9803	the stranger	239	" They call the one nation Turks , and the other Armenians , "
+9805	9814	9816	9816	Peter	60	" Oh , the Armenians are n't rebels , "
+9818	9833	9835	9835	Peter	60	" they are on our side ! The papers are all full of it , "
+9843	9874	9835	9835	Peter	60	" Those bloody Turks ! What right had they to conquer the Armenians ? Who gave them their land ? I 'd like to have a shot at them myself ! "
+9875	9879	9880	9880	rebels	1384	" Why are Armenians not
+9882	9888	9880	9880	rebels	1384	" asked the stranger , gently .
+9889	9899	9901	9901	Peter	60	" Oh , you do ask such curious questions , "
+9903	9960	9962	9962	Peter	60	" If they do n't like the Turks , why should they have 'em ? If the French came now and conquered us , and we tried to drive them out first chance we had ; you would n't call us rebels ! Why should n't they try to turn those bloody Turks out ? Besides , "
+9980	9995	9962	9962	Peter	60	" you see , if we do n't help the Armenians the Russians would ; and
+9998	10006	9996	9996	we	60	" said Peter , looking exceedingly knowing , "
+10049	10060	10039	10039	you	60	" said Peter , looking kindly and patronisingly at the stranger .
+10061	10066	10068	10069	the stranger	239	" If these men , "
+10071	10115	10068	10069	the stranger	239	" would rather be free , or be under the British Government , than under the Chartered Company , why , when they resist the Chartered Company , are they more rebels than the Armenians when they resist the Turk ? Is the Chartered Company
+10151	10151	10182	10182	he	60	"
+10152	10155	10157	10157	Peter	60	" Ah , "
+10159	10180	10157	10157	Peter	60	" no , of course we should n't , but we are white men , and so are the Armenians almost "
+10195	10238	10182	10182	he	60	" At least , it 's not the colour that matters , you know . I rather like a dark face , my mother 's eyes are brown but the Armenians , you know , they 've got long hair like us . "
+10239	10252	10254	10255	the stranger	239	" Oh , it is the hair , then , that matters , "
+10258	10263	10265	10265	Peter	60	" Oh , well , "
+10267	10317	10265	10265	Peter	60	" it 's not altogether , of course . But it 's quite a different thing , the Armenians wanting to get rid of the Turks , and these bloody niggers wanting to get rid of the Chartered Company . Besides , the Armenians are Christians , like us ! "
+10318	10323	10329	10330	the stranger	239	" Are you Christians ? "
+10340	10349	10351	10351	Peter	60	" Why , of course , we are ! "
+10353	10366	10351	10351	Peter	60	" We 're all Christians , we English . Perhaps you do n't like
+10379	10388	10376	10376	I	0	" said Peter , looking up soothingly at him .
+10389	10404	10406	10407	the stranger	239	" I neither love nor hate any man for that which he is called , "
+10409	10415	10406	10407	the stranger	239	" the name boots nothing . "
+10430	10438	10439	10439	he	239	" Is the Chartered Company Christian also ? "
+10442	10448	10450	10450	Peter	60	" Yes , oh yes , "
+10452	10458	10460	10461	the stranger	239	" What is a Christian ? "
+10463	10484	10500	10500	he	43	" Well , now , you really do ask such curious questions . A Christian is a man who believes in Heaven
+10523	10523	10556	10557	The stranger	239	"
+10524	10537	10556	10557	The stranger	239	" But here , in this world , what is a Christian ? "
+10538	10541	10543	10543	Peter	60	" Why , "
+10545	10555	10543	10543	Peter	60	" I 'm a Christian we 're all Christians . "
+10572	10596	10566	10566	he	239	" It 's curious how like my mother you are ; I mean , your ways . She was always saying to me , "
+10624	10624	10618	10618	You	60	"
+10639	10673	10628	10628	Peter	60	" If you do n't want to make money , what did you come to this land for ? No one comes here for anything else . Are you in with the Portuguese ? "
+10674	10686	10688	10689	the stranger	239	" I am not more with one people than with another , "
+10691	10719	10721	10722	the stranger	239	" The Frenchman is not more to me than the Englishman , the Englishman than the Kaffir , the Kaffir than the Chinaman . I have heard , "
+10724	10725	10721	10722	the stranger	239	" the
+10769	10769	10764	10764	I	0	"
+10776	10783	10784	10784	he	60	" Why , who are you ? "
+10801	10811	10798	10798	he	60	" What is it that you are doing here ? "
+10812	10816	10818	10819	the stranger	239	" I belong , "
+10821	10829	10798	10798	he	60	" to the strongest company on earth . "
+10830	10833	10835	10835	Peter	60	" Oh , "
+10849	10868	10835	10835	Peter	60	" So that 's it , is it ? Is it diamonds , or gold , or lands ? "
+10869	10882	10884	10885	the stranger	239	" We are the most vast of all companies on the earth , "
+10887	10967	10884	10885	the stranger	239	" and we are always growing . We have among us men of every race and from every land ; the Esquimo , the Chinaman , the Turk , and the Englishman , we have of them all . We have men of every religion , Buddhists , Mahomedans , Confucians , Freethinkers , Atheists , Christians , Jews . It matters to us nothing by what name the man is named , so he be one of us . "
+10972	10976	10969	10969	Peter	60	" It must be hard
+10994	10994	10969	10969	Peter	60	"
+10999	11022	10995	10996	The stranger	239	" There is a sign by which we all know one another , and by which all the world may know us . "
+11027	11033	11024	11024	Peter	60	" What is that sign ? "
+11040	11048	11050	11050	Peter	60	" Oh , a kind of freemasonry ! "
+11091	11103	11117	11117	his	239	" Are there any more of you here in this country ? "
+11104	11108	11110	11111	the stranger	239	" There are , "
+11123	11206	11114	11114	he	239	" There in a cave were two women . When you blew the cave up they were left unhurt behind a fallen rock . When you took away all the grain , and burnt what you could not carry , there was one basketful that you knew nothing of . The women stayed there , for one was eighty , and one near the time of her giving birth ; and they dared not set out to follow the remnant of their tribe because
+11262	11322	11245	11247	the old woman	465	" Because of the child within you.í And when the child was born and the young woman strong , the old woman took a cloth and filled it with all the grain that was in the basket ; and she put the grain on the young woman 's head and tied the child on her back , and said , "
+11362	11378	11357	11359	the young woman	1470	" Have you corn in the basket to last till they come?í And she said , "
+11445	11445	11415	11415	she	1470	"
+11446	11463	11465	11465	Peter	60	" I met a woman with corn on her head and a child on her back ! "
+11470	11554	11467	11467	his	60	" And to - night I saw her sit again at the door of the cave ; and when the sun had set she grew cold ; and she crept in and lay down by the basket . to - night , at half - past three , she will die . I have known her since she was a little child and played about the huts , while her mother worked in the mealie fields . She was one of our company . "
+11555	11558	11560	11560	Peter	60	" Oh , "
+11562	11569	11467	11467	his	60	" Other members we have here , "
+11574	11579	11580	11580	he	60	" There was a prospector "
+11584	11688	11580	11580	he	60	" he was a man who drank and swore when it listed him ; but he had many servants , and they knew where to find him in need . When they were ill , he tended them with his own hands ; when they were in trouble , they came to him for help . When this war began , and all black men 's hearts were bitter , because certain white men had lied to them , and their envoys had been killed when they would have asked England to put her hand out over them ; at that time certain of the
+11873	11927	11870	11870	they	503	" Oh , you betrayer of your people , white man 's dog , who are on the side of those who take our lands and our wives and our daughters before our eyes ; tell us where you have hidden him?í And when he would not answer them , they killed him before the
+12027	12027	12020	12021	those men	512	"
+12028	12037	12039	12039	Peter	60	" It was damned plucky of the nigger , "
+12041	12052	12039	12039	Peter	60	" but I 've heard of their doing that sort of thing
+12074	12079	12102	12103	the stranger	239	" he added doubtfully , "
+12092	12092	12102	12103	the stranger	239	"
+12093	12100	12102	12103	the stranger	239	" They are of all races , "
+12105	12163	12102	12103	the stranger	239	" In a city in the old Colony is one of us , small of stature and small of voice . It came to pass on a certain Sunday morning , when the men and women were gathered before him , that he mounted his pulpit : and he said when the time for the sermon came , "
+12196	12224	12193	12193	he	0	" Now it came to pass that Naboth the Jezreelite had a vineyard , which was in Jezreel , hard by the palace of Ahab king of Samaria .
+12225	12226	12228	12228	Ahab	71	" "
+12292	12293	12295	12295	Naboth	70	" "
+12318	12319	12321	12321	Ahab	71	" "
+12357	12379	12343	12343	he	71	" The man read the whole story until it was ended . Then he closed the book , and he said , "
+12412	12420	12422	12422	he	71	" And he put the old book aside ,
+12446	12465	12432	12433	the men	1335	" Is not that the Blue Book Report of the Select Committee of the Cape Parliament on the Jameson raid?í
+12466	12472	12473	12473	Friends	530	" And the man said , "
+12623	12649	12617	12618	his wife	540	" And when the service was ended and the man returned to his home , his wife came to him weeping ; and she said , "
+12726	12730	12731	12732	My wife	547	" He said , "
+12766	12771	12762	12762	I	0	" And she said , "
+12841	12896	12838	12838	he	0	" My wife , can not God be worshipped as well under the dome of the heaven He made as in a golden palace ? Shall a man keep silence , when he The Afrikander Bond , the organised Dutch political party , through whom Mr. Rhodes worked , and by whom he was backed .
+12949	12954	12936	12936	we	553	" And she said , "
+13045	13050	13052	13053	my wife	547	" And he said , "
+13158	13163	13175	13178	a really eloquent preacher	567	" And she answered , "
+13248	13253	13255	13256	my wife	547	" And he said , "
+13317	13337	13314	13314	one	573	" My son has a post , he would lose it if I spoke loudí ; and another says , "
+13348	13398	13314	13314	one	573	" I am socially intimate with these men , and should lose my social standing if I let my voice be heard.í Oh my wife , our land , our goodly land , which we had hoped would be free and strong among the peoples of earth , is rotten and
+13524	13598	13641	13641	you	0	" Why break your head against a stone wall ? Leave this work to the greater and larger men of your people ; they who will do it better than you can do it ! Why break your heart when life could be so fair to you ? í But , oh my wife , the strong men are silent ! and shall I not speak , though I know my power is as nothing?í
+13599	13607	13641	13641	you	0	" He laid his head upon his hands .
+13608	13613	13641	13641	you	0	" And she said , "
+13646	13655	13641	13641	you	0	" Wife , what business is it of ours if
+13733	13738	13739	13740	My wife	547	" And he said , "
+13877	13904	13873	13873	he	238	" I have no responsibility for this man 's action.í We armed him , we raised him , we strengthened him , and the evil he accomplishes is
+14232	14237	14238	14238	I	0	" And she said , "
+14317	14355	14314	14314	she	640	" why can not you leave it to Him to bring good out of all this evil ? Does He need you to be made a martyr of ? or will the world be lost without you ? í
+14356	14360	14314	14314	she	640	" He said , "
+14383	14396	14380	14380	I	0	" God may bring good out of this evil , í and let it
+14567	14615	14558	14558	I	0	" Live for them as for your own children.í When in the circle of my own small life all is dark , and I despair , hope springs up in me when I remember that something nobler and fairer may spring up in the spot where I now stand.í
+14616	14621	14622	14622	You	651	" And she said , "
+14721	14726	14713	14713	You	651	" And he said , "
+14801	14862	14787	14793	the feeble or oppressed peoples of earth	673	" Under this banner is freedom and justice which knows no race or colour.í I wish that on our banner were blazoned in large letters Justice and Mercy , and that in every new land which our feet touch , every son among us might see ever blazoned above his head that banner , and below it the great order : "
+14869	14961	14779	14779	I	0	" and that the pirate flag which some men now wave in its place , may be torn down and furled for ever ! Shall I condone the action of some , simply because they happen to be of my own race , when in Bushman or Hottentot I would condemn it ? Shall men belonging to one of the mightiest races of earth , creep softly on their bellies , to attack an unwarned neighbour ; when even the Kaffir has again and again given notice of war , saying , "
+15123	15128	15129	15129	You	684	" And she said , "
+15149	15154	15129	15129	You	684	" And he said , "
+15183	15188	15189	15189	You	684	" And she said , "
+15236	15261	15231	15231	she	547	" Now he will never dare to preach such a sermon again . He dares never oppose me when once I have set down my foot.í
+15262	15300	15231	15231	she	547	" And the man spoke to no one , and went out alone in the veld . All the afternoon he walked up and down among the sand and low bushes ; and I walked there beside him .
+15301	15331	15231	15231	she	547	" And when the evening came , he went back to his chapel . Many were absent , but the elders sat in their places , and his wife also was
+15365	15391	15358	15358	he	689	" If thou forbear to deliver them that are drawn unto death , and those that are ready to be slain ; if thou sayest , "
+15419	15424	15415	15415	he	692	" And he said , "
+15519	15569	15515	15515	he	692	" And when the service was over he went out . No elder came to the porch to greet him ; but as he stood there one , he saw not whom , slipped a leaflet into his hand . He held it up , and read in the lamplight what
+15663	15663	15658	15658	I	0	"
+15664	15668	15670	15670	Peter	60	" And then , "
+15679	15687	15670	15670	Peter	60	" what happened to him after that ? "
+15688	15695	15697	15698	the stranger	239	" That was only last Sunday , "
+15712	15724	15709	15709	Peter	60	" Well , anyhow , at least he did n't die ! "
+15734	15739	15740	15740	he	60	" Peter Simon Halket , "
+15743	15773	15740	15740	he	60	" it is easier for a man to die than to stand alone . He who can stand alone can , also , when the need be , die . "
+15784	15793	15794	15794	he	60	" I should not like to die myself , "
+15797	15809	15794	15794	he	60	" not yet . I shall not be twenty - one till next
+15820	15820	15812	15812	I	0	"
+15831	15842	15828	15828	Peter	60	" Are all the men of your company poor men ? "
+15856	15894	15853	15853	he	239	" There have been rich men who have desired to join us . There was a young man once ; and when he heard the conditions , he went away sorrowful , for he had great possessions . "
+15903	15913	15915	15915	Peter	60	" Is it long since your company was started ? "
+15917	15930	15932	15933	the stranger	239	" There is no man living who can conceive of its age , "
+15935	16021	15932	15933	the stranger	239	" Even here on this earth it began , when these hills were young , and these lichens had hardly shown their stains upon the rocks , and man still raised himself upwards with difficulty because the sinews in his thighs were weak . In those days , which men reck not of now , man , when he hungered , fed on the flesh of his fellow man and found it sweet . Yet even in those days it came to pass that there was one
+16100	16115	16094	16094	they	393	" She , only she , has done this , who has always said , "
+16137	16146	16148	16148	us	393	" She is mad , í they cried ; "
+16195	16252	16192	16192	they	393	" We also will not eat of her . There is something evil in the taste of human flesh.í And ever after , when the fleshpots were filled with man - flesh , these stood aside , and half the tribe ate human flesh and half not ; then , as the years passed , none ate .
+16253	16285	16192	16192	they	393	" Even in those days , which men reck not of now , when men fell easily upon their hands and knees , they were of us on the earth . And ,
+16397	16397	16520	16520	nation	1588	"
+16421	16516	16520	16520	nation	1588	" All earth is ours . And the day shall come , when the stars , looking down on this little world , shall see no spot where the soil is moist and dark with the blood of man shed by his fellow man ; the sun shall rise in the East and set in the West and shed his light across this little globe ; and nowhere shall he see man crushed by his fellows . And they shall beat their swords into ploughshares and their spears into pruning hooks : nation shall not lift
+16575	16580	16556	16556	man	645	" said the stranger , "
+16780	16791	16776	16776	men	393	" Are we not brethren and the sons of one Father?í "
+16803	16883	16799	16800	the stranger	239	" Certain men slept upon a plain , and the night was chill and dark . And , as they slept , at that hour when night is darkest , one stirred . Far off to the eastward , through his half - closed eyelids , he saw , as it were , one faint line , thin as a hair 's width , that edged the hill tops . And he whispered in the darkness to his fellows : "
+16898	16905	16889	16889	they	757	" He lies , there is no dawn.í
+16906	16912	16913	16914	The stranger	239	" Nevertheless , day broke . "
+16946	16953	16954	16954	he	60	" When will that time be ? "
+16957	16965	16954	16954	he	60	" in a thousand years ' time ? "
+16971	17004	16967	16968	the stranger	239	" A thousand years are but as our yesterday 's journey , or as our watch to - night , which draws already to its close . See , piled , these rocks on
+17049	17049	17037	17037	I	0	"
+17079	17090	17091	17091	he	60	" I would like to be one of your men , "
+17094	17105	17091	17091	he	60	" I am tired of belonging to the Chartered Company . "
+17112	17117	17118	17118	he	60	" Peter Simon Halket , "
+17121	17128	17118	17118	he	60	" can you bear the weight ? "
+17133	17143	17130	17130	Peter	60	" Give me work , that I may try . "
+17156	17166	17152	17153	the stranger	239	" Peter Simon Halket , take a message to England "
+17170	17182	17152	17153	the stranger	239	" Go to that great people and cry aloud to it : "
+17278	17279	17282	17282	your	60	" "
+17304	17305	17282	17282	your	60	" "
+17347	17348	17337	17337	you	60	" "
+17383	17384	17385	17388	Great Prince 's Daughter	775	" "
+17447	17456	17457	17457	You	60	" Cry to the wise men of England : "
+17635	17643	17644	17644	You	60	" Cry to the women of England : "
+17714	17759	17760	17762	Mother - heart	795	" For the womanhood of a dominant people has not accomplished all its labour when it has borne its children and fed them at its breast : there cries to it also from over seas and across continents the voice of the child - peoples "
+17797	17797	17807	17807	he	239	"
+17823	17835	17836	17836	You	60	" Cry aloud to the working men and women of England : "
+17859	17926	17836	17836	You	60	" We curse the kings that sit at ease , and care not who oppresses the folk , so their coffers be full and their bellies satisfied , and they be not troubled with the trouble of ruleí ; you , who have taken the king 's rule from him and sit enthroned within his seat ; is his sin not yours to - day ? If men
+17988	18047	17978	17978	you	60	" It matters not who holds out our sword , marauder or speculator , so he calls it ours , we must cloak up the evil it has done!í Think you , no other curses rise to heaven but yours ? Where is your sword ? Into whose hand has it fallen ? Take it quickly and cleanse it!í "
+18059	18091	18056	18056	he	60	" Master , I can not give that message , I am a poor unlearn'd man . And if I should go to England and cry aloud , they would say , "
+18160	18160	18162	18163	the stranger	239	"
+18166	18168	18162	18163	the stranger	239	" Take a
+18200	18300	18195	18195	women	394	" I saw a wide field , and in it were two fair beasts . Wide was the field about them and rich was the earth with sweet scented herbs , and so abundant was the pasturage that hardly might they consume all that grew about them : and the two were like one to another , for they were the sons of one mother . And as I looked , I saw , far off to the northward , a speck within the sky , so small it was , and so high it was , that the eye scarce
+18433	18434	18427	18427	they	818	" "
+18659	18675	18647	18647	he	824	" Peter Simon Halket , cry to the white men and women of South Africa : "
+18775	18775	18777	18778	Peter Halket	60	"
+18817	18821	18822	18822	he	60	" My master , "
+18825	18858	18822	18822	he	60	" how can I take this message ? The Dutchmen of South Africa will not listen to me , they will say I am an Englishman . And the Englishmen will say : "
+18930	18930	18932	18933	the stranger	239	"
+18936	18964	18932	18933	the stranger	239	" Take a message to one man . Find him , whether he sleep or wake , whether he eat or drink ; and say to him : "
+18976	18986	18987	18987	I	0	" And if he shall answer you and say : "
+19014	19018	19006	19006	him	834	" Where are the í
+19019	19026	19027	19027	You	239	" And if he cry out , "
+19072	19103	19113	19113	men	393	" There was a rushlight once . It flickered and flared , and it guttered down , and went out and no man heeded it : it was only a rushlight .
+19104	19105	19113	19113	men	393	" "
+19151	19152	19113	19113	men	393	" "
+19217	19250	19204	19204	their	393	" We are safe ; the great light will lead us when we near the rocks.í And on dark nights men drifted nearer and nearer ; and in the stillness of the midnight they
+19263	19264	19204	19204	their	393	" "
+19308	19317	19320	19320	men	393	" And if he shall answer , saying , "
+19340	19373	19332	19332	them	393	" There was a streamlet once : it burst forth from beneath the snow on a mountain 's crown ; and the snow made a cove over it . It ran on pure and
+19587	19588	19543	19545	the wood dove	863	" "
+19678	19679	19780	19780	itself	858	" "
+19782	19863	20011	20011	he	239	" Ha , ha ! I shall make a great lake here ; a sea!í And it oozed , and it oozed , and it filled half the plain . But no lake came only a great marsh because there was no way outwards , and the water rotted . The grass died out along its edges ; and the trees dropped their leaves and rotted in the water ; and the wood dove who had built her nest there flew up
+20001	20001	20011	20011	he	239	"
+20014	20022	20011	20011	he	239	" Should he answer you and say , "
+20056	20089	20136	20137	all men	160	" But if by some chance he should listen , then , say this one thing to him , clearly in the ear , that he may not fail to hear it : "
+20141	20174	20186	20186	You	884	" Ah , for the beauty of that day!í For the stream that has once descended there is no path upwards . It is never too late for the soul of a man .í
+20175	20185	20256	20256	him	0	" And if he should laugh , and say : "
+20258	20295	20307	20307	I	0	" Deep in the heart of every son of man lies an angel ; but some have their wings folded . Wake yours ! He is larger and stronger than another man 's ; mount up with him!í
+20296	20306	20368	20369	The stranger	239	" But if he curses you , and says , "
+20334	20349	20368	20369	The stranger	239	" The stranger bent down and wrote with his finger in the white ashes of the
+20372	20377	20453	20454	The stranger	239	" Say to him : "
+20422	20452	20453	20454	The stranger	239	" The stranger passed his foot over the words ; Peter Halket looked down , and he saw only a bed of smooth white ashes where the name had been .
+20457	20460	20453	20454	The stranger	239	" And if he
+20469	20504	20516	20516	Thy	892	" There is not one man nor woman in South Africa I can not buy with my money ! When I have the Transvaal , I shall buy God Almighty Himself , if I care to!í
+20505	20515	20516	20516	Thy	892	" Then say to him this one thing only , "
+20527	20527	20538	20539	the stranger	239	"
+20545	20579	20760	20761	Peter Halket	60	" Yet in that leaving him , remember ; It is not the act , but the will , which marks the soul of the man . He who has crushed a nation sins no
+20753	20753	20776	20776	he	60	"
+20771	20775	20776	20776	he	60	" My master , "
+20779	20795	20855	20855	he	60	" I dare not take that message . It is not that men may say , "
+20831	20848	20855	20855	he	60	" and Peter Halket would have poured out all his soul ; but the stranger prevented him .
+20849	20854	20946	20946	I	0	" Peter Simon Halket , "
+20858	20945	20972	20972	I	0	" is it the trumpet which gives forth the call to battle , whether it be battered tin or gilded silver , which boots ? Is it not the call ? What and if I should send my message by a woman or a child : shall truth be less truth because the bearer is despised ? Is it the mouth that speaks or the word that is spoken which is eternal ? Nevertheless , if you will have it so , go , and say , "
+20974	20991	20972	20972	I	0	" The stranger looked down at him , and placed his hand gently on his head . "
+20996	21000	21105	21106	Peter Halket	60	" he said , "
+21097	21097	21176	21176	He	60	"
+21148	21157	21176	21176	He	60	" Because thou hast loved mercy and hated oppression "
+21179	21186	21176	21176	He	60	" My Master , let me go with
+21189	21252	22077	22077	he	959	" But the figure did not turn . And , as it passed into the darkness , it seemed to Peter Halket that the form grew larger and larger : and as it descended the further side of the koppje it seemed that for one instant he still saw the head with a pale , white light upon it : then it vanished .
+22068	22076	22077	22077	he	959	" Now what I say is this , "
+22087	22120	22214	22216	the other two	980	" here we are with about one half teaspoon of Dop given us at night , while he has ten empty champagne bottles lying behind his tent . And we have to live on
+22202	22202	22214	22216	the other two	980	"
+22203	22211	22214	22216	the other two	980	" Oh , Selous 's a man ! "
+22225	22243	22334	22334	they	988	" Yes , well , that 's what I say . But these fellows , who could n't do
+22320	22332	22334	22334	they	988	" He cast his sharp glance over towards the bell tent . "
+22341	22341	22350	22351	his companions	970	"
+22342	22345	22371	22372	a child	275	" Ah ! "
+22378	22442	22489	22489	he	995	" it 's because you 're not a big enough swell , you know ! He 'll be a colonel , or a general , before we 've done with him . I call them all generals or colonels up here ; it 's safest , you know ; if they 're not that to - day they will be to - morrow ! "
+22482	22488	22489	22489	he	995	" I only know this , "
+22492	22598	22610	22623	every man and woman who was killed here as murdered by the Chartered Company	997	" I 'd teach these fellows a lesson , if any one belonging to me had been among the people they left to be murdered here , while they went gallivanting to the Transvaal . If my mother or sister had been killed here , I 'd have taken a pistol and blown out the brains of the great Panjandrum , and the little ones after him . Fine administration of a country , this , to invite people to come in and live here , and then take every fighting man out of the country on a gold hunting marauding expedition to the Transvaal , and
+22625	22625	22489	22489	he	995	"
+22626	22663	22610	22623	every man and woman who was killed here as murdered by the Chartered Company	997	" Well , Jameson only did what he was told . He had to obey orders , like the rest of us . He did n't make the plan , and he 's got the punishment . "
+22664	22720	22831	22833	the handsome man	1004	" What business had he to listen ? What 's all this fine administration they talk of ? It 's six years since I came to this country , and I 've worked like a nigger ever since I came , and what have I , or any men who 've worked hard at real , honest
+22815	22815	22831	22833	the handsome man	1004	"
+22816	22829	22831	22833	the handsome man	1004	" Oh , you wait a bit and you 'll be squared , "
+22835	22841	22874	22874	they	1002	" I 've been here five years
+22889	22896	22991	22993	the keen man	1007	" he nodded towards the bell tent "
+22946	22946	22991	22993	the keen man	1007	"
+22983	22989	22991	22993	the keen man	1007	" I tell you what , "
+22995	23096	22991	22993	the keen man	1007	" those of us up here who have got a bit of land and are trying honestly and fairly to work , are getting pretty sick of this humbugging fighting . If we 'd had a few men like the Curries and Bowkers of the old days up here from the first , all this would never have happened . And there 's no knowing when a reason wo n't turn up for keeping the bloody thing on or stopping it off for a time , to break out just when one 's settled down to work . It 's a damned
+23111	23111	23139	23139	he	994	"
+23124	23138	23193	23196	the big handsome man	1011	" Let resignation wait . We fight the Matabele again to - morrow , "
+23185	23191	23193	23196	the big handsome man	1011	" I 'm always expecting , "
+23198	23209	23256	23257	a man	238	" to have a paper come round , signed by all the
+23265	23265	23296	23296	he	1011	"
+23287	23295	23296	23296	he	1011	" What 's that in the Bible , "
+23301	23320	23353	23353	yours	0	" about the statue , whose thighs and belly were of brass , and its feet of mud ? "
+23321	23328	23296	23296	he	1011	" I do n't know much about the
+23331	23337	23296	23296	he	1011	" said the keen man , "
+23356	23356	23296	23296	he	1011	"
+23357	23389	23296	23296	he	1011	" No , I asked the Captain 's boy to keep an eye on it but I expect he wo n't . Do you put the rice in with the mealies ? "
+23390	23417	23729	23729	he	238	" Got to ; I 've got no other pot . And the fellows do n't object . It 's a tasty variety , you know ! "
+23720	23728	23794	23794	he	238	" That is all I 've got , "
+23772	23792	23828	23829	the Colonial	1029	" I 'll put it into the pot ; it 'll give it the flavour of something except weevily mealies "
+23820	23826	23828	23829	the Colonial	1029	" Knocked up , eh ? "
+23837	23848	23869	23869	He	1434	" I 've a few drops in my flask still . "
+23849	23868	23946	23946	he	1434	" Oh , no , I can stand it well enough . It 's only a little warm . "
+23937	23945	23964	23965	the Colonial	1029	" What 's Halket doing over there ? "
+23954	23962	23964	23965	the Colonial	1029	" Were n't you here this morning ? "
+23967	23981	23987	23988	the Englishman	1434	" Did n't you know they 'd had a devil of a row ? "
+23982	23985	23987	23988	the Englishman	1434	" Who ? "
+23997	24003	24004	24005	The Colonial	85	" Halket and the Captain . "
+24011	24022	24044	24044	he	42	" My God , you never saw anything like it ! "
+24050	24062	24071	24072	the Colonial	1029	" What 's he doing out there in this blazing sun ? "
+24063	24069	24071	24072	the Colonial	1029	" He 's on guard , "
+24074	24100	24101	24101	He	1434	" I thought you were here when it happened . It 's the best thing I ever saw or heard of in my whole life ! "
+24114	24153	24271	24271	he	1039	" You see , some of the men went down into the river , to look for fresh pools of water , and they found a nigger , hidden away in a hole in the bank , not five hundred
+24280	24285	24299	24299	He	1039	" Aard - vark , "
+24322	24425	24299	24299	He	1039	" Well , they hauled him up before the Captain , of course ; and he blew and swore , and said the nigger was a spy , and was to be hanged to - morrow ; he 'd hang him to - night , only the big troop might catch us up this evening , so he 'd wait to hear what the Colonel said ; but if they did n't come he 'd hang him first thing to - morrow morning , or have him shot , as sure as the sun rose . He made the fellows tie him up to
+24452	24452	24462	24463	the Englishman	1434	"
+24453	24460	24299	24299	He	1039	" What did the native say ? "
+24465	24529	24565	24565	they	1048	" Oh , he did n't say anything . There was n't a soul in the camp could have understood him if he had . The coloured boys do n't know his language . I expect he 's one of those bloody fellows we hit the day we cleared the bush out yonder ; but how he got down that bank with his A "
+24531	24543	24679	24680	The Colonial	1029	" is a thong of undressed leather universally used in South Africa .
+24594	24678	24679	24680	The Colonial	1029	" Well , I tell you , we 'd just got him fixed up , and the Captain was just going into his tent to have a drink , and we chaps were all standing round , when up steps Halket , right before the Captain , and pulls his front lock you know the way he has ? Oh , my God , my God , if you could have seen it ! I 'll never forget it to my dying day ! "
+24687	24691	24763	24763	he	1055	" He begins , "
+24779	24779	24788	24789	the Englishman	1434	"
+24780	24786	24788	24789	the Englishman	1434	" What did he say , "
+24791	24808	24873	24874	brave men	1063	" Oh , he started , How did we know this nigger was a spy at all ;
+24876	24891	24935	24935	he	1066	" please sirí every five minutes he 'd pull his forelock , and say , "
+24894	24924	25063	25063	he	1066	" and if we have to fight against them we ought to remember they 're fighting for freedom ; we should n't shoot wounded prisoners when they were black if we
+25038	25050	25063	25063	he	1066	" It 's hard to love a nigger , Captain , but we
+25069	25130	25178	25178	he	0	" And I think this is a man I know , Captain ; I 'm not sure , but I think he comes from up Lo Magundis way!í as if any born devil cared whether a bloody nigger came from Lo Magundis or anywhere else ! I 'm sure he said it fifteen times . And then he broke out , "
+25182	25185	25209	25209	he	0	" I 'm an
+25211	25285	25301	25302	the Englishman	1434	" If you let me take him up to Lo Magundis , sir , I 'm not afraid ; and I 'll tell the people there that it 's not their land and their women that we want , it 's them to be our brothers and love us . If you 'll only let me go , sir , I 'll go and make peace ; give the man to me , sir!í "
+25292	25299	25325	25325	he	1089	" What did the Captain say ? "
+25304	25317	25355	25355	he	1089	" The Captain ; well , you know the smallest thing sets him off
+25360	25396	25454	25454	he	1089	" My Gawd ! my Gawd!í I thought he 'd burst . And Halket stood there looking straight in front of him , as though he did n't see a soul of us all there . "
+25397	25404	25355	25355	he	1089	" What did the Captain do ? "
+25405	25442	25504	25504	Halket	42	" Oh , as soon as Halket turned away he started swearing , but he got the tail of one oath hooked on to the head of another . It was nearly as good as Halket himself .
+25510	25510	25511	25512	The Englishman	1434	"
+25515	25521	25537	25538	The Englishman	1434	" What did Halket say ? "
+25522	25536	25605	25605	his	1029	" Nothing . He 's been walking there with his gun all day . "
+25554	25562	25590	25591	The Colonial	1029	" Is the nigger hanging there now ? "
+25563	25589	25605	25605	his	1029	" Yes . The Captain said no one was to go near him , or give him anything to eat or drink all day : but "
+25609	25670	25754	25754	I	0	" This morning , a couple of hours ago , Halket sent the Captain 's coloured boy to ask me for a drink of water . I thought it was for Halket himself , and the poor devil must be hot walking there in the sun , so I sent him the water out of my canvas bag . I went along
+25761	25761	25777	25778	the Englishman	1434	"
+25762	25775	25754	25754	I	0	" Do you think he will try to make Halket do it ? "
+25780	25788	25793	25793	Halket	42	" Of course he will . He 's the
+25812	25812	25754	25754	I	0	"
+25813	25823	25793	25793	Halket	42	" His time 's up to - morrow evening ! "
+25824	25888	25906	25907	the Englishman	1434	" Yes , but not to - morrow morning . And I would n't make a row about it if I was Halket . It does n't do to fall out with the authorities here . What 's one nigger more or less ? He 'll get shot some other way , or die of hunger , if we do n't do it . "
+25889	25904	25995	25996	The Englishman	1434	" It 's hardly sport to shoot a man tied up neck and legs , "
+25921	25994	25906	25907	the Englishman	1434	" Oh , they do n't feel , these niggers , not as we should , you know . I 've seen a man going to be shot , looking full at the guns , and falling like that ! without a sound . They 've no feeling , these niggers ; I do n't suppose they care much whether they live or die , not as we should , you know . "
+26015	26021	25906	25907	the Englishman	1434	" They have no right to order
+26033	26038	26059	26060	the Colonial	1029	" said the Englishman slowly .
+26039	26057	26059	26060	the Colonial	1029	" You 're not going to be such a fool as to step in , are you ? "
+26067	26146	26148	26148	his	1434	" It does n't pay . I 've made up my mind never to speak whatever happens . What 's the good ? Suppose one were to make a complaint now about this affair with Halket , if he 's made to shoot the nigger against his will ; what would come of it ? There 'd be half - a - dozen fellows here squared to say what headquarters wanted not to speak of a fellow like that "
+26157	26273	26435	26435	he	238	" who are paid to watch . I believe he reports on the Captain himself to the big headquarters . All one 's wires are edited before they go down ; only what the Company wants to go , go through . There are many downright good fellows in this lot ; but how many of us are there , do you think , who could throw away all chance of ever making anything in Mashonaland , for the sake of standing by Halket ; even if he had a real row with the Company ? I 've a great liking for Halket myself , he 's a real good fellow , and he 's done me
+26438	26438	26439	26440	The Englishman	1434	"
+26448	26461	26477	26478	the Colonial	1029	" And the Union Jack is supposed to be flying over us . "
+26462	26475	26490	26491	the Englishman	1434	" Yes , with a black bar across it for the Company , "
+26480	26488	26503	26503	he	1434	" Do you ever have the nightmare ? "
+26494	26501	26503	26503	he	1434	" I ? Oh yes , sometimes "
+26510	26522	26536	26537	the Englishman	1434	" when I 've eaten too much , I get it . "
+26523	26534	26536	26537	the Englishman	1434	" I always have it since I came up here , "
+26539	26585	26601	26602	the Colonial	1029	" It is that a vast world is resting on me a whole globe : and I am a midge beneath it . I try to raise it , and I can not . So I lie still under it and let it crush me ! "
+26586	26599	26601	26602	the Colonial	1029	" It 's curious you should have the nightmare so up here , "
+26604	26612	26642	26643	the Colonial	1029	" one gets so little to eat . "
+26637	26641	26642	26643	the Colonial	1029	" Mind you , "
+26648	26764	26967	26967	Man	645	" I do n't say that in this case the Captain was to blame ; Halket made an awful ass of himself . He 's never been quite right since that time he got lost and spent the night out on the koppje . When we found him in the morning he was in a kind of dead sleep ; we could n't wake him ; yet it was n't cold enough for him to have been frozen . He 's never been the same man since ; queer , you know ; giving his rations away to the coloured boys , and letting the other fellows have his dot of brandy at night ; and keeping
+26982	26987	27007	27007	he	1641	" He stood up . "
+27013	27013	27149	27150	The Colonial	85	"
+27163	27165	27283	27284	the Englishman	1434	" mess "
+27273	27281	27299	27299	he	1434	" You are eating nothing , Halket , "
+27291	27298	27331	27331	He	1434	" I am not hungry now , "
+27347	27354	27357	27357	Halket	42	" You wo n't come nearer to the
+27359	27363	27331	27331	He	1434	" asked the Englishman .
+27364	27375	27469	27470	the Colonial	1029	" No , thank you , the night is warm . "
+27458	27467	27469	27470	the Colonial	1029	" He 's had a pretty stiff day , "
+27472	27483	28210	28210	he	42	" I expect he 's glad enough to turn in . "
+28202	28209	28325	28326	Peter Halket	42	" Hus h ! hus h ! "
+28312	28323	28361	28361	he	42	" Ari - tsemaia ! Hamba ! Loop ! Go ! "
+28353	28360	28460	28460	he	939	" Hamba ! Sucka ! Go ! "
+28454	28459	28495	28500	the half- sleep- sleeping ing men	1192	" Who is there ? "
+28527	28535	28555	28556	Peter Halket	42	" The Mashonas are releasing the spy ! "
+28587	28593	28555	28556	Peter Halket	42	" How many were there ? "
+28594	28602	28555	28556	Peter Halket	42	" Where have they gone to now ? "
+28603	28610	28555	28556	Peter Halket	42	" They 've shot Peter Halket ! "
+28611	28618	28555	28556	Peter Halket	42	" The Captain saw them do it "
+28619	28630	28667	28667	he	1434	" Stand ready , they may come back any time ! "
+28661	28666	28710	28711	the Captain	939	" He 's dead , "
+28698	28708	28710	28711	the Captain	939	" What are you fellows fooling about here for ? "
+28713	28727	28792	28793	the Englishman	1434	" Do you suppose it 's any use looking for foot marks after all this
+28739	28739	28749	28749	he	939	"
+28740	28748	28749	28749	he	939	" I will send four coloured boys , "
+28758	28786	28792	28793	the Englishman	1434	" to dig the grave . You 'd better bury him at once ; there 's no use waiting . We start first thing in the morning . "
+28831	28840	28792	28793	the Englishman	1434	" Strange , is n't it , what he can
+28846	28851	28792	28793	the Englishman	1434	" said the Colonial ; "
+28860	28860	28868	28869	the Englishman	1434	"
+28861	28866	28868	28869	the Englishman	1434	" A pistol shot , "
+28875	28878	28907	28907	He	1434	" A pistol "
+28893	28906	28944	28945	The Colonial	1029	" I told you he would not kill that nigger . See here "
+28937	28943	29008	29008	They	1214	" But you do n't think "
+28964	29007	29190	29191	the Colonial	85	" Yes , I think that Go and fetch his great - coat ; we 'll put him in it . If it is no use talking while a man is alive , it is no use talking when he is dead ! "
+29178	29188	29190	29191	the Colonial	85	" Do you think they will make any inquiries ? "
+29193	29207	29190	29191	the Colonial	85	" Why should they ? His time will be up to - morrow . "
+29208	29216	29224	29224	They	1214	" Are you going to say anything ? "
+29217	29223	29250	29251	the Englishman	1434	" What is the use ? "
+29240	29248	29255	29256	The Colonial	85	" Do you believe in a God ? "
+29259	29265	29273	29276	the English- Englishman man	1225	" Of course I do ! "
+29266	29271	29273	29276	the English- Englishman man	1225	" I used to , "
+29278	29368	29379	29380	the Colonial	1029	" I do not believe in your God ; but I believed in something greater than I could understand , which moved in this earth , as your soul moves in your body . And I thought this worked in such wise , that the law of cause and effect , which holds in the physical world , held also in the moral : so , that the thing we call justice , ruled . I do not believe it any more . There is no God in Mashonaland . "
+29369	29377	29379	29380	the Colonial	1029	" Oh , do n't say that ! "
+29385	29397	29409	29410	the Englishman	1434	" Are you going off your head , like poor Halket ? "
+29398	29407	29638	29639	the Colonial	1029	" No ; but there is no God , "
+29626	29636	29655	29655	he	1434	" It 's all that night on the koppje ! "
+29649	29654	29655	29655	he	1434	" I hardly know , "
+29658	29672	None	None	None	None	" whether it is not better for him now , than for us . "
