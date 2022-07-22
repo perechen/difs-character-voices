@@ -1,0 +1,187 @@
+acc	d_words	char_id	label	playName	round
+0.6666666666666666	NA	33349	Helen	all-s-well-that-ends-well	1
+0.6666666666666666	bestow	33349	Helen	all-s-well-that-ends-well	2
+0.6666666666666666	humble	33349	Helen	all-s-well-that-ends-well	3
+0.6666666666666666	bright	33349	Helen	all-s-well-that-ends-well	4
+0.6666666666666666	consent	33349	Helen	all-s-well-that-ends-well	5
+0.6666666666666666	fated	33349	Helen	all-s-well-that-ends-well	6
+0.6666666666666666	lawful	33349	Helen	all-s-well-that-ends-well	7
+0.6666666666666666	restored	33349	Helen	all-s-well-that-ends-well	8
+0.6666666666666666	sun	33349	Helen	all-s-well-that-ends-well	9
+0.6666666666666666	air	33349	Helen	all-s-well-that-ends-well	10
+0.6666666666666666	limbs	33349	Helen	all-s-well-that-ends-well	11
+0.6666666666666666	stars	33349	Helen	all-s-well-that-ends-well	12
+0.6666666666666666	twice	33349	Helen	all-s-well-that-ends-well	13
+0.6666666666666666	babes	33349	Helen	all-s-well-that-ends-well	14
+0.6666666666666666	break	33349	Helen	all-s-well-that-ends-well	15
+0.6666666666666666	encounter	33349	Helen	all-s-well-that-ends-well	16
+0.6666666666666666	lion	33349	Helen	all-s-well-that-ends-well	17
+0.6666666666666666	thief	33349	Helen	all-s-well-that-ends-well	18
+0.6666666666666666	sit	33349	Helen	all-s-well-that-ends-well	19
+0.6666666666666666	heaven	33349	Helen	all-s-well-that-ends-well	20
+0.6666666666666666	rest	33349	Helen	all-s-well-that-ends-well	21
+0.6666666666666666	dear	33349	Helen	all-s-well-that-ends-well	22
+0.6666666666666666	high	33349	Helen	all-s-well-that-ends-well	23
+0.6666666666666666	sharp	33349	Helen	all-s-well-that-ends-well	24
+0.6666666666666666	oft	33349	Helen	all-s-well-that-ends-well	25
+0.6666666666666666	thus	33349	Helen	all-s-well-that-ends-well	26
+0.6666666666666666	yourself	33349	Helen	all-s-well-that-ends-well	27
+0.6666666666666666	absent	33349	Helen	all-s-well-that-ends-well	28
+0.6666666666666666	free	33349	Helen	all-s-well-that-ends-well	29
+0.6666666666666666	happy	33349	Helen	all-s-well-that-ends-well	30
+0.6666666666666666	whoever	33349	Helen	all-s-well-that-ends-well	31
+1	NA	33376	Cleopatra	antony-and-cleopatra	1
+1	charmian	33376	Cleopatra	antony-and-cleopatra	2
+1	dull	33376	Cleopatra	antony-and-cleopatra	3
+1	prithee	33376	Cleopatra	antony-and-cleopatra	4
+1	help	33376	Cleopatra	antony-and-cleopatra	5
+1	iras	33376	Cleopatra	antony-and-cleopatra	6
+1	tell	33376	Cleopatra	antony-and-cleopatra	7
+1	women	33376	Cleopatra	antony-and-cleopatra	8
+1	thee	33376	Cleopatra	antony-and-cleopatra	9
+1	mardian	33376	Cleopatra	antony-and-cleopatra	10
+1	thou	33376	Cleopatra	antony-and-cleopatra	11
+1	or	33376	Cleopatra	antony-and-cleopatra	12
+1	above	33376	Cleopatra	antony-and-cleopatra	13
+1	nurse	33376	Cleopatra	antony-and-cleopatra	14
+0.875	my	33376	Cleopatra	antony-and-cleopatra	15
+0.875	girls	33376	Cleopatra	antony-and-cleopatra	16
+0.875	swearing	33376	Cleopatra	antony-and-cleopatra	17
+0.875	dreamt	33376	Cleopatra	antony-and-cleopatra	18
+0.875	fit	33376	Cleopatra	antony-and-cleopatra	19
+0.875	dog	33376	Cleopatra	antony-and-cleopatra	20
+0.875	others	33376	Cleopatra	antony-and-cleopatra	21
+0.875	resolution	33376	Cleopatra	antony-and-cleopatra	22
+0.875	shrilltongued	33376	Cleopatra	antony-and-cleopatra	23
+0.875	snakes	33376	Cleopatra	antony-and-cleopatra	24
+0.875	years	33376	Cleopatra	antony-and-cleopatra	25
+0.875	beggar	33376	Cleopatra	antony-and-cleopatra	26
+0.875	o	33376	Cleopatra	antony-and-cleopatra	27
+0.875	am	33376	Cleopatra	antony-and-cleopatra	28
+0.875	gold	33376	Cleopatra	antony-and-cleopatra	29
+0.875	eunuch	33376	Cleopatra	antony-and-cleopatra	30
+0.875	shalt	33376	Cleopatra	antony-and-cleopatra	31
+1	NA	33377	Antony	antony-and-cleopatra	1
+0.9	eros	33377	Antony	antony-and-cleopatra	2
+0.9	whip	33377	Antony	antony-and-cleopatra	3
+0.9	itself	33377	Antony	antony-and-cleopatra	4
+0.9	begone	33377	Antony	antony-and-cleopatra	5
+0.9	hence	33377	Antony	antony-and-cleopatra	6
+0.9	hours	33377	Antony	antony-and-cleopatra	7
+0.9	awhile	33377	Antony	antony-and-cleopatra	8
+0.9	me	33377	Antony	antony-and-cleopatra	9
+0.9	dying	33377	Antony	antony-and-cleopatra	10
+0.9	ills	33377	Antony	antony-and-cleopatra	11
+0.9	necessity	33377	Antony	antony-and-cleopatra	12
+0.9	fight	33377	Antony	antony-and-cleopatra	13
+0.9	pine	33377	Antony	antony-and-cleopatra	14
+0.9	services	33377	Antony	antony-and-cleopatra	15
+0.9	taunt	33377	Antony	antony-and-cleopatra	16
+0.9	nobly	33377	Antony	antony-and-cleopatra	17
+0.9	fellows	33377	Antony	antony-and-cleopatra	18
+0.9	past	33377	Antony	antony-and-cleopatra	19
+0.9	baseness	33377	Antony	antony-and-cleopatra	20
+0.9	owe	33377	Antony	antony-and-cleopatra	21
+0.9	hint	33377	Antony	antony-and-cleopatra	22
+0.9	urge	33377	Antony	antony-and-cleopatra	23
+0.9	white	33377	Antony	antony-and-cleopatra	24
+0.9	fie	33377	Antony	antony-and-cleopatra	25
+0.9	beds	33377	Antony	antony-and-cleopatra	26
+0.9	commend	33377	Antony	antony-and-cleopatra	27
+0.9	lowness	33377	Antony	antony-and-cleopatra	28
+0.9	yond	33377	Antony	antony-and-cleopatra	29
+0.9	goal	33377	Antony	antony-and-cleopatra	30
+0.9	seal	33377	Antony	antony-and-cleopatra	31
+1	NA	33455	Rosalind	as-you-like-it	1
+1	play	33455	Rosalind	as-you-like-it	2
+1	could	33455	Rosalind	as-you-like-it	3
+1	love	33455	Rosalind	as-you-like-it	4
+1	she	33455	Rosalind	as-you-like-it	5
+1	sister	33455	Rosalind	as-you-like-it	6
+1	epilogue	33455	Rosalind	as-you-like-it	7
+1	maids	33455	Rosalind	as-you-like-it	8
+1	manner	33455	Rosalind	as-you-like-it	9
+1	minute	33455	Rosalind	as-you-like-it	10
+1	orlando	33455	Rosalind	as-you-like-it	11
+0.9	you	33455	Rosalind	as-you-like-it	12
+0.9	youll	33455	Rosalind	as-you-like-it	13
+0.9	woman	33455	Rosalind	as-you-like-it	14
+0.9	wine	33455	Rosalind	as-you-like-it	15
+0.9	marry	33455	Rosalind	as-you-like-it	16
+0.9	women	33455	Rosalind	as-you-like-it	17
+0.9	ask	33455	Rosalind	as-you-like-it	18
+0.9	hose	33455	Rosalind	as-you-like-it	19
+0.9	natures	33455	Rosalind	as-you-like-it	20
+0.9	counterfeited	33455	Rosalind	as-you-like-it	21
+0.9	incontinent	33455	Rosalind	as-you-like-it	22
+0.9	soon	33455	Rosalind	as-you-like-it	23
+0.9	madness	33455	Rosalind	as-you-like-it	24
+0.9	because	33455	Rosalind	as-you-like-it	25
+0.9	deep	33455	Rosalind	as-you-like-it	26
+0.9	wed	33455	Rosalind	as-you-like-it	27
+0.9	apparel	33455	Rosalind	as-you-like-it	28
+0.9	turned	33455	Rosalind	as-you-like-it	29
+0.9	study	33455	Rosalind	as-you-like-it	30
+0.9	joves	33455	Rosalind	as-you-like-it	31
+0.875	NA	33480	Menenius	coriolanus	1
+0.875	worships	33480	Menenius	coriolanus	2
+0.875	worst	33480	Menenius	coriolanus	3
+0.875	fie	33480	Menenius	coriolanus	4
+0.875	begone	33480	Menenius	coriolanus	5
+0.875	angry	33480	Menenius	coriolanus	6
+0.875	receive	33480	Menenius	coriolanus	7
+0.875	bran	33480	Menenius	coriolanus	8
+0.875	form	33480	Menenius	coriolanus	9
+0.875	necks	33480	Menenius	coriolanus	10
+0.875	tie	33480	Menenius	coriolanus	11
+0.875	hum	33480	Menenius	coriolanus	12
+0.875	venture	33480	Menenius	coriolanus	13
+0.875	morning	33480	Menenius	coriolanus	14
+0.875	accused	33480	Menenius	coriolanus	15
+0.875	bids	33480	Menenius	coriolanus	16
+0.875	brand	33480	Menenius	coriolanus	17
+0.875	belly	33480	Menenius	coriolanus	18
+0.625	you	33480	Menenius	coriolanus	19
+0.625	beards	33480	Menenius	coriolanus	20
+0.625	clubs	33480	Menenius	coriolanus	21
+0.625	controversy	33480	Menenius	coriolanus	22
+0.625	loss	33480	Menenius	coriolanus	23
+0.625	veins	33480	Menenius	coriolanus	24
+0.625	bats	33480	Menenius	coriolanus	25
+0.625	clusters	33480	Menenius	coriolanus	26
+0.625	grub	33480	Menenius	coriolanus	27
+0.625	quench	33480	Menenius	coriolanus	28
+0.625	suffering	33480	Menenius	coriolanus	29
+0.625	could	33480	Menenius	coriolanus	30
+0.625	patience	33480	Menenius	coriolanus	31
+1	NA	33481	Martius Coriolanus	coriolanus	1
+1	me	33481	Martius Coriolanus	coriolanus	2
+1	my	33481	Martius Coriolanus	coriolanus	3
+1	i	33481	Martius Coriolanus	coriolanus	4
+1	change	33481	Martius Coriolanus	coriolanus	5
+1	service	33481	Martius Coriolanus	coriolanus	6
+1	witness	33481	Martius Coriolanus	coriolanus	7
+1	sweat	33481	Martius Coriolanus	coriolanus	8
+1	let	33481	Martius Coriolanus	coriolanus	9
+1	seal	33481	Martius Coriolanus	coriolanus	10
+1	dust	33481	Martius Coriolanus	coriolanus	11
+1	ope	33481	Martius Coriolanus	coriolanus	12
+1	mother	33481	Martius Coriolanus	coriolanus	13
+1	they	33481	Martius Coriolanus	coriolanus	14
+1	hang	33481	Martius Coriolanus	coriolanus	15
+1	aufidius	33481	Martius Coriolanus	coriolanus	16
+1	greece	33481	Martius Coriolanus	coriolanus	17
+1	garments	33481	Martius Coriolanus	coriolanus	18
+1	practice	33481	Martius Coriolanus	coriolanus	19
+1	shields	33481	Martius Coriolanus	coriolanus	20
+1	wisdom	33481	Martius Coriolanus	coriolanus	21
+1	cracked	33481	Martius Coriolanus	coriolanus	22
+1	forsworn	33481	Martius Coriolanus	coriolanus	23
+1	outward	33481	Martius Coriolanus	coriolanus	24
+1	suffered	33481	Martius Coriolanus	coriolanus	25
+1	honored	33481	Martius Coriolanus	coriolanus	26
+1	sweet	33481	Martius Coriolanus	coriolanus	27
+1	hours	33481	Martius Coriolanus	coriolanus	28
+1	courage	33481	Martius Coriolanus	coriolanus	29
+1	false	33481	Martius Coriolanus	coriolanus	30
+1	womans	33481	Martius Coriolanus	coriolanus	31
