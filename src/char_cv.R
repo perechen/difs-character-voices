@@ -1,4 +1,4 @@
-char_cross_v <- function(x,df,mfw,novel,s) {
+char_cross_v <- function(x,df,mfw,novel,cr,s) {
 	chrt <- x
 	df_res <- NULL
 	v_predicted <- NULL
@@ -63,7 +63,8 @@ char_cross_v <- function(x,df,mfw,novel,s) {
 	                  chr=chrt,
 	                  book_id=novel,
 	                  char_samples=length(df$classes==c),
-	                  sample_id=s)
+	                  sample_id=s,
+	                  corpus=cr)
 
 
 	return(df_pred)

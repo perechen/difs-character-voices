@@ -1,0 +1,104 @@
+---
+title: "DIFS analysis"
+author: "Artjoms Šeļa"
+date: '2022-07-22'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggrepel)
+library(tidytext)
+library(paletteer)
+df_fin <- read_tsv("data/df_fin_curves.tsv")
+df_res <- read_tsv("data/df_res.tsv")
+```
+
+
+### Curves-under-keywords
+
+A simple, but not data-hungry approach to character distinctiveness:  
+
+1. Calculate "keyness" for Character A vs "Others" in a drama
+2. Arrange top $N$ keywords by amount of "keyness" 
+3. Calculate the area under the curve. Guys who would have flatter curve decays are probably more distinctive (more words that describe them). That is it. That is our $d$ measure.
+
+For keyness here I use [weighted log-odds] (https://bookdown.org/Maxine/tidy-text-mining/weighted-log-odds-ratio.html), but in principle anything will do.  
+
+Legit characters are filter at $words > 2000$. In each log-odds calculation we upsample Character to "Other" lengths (probably will redo it to proper bootstrapping Ben's-way)  
+
+$N$ keywords cut-off is 100 for every character (even if there is a tie in log-odds rank).  
+
+The main script for analysis is `03_logodds_curves.R`, functions sit in `src/loo_distinct.R`.  
+
+### Cleopatra & Anthony
+
+Here is an example: Cleo girl has more distinctive words with values above the Anthony. Her area-under-curve would be of higher value.  
+
+```{r}
+df_fin %>% filter(playName=="antony-and-cleopatra") %>% filter(label %in% c("Antony_1", "Cleopatra_1")) %>%  ggplot(aes(rank,log_odds_weighted,color=label)) + geom_path() + theme_minimal() + scale_color_paletteer_d("wesanderson::Darjeeling1") + labs(x="word distinctivness rank")
+```
+
+
+### Bags of words
+
+Good news is that together with distinctiveness measure $d$ we also have the corresponding words. Here are top 30 keywords per character, 30 top distinct characters from the whole corpus.
+
+```{r}
+
+labs <- df_fin %>% group_by(label,d) %>% top_n(30,log_odds_weighted) %>% group_by(label,d,corpus) %>%   summarise(bag=paste(word,collapse = "_")) %>% group_by(corpus)  %>% top_n(30,d) %>% arrange(corpus)
+
+
+knitr::kable(labs)
+```
+### D-measure vs. length
+
+```{r}
+df_fin %>% select(d,label,n,gender,corpus,eigenvector) %>% filter(gender %in% c("MALE","FEMALE")) %>% unique() %>% ggplot(aes(log(n),d,color=gender)) + geom_point(size=0.5,alpha=0.5) + geom_smooth(method="gam",se=F) + facet_wrap(~corpus)  +theme_minimal() + scale_color_paletteer_d("wesanderson::Darjeeling1")
+
+```
+
+### Shakespeare
+
+Most distinctive characters for old fella Shake. Now, after standardizing curves at rank 100 and oversampling character, the distribution looks very similar to what we have with energy-distance bootstrapping magic.
+
+```{r,fig.height=10,fig.width=5}
+lost_girls <- c("Queen Elizabeth_1", "Queen Margaret_1","Cleopatra_1","Queen Margaret_1","	
+Queen Margaret_2","Constance_10")
+df_fin %>% filter(corpus=="shake") %>% select(d,char_id,label,n,gender,eigenvector) %>% unique() %>% mutate(gender=ifelse(label %in% lost_girls, "FEMALE", gender), gender=ifelse(is.na(gender), "MALE", gender)) %>% 
+  ggplot(aes(d,reorder(label,d))) + theme_minimal() +
+  geom_segment(aes(yend=label,x=150,xend=d),size=0.2) +
+  geom_point(aes(color=n),size=2) + 
+  #geom_label_repel(data=labs,aes(label=bag),nudge_y = 100,size=3) + 
+  theme(axis.text.y = element_text(hjust = 1,size=6))  + facet_grid(scales = "free_y",space="free_y",rows=vars(gender)) + scale_color_paletteer_c("gameofthrones::targaryen2") +
+  scale_x_continuous(limits=c(150,400),expand = c(0, 0)) 
+
+```
+  
+## Character unmasking
+
+The small part of supervised "unmasking" by character. The same idea: look at how quickly accuracy (SVM, leave-one-out) curves deteriorate when you remove top performing feature, one by one.  
+
+TL;DR. It works! Word lists are similar to Keyness words, but overall not enough data for too much resources.    
+
+```{r}
+df_res %>% select(char_id,label,round,acc) %>% ggplot(aes(round,acc,color=label)) + geom_path() + theme_minimal() + scale_color_paletteer_d("basetheme::brutal") + facet_wrap(~label)
+```
+  
+First 30 removed features for Cleo in SVM unmasking:  
+
+```{r}
+s <- df_res %>% filter(label=="Cleopatra") %>% select(d_words,acc)
+
+knitr::kable(s)
+```
+  
+Top 30 keywords for Cleo girl.
+
+```{r}
+df1 <- df_fin %>% filter(label=="Cleopatra_1") %>% select(word,log_odds_weighted)
+
+knitr::kable(df1[1:30,])
+
+```
