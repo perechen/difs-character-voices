@@ -202,7 +202,299 @@ df_fin %>% filter(corpus=="shake") %>% select(d,char_id,label,n,gender,eigenvect
   scale_x_continuous(limits=c(150,400),expand = c(0, 0)) 
 ```
 
-![](03_analysis_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](03_analysis_files/figure-markdown_github/unnamed-chunk-4-1.png) \###
+Female vs. male keywords all
+
+``` r
+library(tidylo)
+allstars <- read_tsv("data/allstars_clean.tsv") %>% 
+  mutate(gender = ifelse(gender == "MAE","MALE",gender))
+```
+
+    ## Warning: Missing column names filled in: 'X1' [1]
+
+    ## 
+    ## ── Column specification ────────────────────────────────────────────────────────
+    ## cols(
+    ##   X1 = col_double(),
+    ##   id = col_character(),
+    ##   label = col_character(),
+    ##   isGroup = col_logical(),
+    ##   gender = col_character(),
+    ##   text = col_character(),
+    ##   betweenness = col_double(),
+    ##   degree = col_double(),
+    ##   closeness = col_double(),
+    ##   eigenvector = col_double(),
+    ##   weightedDegree = col_double(),
+    ##   corpus = col_character(),
+    ##   playName = col_character(),
+    ##   yearNormalized = col_double(),
+    ##   firstAuthor = col_character(),
+    ##   cleanText = col_character()
+    ## )
+
+``` r
+a_tok <- allstars %>% unnest_tokens(input=cleanText, output=word) %>% group_by(corpus) %>% group_split()
+
+list_df <- vector(mode="list",length=length(a_tok))
+
+for (i in 1:length(a_tok)) {
+  cr=a_tok[[i]]$corpus %>% unique()
+  
+  fr_t <- a_tok[[i]] %>% filter(gender != "UNKNOWN") %>% 
+  group_by(gender) %>%
+# sample_n(500000,replace=T) %>%
+  count(gender,word) %>% 
+  bind_log_odds(gender,word,n)
+
+  fr_top <- fr_t %>%
+  group_by(gender) %>%
+  top_n(200) %>% 
+  arrange(gender, -log_odds_weighted) %>% mutate(corpus=cr)
+  
+  list_df[[i]] <- fr_top
+
+}
+```
+
+    ## Selecting by log_odds_weighted
+
+    ## Selecting by log_odds_weightedSelecting by log_odds_weightedSelecting by
+    ## log_odds_weighted
+
+Let’s look at 20 most distinctive words in each corpus.  
+These are weird: women words look fine, but men words are full of
+toponyms and proper nouns. Is it a bug or a feature? If a feature,
+consider this: women speak less about the non-immediate world, refer to
+outside characters etc.? Would be consistent with “loving”/“feeling”
+niche for women chars. Still, might be some log-odds failure that i
+don’t see.
+
+**French:**
+
+``` r
+fr <- list_df[[1]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(fr)
+```
+
+| gender | word        |      n | log_odds_weighted | corpus |
+|:-------|:------------|-------:|------------------:|:-------|
+| FEMALE | vous        |  88367 |         12.626754 | fre    |
+| FEMALE | époux       |   2423 |          9.688363 | fre    |
+| FEMALE | mère        |   3007 |          9.059305 | fre    |
+| FEMALE | ne          |  48364 |          8.195934 | fre    |
+| FEMALE | amant       |   2359 |          7.863718 | fre    |
+| FEMALE | coeur       |  11467 |          7.803405 | fre    |
+| FEMALE | mari        |   1512 |          7.763646 | fre    |
+| FEMALE | hélas       |   3323 |          7.576005 | fre    |
+| FEMALE | tante       |    751 |          7.437500 | fre    |
+| FEMALE | mon         |  35529 |          7.393511 | fre    |
+| FEMALE | rivale      |    438 |          7.291353 | fre    |
+| FEMALE | quil        |  16404 |          7.239405 | fre    |
+| FEMALE | malheureuse |    730 |          6.987188 | fre    |
+| FEMALE | me          |  34482 |          6.947541 | fre    |
+| FEMALE | que         |  85553 |          6.541200 | fre    |
+| FEMALE | il          |  38106 |          6.104932 | fre    |
+| FEMALE | ménon       |     56 |          5.918321 | fre    |
+| FEMALE | père        |   6178 |          5.718961 | fre    |
+| FEMALE | sifroy      |     52 |          5.703035 | fre    |
+| FEMALE | zirphée     |     52 |          5.703035 | fre    |
+| MALE   | jé          |    247 |          9.494922 | fre    |
+| MALE   | diable      |   2052 |          7.392530 | fre    |
+| MALE   | ami         |   3976 |          6.004906 | fre    |
+| MALE   | la          | 115947 |          5.916794 | fre    |
+| MALE   | parbleu     |    835 |          5.902317 | fre    |
+| MALE   | mé          |     90 |          5.731366 | fre    |
+| MALE   | maître      |   5075 |          5.085107 | fre    |
+| MALE   | les         |  63923 |          5.062907 | fre    |
+| MALE   | morbleu     |    567 |          4.658257 | fre    |
+| MALE   | damne       |     59 |          4.640467 | fre    |
+| MALE   | séide       |     58 |          4.600973 | fre    |
+| MALE   | cé          |     55 |          4.480401 | fre    |
+| MALE   | morgué      |    418 |          4.334931 | fre    |
+| MALE   | amis        |   2402 |          4.245199 | fre    |
+| MALE   | serviteur   |    617 |          4.206582 | fre    |
+| MALE   | belle       |   4263 |          4.031112 | fre    |
+| MALE   | syracuse    |     44 |          4.007389 | fre    |
+| MALE   | vin         |    938 |          3.978142 | fre    |
+| MALE   | monsir      |     42 |          3.915252 | fre    |
+| MALE   | phylazie    |     42 |          3.915252 | fre    |
+
+**German: **
+
+``` r
+ger <- list_df[[2]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(ger)
+```
+
+| gender | word        |      n | log_odds_weighted | corpus |
+|:-------|:------------|-------:|------------------:|:-------|
+| FEMALE | ach         |   5228 |         18.555316 | ger    |
+| FEMALE | du          |  29294 |         14.357043 | ger    |
+| FEMALE | o           |   6761 |         13.135848 | ger    |
+| FEMALE | er          |  22471 |         13.019178 | ger    |
+| FEMALE | mich        |  19701 |         12.263855 | ger    |
+| FEMALE | ich         |  67360 |         11.251741 | ger    |
+| FEMALE | vater       |   4218 |         11.061531 | ger    |
+| FEMALE | sie         |  39440 |         11.025780 | ger    |
+| FEMALE | nicht       |  36060 |         10.938568 | ger    |
+| FEMALE | mutter      |   2891 |         10.527996 | ger    |
+| FEMALE | liebe       |   3907 |          9.747916 | ger    |
+| FEMALE | mein        |  12106 |          9.700061 | ger    |
+| FEMALE | nein        |   4706 |          8.767730 | ger    |
+| FEMALE | so          |  23243 |          8.685916 | ger    |
+| FEMALE | ihn         |   8134 |          8.549805 | ger    |
+| FEMALE | mama        |    571 |          8.347766 | ger    |
+| FEMALE | mir         |  21148 |          8.344605 | ger    |
+| FEMALE | herz        |   3130 |          8.166103 | ger    |
+| FEMALE | gott        |   4176 |          8.056966 | ger    |
+| FEMALE | ja          |  12013 |          8.019479 | ger    |
+| MALE   | bernhardi   |    147 |          6.542814 | ger    |
+| MALE   | cromwell    |     97 |          5.314830 | ger    |
+| MALE   | teufel      |   2396 |          5.074365 | ger    |
+| MALE   | gaddo       |     85 |          4.975221 | ger    |
+| MALE   | franziskus  |     72 |          4.578978 | ger    |
+| MALE   | brandenburg |     63 |          4.283238 | ger    |
+| MALE   | mitbürger   |     58 |          4.109752 | ger    |
+| MALE   | granville   |     56 |          4.038272 | ger    |
+| MALE   | woyzeck     |     54 |          3.965504 | ger    |
+| MALE   | bündnisses  |     51 |          3.853776 | ger    |
+| MALE   | der         | 114936 |          3.825104 | ger    |
+| MALE   | finnen      |     49 |          3.777455 | ger    |
+| MALE   | marbod      |     49 |          3.777455 | ger    |
+| MALE   | kerl        |   1464 |          3.697099 | ger    |
+| MALE   | ebenwald    |     46 |          3.659991 | ger    |
+| MALE   | grobitzsch  |     46 |          3.659991 | ger    |
+| MALE   | jufifallera |     46 |          3.659991 | ger    |
+| MALE   | karthago    |     46 |          3.659991 | ger    |
+| MALE   | tullus      |     46 |          3.659991 | ger    |
+| MALE   | torrigiano  |     45 |          3.619989 | ger    |
+
+**Russian:**
+
+``` r
+rus <- list_df[[3]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(rus)
+```
+
+| gender | word                     |     n | log_odds_weighted | corpus |
+|:-------|:-------------------------|------:|------------------:|:-------|
+| FEMALE | ах                       |  2134 |         12.627285 | rus    |
+| FEMALE | не                       | 18700 |          9.907003 | rus    |
+| FEMALE | вы                       |  6625 |          9.342258 | rus    |
+| FEMALE | он                       |  5268 |          9.036707 | rus    |
+| FEMALE | сама                     |   662 |          8.523064 | rus    |
+| FEMALE | что                      | 12963 |          8.508559 | rus    |
+| FEMALE | батюшка                  |   597 |          8.022666 | rus    |
+| FEMALE | я                        | 17012 |          7.738918 | rus    |
+| FEMALE | ты                       |  8210 |          7.492246 | rus    |
+| FEMALE | меня                     |  4992 |          7.273345 | rus    |
+| FEMALE | уж                       |  2672 |          7.095583 | rus    |
+| FEMALE | мой                      |  2245 |          6.999131 | rus    |
+| FEMALE | мне                      |  6047 |          6.988468 | rus    |
+| FEMALE | рада                     |   242 |          6.671507 | rus    |
+| FEMALE | думала                   |   202 |          6.363137 | rus    |
+| FEMALE | да                       |  6230 |          6.015466 | rus    |
+| FEMALE | хотела                   |   219 |          5.863324 | rus    |
+| FEMALE | была                     |   674 |          5.817058 | rus    |
+| FEMALE | сказала                  |   234 |          5.427145 | rus    |
+| FEMALE | как                      |  5981 |          5.397566 | rus    |
+| MALE   | хе                       |   174 |          7.357367 | rus    |
+| MALE   | хехе                     |    60 |          4.320158 | rus    |
+| MALE   | шурин                    |    57 |          4.210763 | rus    |
+| MALE   | высокородие              |    51 |          3.982971 | rus    |
+| MALE   | поручик                  |    40 |          3.527360 | rus    |
+| MALE   | басманов                 |    38 |          3.438042 | rus    |
+| MALE   | федотыч                  |    38 |          3.438042 | rus    |
+| MALE   | крафт                    |    37 |          3.392501 | rus    |
+| MALE   | брат                     |   988 |          3.281671 | rus    |
+| MALE   | артемьич                 |    34 |          3.252056 | rus    |
+| MALE   | демьяныч                 |    34 |          3.252056 | rus    |
+| MALE   | пардонпардон             |    33 |          3.203873 | rus    |
+| MALE   | черт                     |   563 |          3.176401 | rus    |
+| MALE   | ел                       |    32 |          3.154955 | rus    |
+| MALE   | почтеннейший             |    32 |          3.154955 | rus    |
+| MALE   | могус                    |    30 |          3.054769 | rus    |
+| MALE   | высокопревосходительство |    29 |          3.003423 | rus    |
+| MALE   | ммм                      |    29 |          3.003423 | rus    |
+| MALE   | момент                   |    29 |          3.003423 | rus    |
+| MALE   | мануска                  |    27 |          2.898004 | rus    |
+| MALE   | согдай                   |    27 |          2.898004 | rus    |
+| MALE   | трагедии                 |    27 |          2.898004 | rus    |
+
+**Shakespeare:**
+
+``` r
+shk <- list_df[[4]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(shk)
+```
+
+| gender | word      |    n | log_odds_weighted | corpus |
+|:-------|:----------|-----:|------------------:|:-------|
+| FEMALE | you       | 2606 |          5.964109 | shake  |
+| FEMALE | i         | 3406 |          4.952518 | shake  |
+| FEMALE | husband   |  137 |          4.664723 | shake  |
+| FEMALE | me        | 1364 |          4.204448 | shake  |
+| FEMALE | my        | 1944 |          4.020696 | shake  |
+| FEMALE | love      |  438 |          3.628540 | shake  |
+| FEMALE | alas      |   96 |          3.432106 | shake  |
+| FEMALE | not       | 1345 |          3.139153 | shake  |
+| FEMALE | your      | 1120 |          3.017941 | shake  |
+| FEMALE | o         |  488 |          2.948125 | shake  |
+| FEMALE | griffith  |   10 |          2.938218 | shake  |
+| FEMALE | lucetta   |   10 |          2.938218 | shake  |
+| FEMALE | do        |  658 |          2.836750 | shake  |
+| FEMALE | madame    |    9 |          2.787432 | shake  |
+| FEMALE | that      | 1585 |          2.660010 | shake  |
+| FEMALE | husbands  |   33 |          2.589320 | shake  |
+| FEMALE | romeo     |   59 |          2.586386 | shake  |
+| FEMALE | he        | 1037 |          2.583865 | shake  |
+| FEMALE | would     |  429 |          2.458427 | shake  |
+| FEMALE | silvius   |    7 |          2.458274 | shake  |
+| MALE   | marcus    |   44 |          3.332517 | shake  |
+| MALE   | hamlet    |   43 |          3.294425 | shake  |
+| MALE   | henry     |   41 |          3.216887 | shake  |
+| MALE   | clifford  |   32 |          2.841924 | shake  |
+| MALE   | gar       |   30 |          2.751672 | shake  |
+| MALE   | sack      |   29 |          2.705417 | shake  |
+| MALE   | sore      |   26 |          2.561650 | shake  |
+| MALE   | also      |   25 |          2.511900 | shake  |
+| MALE   | amiss     |   25 |          2.511900 | shake  |
+| MALE   | baptista  |   24 |          2.461145 | shake  |
+| MALE   | milan     |   24 |          2.461145 | shake  |
+| MALE   | provost   |   24 |          2.461145 | shake  |
+| MALE   | recover   |   24 |          2.461145 | shake  |
+| MALE   | cade      |   23 |          2.409322 | shake  |
+| MALE   | cat       |   23 |          2.409322 | shake  |
+| MALE   | davy      |   23 |          2.409322 | shake  |
+| MALE   | lancaster |   23 |          2.409322 | shake  |
+| MALE   | leonato   |   23 |          2.409322 | shake  |
+| MALE   | naples    |   23 |          2.409322 | shake  |
+| MALE   | delicate  |   22 |          2.356359 | shake  |
+| MALE   | island    |   22 |          2.356359 | shake  |
+
+``` r
+p_fr <- fr_top %>%
+ arrange(gender, log_odds_weighted) %>%
+ mutate(pos_y=row_number()) %>%
+ mutate(pos_x=ifelse(gender=="FEMALE",-1,1)) %>%
+ ggplot(aes(pos_x,pos_y)) + 
+ geom_text(aes(label=word,color=gender)) + xlim(-5,5) + theme_void() +
+  scale_color_paletteer_d("basetheme::clean")
+```
+
+``` r
+## saving log odds in a tsv
+
+loo_df <- list_df %>% bind_rows()
+
+write_tsv(loo_df,file="data/gender_log_odds_top200.tsv")
+```
 
 ## Character unmasking
 
@@ -217,7 +509,7 @@ not enough data for too much resources.
 df_res %>% select(char_id,label,round,acc) %>% ggplot(aes(round,acc,color=label)) + geom_path() + theme_minimal() + scale_color_paletteer_d("basetheme::brutal") + facet_wrap(~label)
 ```
 
-![](03_analysis_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![](03_analysis_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 First 30 removed features for Cleo in SVM unmasking:
 
@@ -264,7 +556,8 @@ knitr::kable(s)
 Top 30 keywords for Cleo girl.
 
 ``` r
-df1 <- df_fin %>% filter(label=="Cleopatra_1") %>% select(word,log_odds_weighted)
+df1 <- df_fin %>% filter(label=="Cleopatra_1") %>%
+  select(word,log_odds_weighted)
 
 knitr::kable(df1[1:30,])
 ```
@@ -301,3 +594,74 @@ knitr::kable(df1[1:30,])
 | gnats         |          2.023386 |
 | imperious     |          2.023386 |
 | juice         |          2.023386 |
+
+``` r
+d_df <- df_fin %>% left_join(meta,by="playName") %>% select(d,label,n,gender,corpus,yearNormalized,firstAuthor,normalizedGenre,eigenvector) %>% filter(gender %in% c("MALE","FEMALE")) %>% unique()
+```
+
+``` r
+library(brms)
+d <- d_df %>% mutate(n=log(n),
+                     d=log(d))
+
+m1 <- brm(formula = d ~ gender*corpus,data=d,cores = 4)
+
+m1_gender_size <- brm(formula = d ~ gender*corpus + n,data=d,cores = 4)
+
+pp_check(m1)
+summary(m1)
+conditional_effects(m1)
+```
+
+``` r
+plot(d$n,d$d)
+
+pp_check(m1_gender_size)
+summary(m1_gender_size)
+conditional_effects(m1_gender_size, "gender:corpus")
+```
+
+``` r
+m2 <- brm(formula = d ~ gender*corpus + gender*n,data=d,cores = 4)
+```
+
+``` r
+pp_check(m2)
+summary(m2)
+conditional_effects(m2)
+```
+
+``` r
+d_zeroshake <- d %>% filter(corpus != "shake")
+
+m3 <- brm(formula = d ~ gender*corpus*n + (1 + gender|firstAuthor),data=d_zeroshake,cores = 4)
+
+pp_check(m3)
+summary(m3)
+conditional_effects(m3)
+```
+
+``` r
+ranef(m3, groups="firstAuthor", probs = 0.5)
+
+d_zeroshake$firstAuthor %>% unique() %>% length()
+
+m3 %>%
+  tidybayes::spread_draws(r_firstAuthor[,genderMAlE]) #%>%
+  # add the grand mean to the group-specific deviations
+  mutate(mu = b_cw_Intercept + r_site__cw) %>%
+  ungroup() %>%
+  mutate(site = str_replace_all(site, "[.]", " ")) %>% 
+  
+  # plot
+  ggplot(aes(x = mu, y = reorder(site, mu))) +
+  geom_vline(xintercept = fixef(k_fit_brms)[1, 1], color = "#839496", size = 1) +
+  geom_vline(xintercept = fixef(k_fit_brms)[1, 3:4], color = "#839496", linetype = 2) +
+  geom_halfeyeh(.width = .5, size = 2/3, fill = "#859900") +
+  labs(x = expression("Cottonwood litterfall (g/m^2)"),
+       y = "BEMP sites ordered by mean predicted litterfall") +
+  theme(panel.grid   = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y  = element_text(hjust = 0),
+        text = element_text(family = "Ubuntu")) 
+```
