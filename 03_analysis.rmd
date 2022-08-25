@@ -2,7 +2,9 @@
 title: "DIFS analysis"
 author: "Artjoms Šeļa"
 date: '2022-07-22'
-output: html_document
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}
@@ -12,6 +14,7 @@ library(ggrepel)
 library(tidytext)
 library(paletteer)
 df_fin <- read_tsv("data/df_fin_curves.tsv")
+meta <- read_tsv("data/all_stars_meta.tsv") %>% select(-yearNormalized,-corpus)
 df_res <- read_tsv("data/df_res.tsv")
 ```
 
@@ -52,6 +55,9 @@ labs <- df_fin %>% group_by(label,d) %>% top_n(30,log_odds_weighted) %>% group_b
 
 knitr::kable(labs)
 ```
+
+
+
 ### D-measure vs. length
 
 ```{r}
@@ -75,6 +81,101 @@ df_fin %>% filter(corpus=="shake") %>% select(d,char_id,label,n,gender,eigenvect
   scale_x_continuous(limits=c(150,400),expand = c(0, 0)) 
 
 ```
+### Female vs. male keywords all 
+
+
+```{r}
+library(tidylo)
+allstars <- read_tsv("data/allstars_clean.tsv") %>% 
+  mutate(gender = ifelse(gender == "MAE","MALE",gender))
+
+a_tok <- allstars %>% unnest_tokens(input=cleanText, output=word) %>% group_by(corpus) %>% group_split()
+
+list_df <- vector(mode="list",length=length(a_tok))
+
+for (i in 1:length(a_tok)) {
+  cr=a_tok[[i]]$corpus %>% unique()
+  
+  fr_t <- a_tok[[i]] %>% filter(gender != "UNKNOWN") %>% 
+  group_by(gender) %>%
+# sample_n(500000,replace=T) %>%
+  count(gender,word) %>% 
+  bind_log_odds(gender,word,n)
+
+  fr_top <- fr_t %>%
+  group_by(gender) %>%
+  top_n(200) %>% 
+  arrange(gender, -log_odds_weighted) %>% mutate(corpus=cr)
+  
+  list_df[[i]] <- fr_top
+
+}
+
+
+
+```
+Let's look at 20 most distinctive words in each corpus.  
+These are weird: women words look fine, but men words are full of toponyms and proper nouns.
+Is it a bug or a feature? If a feature, consider this: women speak less about the non-immediate world, refer to outside characters etc.? Would be consistent with "loving"/"feeling" niche for women chars.  Still, might be some log-odds failure that i don't see. 
+
+**French:**
+
+```{r}
+fr <- list_df[[1]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(fr)
+```
+  
+
+**German:  **
+
+```{r}
+ger <- list_df[[2]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(ger)
+```  
+
+  
+**Russian:**  
+
+
+```{r}
+rus <- list_df[[3]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(rus)
+```
+
+**Shakespeare:**
+
+
+```{r}
+
+shk <- list_df[[4]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(shk)
+```
+
+
+```{r,eval=F}
+p_fr <- fr_top %>%
+ arrange(gender, log_odds_weighted) %>%
+ mutate(pos_y=row_number()) %>%
+ mutate(pos_x=ifelse(gender=="FEMALE",-1,1)) %>%
+ ggplot(aes(pos_x,pos_y)) + 
+ geom_text(aes(label=word,color=gender)) + xlim(-5,5) + theme_void() +
+  scale_color_paletteer_d("basetheme::clean")
+
+```
+  
+```{r}
+## saving log odds in a tsv
+
+loo_df <- list_df %>% bind_rows()
+
+write_tsv(loo_df,file="data/gender_log_odds_top200.tsv")
+
+```
+
   
 ## Character unmasking
 
@@ -97,8 +198,88 @@ knitr::kable(s)
 Top 30 keywords for Cleo girl.
 
 ```{r}
-df1 <- df_fin %>% filter(label=="Cleopatra_1") %>% select(word,log_odds_weighted)
+df1 <- df_fin %>% filter(label=="Cleopatra_1") %>%
+  select(word,log_odds_weighted)
 
 knitr::kable(df1[1:30,])
 
 ```
+
+
+
+```{r,eval=F}
+d_df <- df_fin %>% left_join(meta,by="playName") %>% select(d,label,n,gender,corpus,yearNormalized,firstAuthor,normalizedGenre,eigenvector) %>% filter(gender %in% c("MALE","FEMALE")) %>% unique()
+
+```
+
+```{r,eval=F}
+library(brms)
+d <- d_df %>% mutate(n=log(n),
+                     d=log(d))
+
+m1 <- brm(formula = d ~ gender*corpus,data=d,cores = 4)
+
+m1_gender_size <- brm(formula = d ~ gender*corpus + n,data=d,cores = 4)
+
+pp_check(m1)
+summary(m1)
+conditional_effects(m1)
+```
+
+
+```{r,eval=F}
+plot(d$n,d$d)
+
+pp_check(m1_gender_size)
+summary(m1_gender_size)
+conditional_effects(m1_gender_size, "gender:corpus")
+
+```
+
+```{r,eval=F}
+m2 <- brm(formula = d ~ gender*corpus + gender*n,data=d,cores = 4)
+
+```
+
+```{r,eval=F}
+pp_check(m2)
+summary(m2)
+conditional_effects(m2)
+```
+
+```{r,eval=F}
+d_zeroshake <- d %>% filter(corpus != "shake")
+
+m3 <- brm(formula = d ~ gender*corpus*n + (1 + gender|firstAuthor),data=d_zeroshake,cores = 4)
+
+pp_check(m3)
+summary(m3)
+conditional_effects(m3)
+```
+
+
+```{r,eval=F}
+ranef(m3, groups="firstAuthor", probs = 0.5)
+
+d_zeroshake$firstAuthor %>% unique() %>% length()
+
+m3 %>%
+  tidybayes::spread_draws(r_firstAuthor[,genderMAlE]) #%>%
+  # add the grand mean to the group-specific deviations
+  mutate(mu = b_cw_Intercept + r_site__cw) %>%
+  ungroup() %>%
+  mutate(site = str_replace_all(site, "[.]", " ")) %>% 
+  
+  # plot
+  ggplot(aes(x = mu, y = reorder(site, mu))) +
+  geom_vline(xintercept = fixef(k_fit_brms)[1, 1], color = "#839496", size = 1) +
+  geom_vline(xintercept = fixef(k_fit_brms)[1, 3:4], color = "#839496", linetype = 2) +
+  geom_halfeyeh(.width = .5, size = 2/3, fill = "#859900") +
+  labs(x = expression("Cottonwood litterfall (g/m^2)"),
+       y = "BEMP sites ordered by mean predicted litterfall") +
+  theme(panel.grid   = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y  = element_text(hjust = 0),
+        text = element_text(family = "Ubuntu")) 
+```
+
