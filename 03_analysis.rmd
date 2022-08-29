@@ -16,6 +16,12 @@ library(paletteer)
 df_fin <- read_tsv("data/df_fin_curves.tsv")
 meta <- read_tsv("data/all_stars_meta.tsv") %>% select(-yearNormalized,-corpus)
 df_res <- read_tsv("data/df_res.tsv")
+
+#d <- read_tsv("data/logodds_curves.tsv")
+
+#exp <- df_fin %>% select(char_id,d) %>% unique()
+
+#write_tsv(exp,"data/artjom_d_measure.tsv")
 ```
 
 
@@ -46,12 +52,11 @@ df_fin %>% filter(playName=="antony-and-cleopatra") %>% filter(label %in% c("Ant
 
 ### Bags of words
 
-Good news is that together with distinctiveness measure $d$ we also have the corresponding words. Here are top 30 keywords per character, 30 top distinct characters from the whole corpus.
+Good news is that together with distinctiveness measure $d$ we also have the corresponding words. Here are top 30 keywords per character, 50 top distinct characters from the whole corpus.
 
 ```{r}
 
-labs <- df_fin %>% group_by(label,d) %>% top_n(30,log_odds_weighted) %>% group_by(label,d,corpus) %>%   summarise(bag=paste(word,collapse = "_")) %>% group_by(corpus)  %>% top_n(30,d) %>% arrange(corpus)
-
+labs <- df_fin %>% left_join(meta %>% select(playName,firstAuthor),by="playName") %>% group_by(label,d) %>% top_n(30,log_odds_weighted) %>% group_by(label,playName,firstAuthor,corpus,d) %>%   summarise(bag=paste(word,collapse = "_")) %>% group_by(corpus)  %>% top_n(50,d) %>% arrange(corpus)
 
 knitr::kable(labs)
 ```
@@ -205,25 +210,39 @@ knitr::kable(df1[1:30,])
 
 ```
 
+## Formal models
 
+```{r energy dists,eval=F}
+library(brms)
 
-```{r,eval=F}
-d_df <- df_fin %>% left_join(meta,by="playName") %>% select(d,label,n,gender,corpus,yearNormalized,firstAuthor,normalizedGenre,eigenvector) %>% filter(gender %in% c("MALE","FEMALE")) %>% unique()
+#d_df <- df_fin %>% left_join(meta,by="playName") %>% select(d,label,n,gender,corpus,yearNormalized,firstAuthor,normalizedGenre,eigenvector) %>% filter(gender %in% c("MALE","FEMALE")) %>% unique()
+
+d_df <- read_csv("data/consolidated_energy.csv")
 
 ```
 
+What is the influence of character's gender on distinctiveness scores across traditions, conditioned on share of dialogue they have (sample size)? We aim at the multilevel multiple regression with partial pooling of estimates per each individual author:
+
+```
+D ~ Gender * Corpus + Size + (1 + Gender + Corpus |Author)
+```
+
+However, we also build smaller models to show that their predictions are worse (cross validation)
+
+``
+
 ```{r,eval=F}
-library(brms)
-d <- d_df %>% mutate(n=log(n),
-                     d=log(d))
+d <- d_df %>% mutate(D=VersusOther50,
+            S=PctDialog,
+            logD=log(D),
+            logS=log(S),
+            G=gender)
 
-m1 <- brm(formula = d ~ gender*corpus,data=d,cores = 4)
 
-m1_gender_size <- brm(formula = d ~ gender*corpus + n,data=d,cores = 4)
-
-pp_check(m1)
-summary(m1)
-conditional_effects(m1)
+## baseline D ~ G*corpus
+m1 <- brm(formula = D ~ G*corpus,
+          data=d,
+          cores = 4,file = )
 ```
 
 
