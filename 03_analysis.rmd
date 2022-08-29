@@ -17,8 +17,8 @@ df_fin <- read_tsv("data/df_fin_curves.tsv")
 meta <- read_tsv("data/all_stars_meta.tsv") %>% select(-yearNormalized,-corpus)
 df_res <- read_tsv("data/df_res.tsv")
 
-#d <- read_tsv("data/logodds_curves.tsv")
-
+#d <- read_tsv("data/allstars_clean.tsv")
+#paste0(d$id,d$X1) %>% unique() %>% length()
 #exp <- df_fin %>% select(char_id,d) %>% unique()
 
 #write_tsv(exp,"data/artjom_d_measure.tsv")
@@ -86,6 +86,7 @@ df_fin %>% filter(corpus=="shake") %>% select(d,char_id,label,n,gender,eigenvect
   scale_x_continuous(limits=c(150,400),expand = c(0, 0)) 
 
 ```
+
 ### Female vs. male keywords all 
 
 
@@ -94,12 +95,22 @@ library(tidylo)
 allstars <- read_tsv("data/allstars_clean.tsv") %>% 
   mutate(gender = ifelse(gender == "MAE","MALE",gender))
 
-a_tok <- allstars %>% unnest_tokens(input=cleanText, output=word) %>% group_by(corpus) %>% group_split()
+a_tok <- allstars %>%
+  unnest_tokens(input=cleanText, output=word) %>%
+  group_by(corpus) %>%
+  group_split()
+
 
 list_df <- vector(mode="list",length=length(a_tok))
 
 for (i in 1:length(a_tok)) {
   cr=a_tok[[i]]$corpus %>% unique()
+  
+#  f_words <- fr_t %>% filter(gender=="FEMALE") %>% pull(word) %>% unique()
+#  m_words <- fr_t %>% filter(gender=="MALE") %>% pull(word) %>% unique()
+  
+#  union <- intersect(f_words,m_words)
+
   
   fr_t <- a_tok[[i]] %>% filter(gender != "UNKNOWN") %>% 
   group_by(gender) %>%
@@ -119,6 +130,7 @@ for (i in 1:length(a_tok)) {
 
 
 ```
+
 Let's look at 20 most distinctive words in each corpus.  
 These are weird: women words look fine, but men words are full of toponyms and proper nouns.
 Is it a bug or a feature? If a feature, consider this: women speak less about the non-immediate world, refer to outside characters etc.? Would be consistent with "loving"/"feeling" niche for women chars.  Still, might be some log-odds failure that i don't see. 
@@ -160,6 +172,87 @@ shk <- list_df[[4]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
 knitr::kable(shk)
 ```
 
+### Female vs. male keywords, union
+
+```{r}
+library(tidylo)
+#allstars <- read_tsv("data/allstars_clean.tsv") %>% 
+#  mutate(gender = ifelse(gender == "MAE","MALE",gender))
+
+# #a_tok <- allstars %>%
+#   unnest_tokens(input=cleanText, output=word) %>%
+#   group_by(corpus) %>%
+#   group_split()
+# 
+
+list_df <- vector(mode="list",length=length(a_tok))
+
+for (i in 1:length(a_tok)) {
+  cr=a_tok[[i]]$corpus %>% unique()
+  
+  f_words <- a_tok[[i]] %>% filter(gender=="FEMALE") %>% pull(word) %>% unique()
+  m_words <- a_tok[[i]] %>% filter(gender=="MALE") %>% pull(word) %>% unique()
+  
+  union <- intersect(f_words,m_words)
+
+  
+  fr_t <- a_tok[[i]] %>% filter(gender != "UNKNOWN",
+                                word %in% union) %>% 
+  group_by(gender) %>%
+# sample_n(500000,replace=T) %>%
+  count(gender,word) %>% 
+  bind_log_odds(gender,word,n)
+
+  fr_top <- fr_t %>%
+  group_by(gender) %>%
+  top_n(200) %>% 
+  arrange(gender, -log_odds_weighted) %>% mutate(corpus=cr)
+  
+  list_df[[i]] <- fr_top
+
+}
+
+```
+
+Using words that are spoken both by men and women give clear picture: women are family, men are duty & servitude.
+
+**French (ONLY UNION WORDS):**
+
+```{r}
+fr <- list_df[[1]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(fr)
+```
+  
+
+**German (ONLY UNION WORDS):  **
+
+```{r}
+ger <- list_df[[2]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(ger)
+```  
+
+  
+**Russian (ONLY UNION WORDS):**  
+
+
+```{r}
+rus <- list_df[[3]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(rus)
+```
+
+**Shakespeare (ONLY UNION WORDS):**
+
+
+```{r}
+
+shk <- list_df[[4]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(shk)
+
+```
 
 ```{r,eval=F}
 p_fr <- fr_top %>%
