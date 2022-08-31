@@ -1,14 +1,15 @@
 ---
 title: "DIFS analysis"
 author: "Artjoms Šeļa"
-date: '2022-07-22'
+date: '2022-08-31'
 output:
-  md_document:
-    variant: markdown_github
+  github_document:
+    toc: true
+    toc_depth: 4
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,warning = F,message = F)
 library(tidyverse)
 library(ggrepel)
 library(tidytext)
@@ -25,7 +26,7 @@ df_res <- read_tsv("data/df_res.tsv")
 ```
 
 
-### Curves-under-keywords
+## Curves-under-keywords
 
 A simple, but not data-hungry approach to character distinctiveness:  
 
@@ -41,7 +42,7 @@ $N$ keywords cut-off is 100 for every character (even if there is a tie in log-o
 
 The main script for analysis is `03_logodds_curves.R`, functions sit in `src/loo_distinct.R`.  
 
-### Cleopatra & Anthony
+### Cleopatra & Anthony example
 
 Here is an example: Cleo girl has more distinctive words with values above the Anthony. Her area-under-curve would be of higher value.  
 
@@ -52,7 +53,7 @@ df_fin %>%
 ```
 
 
-### Bags of words
+### Characters' distinctive words
 
 Good news is that together with distinctiveness measure $d$ we also have the corresponding words. Here are top 30 keywords per character, 50 top distinct characters from the whole corpus.
 
@@ -72,7 +73,7 @@ df_fin %>% select(d,label,n,gender,corpus,eigenvector) %>% filter(gender %in% c(
 
 ```
 
-### Shakespeare
+### Shakespeare's characters
 
 Most distinctive characters for old fella Shake. Now, after standardizing curves at rank 100 and oversampling character, the distribution looks very similar to what we have with energy-distance bootstrapping magic.
 
@@ -137,7 +138,7 @@ Let's look at 20 most distinctive words in each corpus.
 These are weird: women words look fine, but men words are full of toponyms and proper nouns.
 Is it a bug or a feature? If a feature, consider this: women speak less about the non-immediate world, refer to outside characters etc.? Would be consistent with "loving"/"feeling" niche for women chars.  Still, might be some log-odds failure that i don't see. 
 
-**French:**
+#### French
 
 ```{r}
 fr <- list_df[[1]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -146,7 +147,7 @@ knitr::kable(fr)
 ```
   
 
-**German:  **
+#### German
 
 ```{r}
 ger <- list_df[[2]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -155,7 +156,7 @@ knitr::kable(ger)
 ```  
 
   
-**Russian:**  
+#### Russian
 
 
 ```{r}
@@ -164,7 +165,7 @@ rus <- list_df[[3]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
 knitr::kable(rus)
 ```
 
-**Shakespeare:**
+#### Shakespeare
 
 
 ```{r}
@@ -218,7 +219,7 @@ for (i in 1:length(a_tok)) {
 
 Using words that are spoken both by men and women give clear picture: women are family, men are duty & servitude.
 
-**French (ONLY UNION WORDS):**
+#### French (UNION)
 
 ```{r}
 fr <- list_df[[1]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -226,8 +227,7 @@ fr <- list_df[[1]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
 knitr::kable(fr)
 ```
   
-
-**German (ONLY UNION WORDS):  **
+#### German (UNION)
 
 ```{r}
 ger <- list_df[[2]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -236,8 +236,7 @@ knitr::kable(ger)
 ```  
 
   
-**Russian (ONLY UNION WORDS):**  
-
+#### Russian (UNION)
 
 ```{r}
 rus <- list_df[[3]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -245,8 +244,7 @@ rus <- list_df[[3]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
 knitr::kable(rus)
 ```
 
-**Shakespeare (ONLY UNION WORDS):**
-
+#### Shakespeare (UNION)
 
 ```{r}
 
@@ -278,7 +276,7 @@ write_tsv(loo_df,file="data/culled_gender_log_odds_top200.tsv")
 ```
 
   
-## Character unmasking
+## Character unmasking [deprecated]
 
 The small part of supervised "unmasking" by character. The same idea: look at how quickly accuracy (SVM, leave-one-out) curves deteriorate when you remove top performing feature, one by one.  
 
@@ -306,7 +304,7 @@ knitr::kable(df1[1:30,])
 
 ```
 
-## Formal models
+## Formal modeling
 
 ```{r energy dists}
 library(brms)

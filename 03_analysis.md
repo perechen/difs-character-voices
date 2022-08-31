@@ -1,4 +1,40 @@
-### Curves-under-keywords
+DIFS analysis
+================
+Artjoms Šeļa
+2022-08-31
+
+-   <a href="#curves-under-keywords"
+    id="toc-curves-under-keywords">Curves-under-keywords</a>
+    -   <a href="#cleopatra--anthony-example"
+        id="toc-cleopatra--anthony-example">Cleopatra &amp; Anthony example</a>
+    -   <a href="#characters-distinctive-words"
+        id="toc-characters-distinctive-words">Characters’ distinctive words</a>
+    -   <a href="#d-measure-vs-length" id="toc-d-measure-vs-length">D-measure
+        vs. length</a>
+    -   <a href="#shakespeares-characters"
+        id="toc-shakespeares-characters">Shakespeare’s characters</a>
+    -   <a href="#female-vs-male-keywords-all"
+        id="toc-female-vs-male-keywords-all">Female vs. male keywords all</a>
+        -   <a href="#french" id="toc-french">French</a>
+        -   <a href="#german" id="toc-german">German</a>
+        -   <a href="#russian" id="toc-russian">Russian</a>
+        -   <a href="#shakespeare" id="toc-shakespeare">Shakespeare</a>
+    -   <a href="#female-vs-male-keywords-union"
+        id="toc-female-vs-male-keywords-union">Female vs. male keywords,
+        union</a>
+        -   <a href="#french-union" id="toc-french-union">French (UNION)</a>
+        -   <a href="#german-union" id="toc-german-union">German (UNION)</a>
+        -   <a href="#russian-union" id="toc-russian-union">Russian (UNION)</a>
+        -   <a href="#shakespeare-union" id="toc-shakespeare-union">Shakespeare
+            (UNION)</a>
+-   <a href="#character-unmasking-deprecated"
+    id="toc-character-unmasking-deprecated">Character unmasking
+    [deprecated]</a>
+-   <a href="#formal-modeling" id="toc-formal-modeling">Formal modeling</a>
+    -   <a href="#posterior-predictions"
+        id="toc-posterior-predictions">Posterior predictions</a>
+
+## Curves-under-keywords
 
 A simple, but not data-hungry approach to character distinctiveness:
 
@@ -22,7 +58,7 @@ in log-odds rank).
 The main script for analysis is `03_logodds_curves.R`, functions sit in
 `src/loo_distinct.R`.
 
-### Cleopatra & Anthony
+### Cleopatra & Anthony example
 
 Here is an example: Cleo girl has more distinctive words with values
 above the Anthony. Her area-under-curve would be of higher value.
@@ -33,9 +69,9 @@ df_fin %>%
   filter(label %in% c("Antony_1", "Cleopatra_1")) %>%  ggplot(aes(rank,log_odds_weighted,color=label)) + geom_path() + theme_minimal() + scale_color_paletteer_d("wesanderson::Darjeeling1") + labs(x="word distinctivness rank")
 ```
 
-![](03_analysis_files/figure-markdown_github/unnamed-chunk-1-1.png)
+![](03_analysis_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
-### Bags of words
+### Characters’ distinctive words
 
 Good news is that together with distinctiveness measure *d* we also have
 the corresponding words. Here are top 30 keywords per character, 50 top
@@ -43,17 +79,12 @@ distinct characters from the whole corpus.
 
 ``` r
 labs <- df_fin %>% left_join(meta %>% select(playName,firstAuthor),by="playName") %>% group_by(label,d) %>% top_n(30,log_odds_weighted) %>% group_by(label,playName,firstAuthor,corpus,d) %>%   summarise(bag=paste(word,collapse = "_")) %>% group_by(corpus)  %>% top_n(50,d) %>% arrange(corpus)
-```
 
-    ## `summarise()` has grouped output by 'label', 'playName', 'firstAuthor',
-    ## 'corpus'. You can override using the `.groups` argument.
-
-``` r
 knitr::kable(labs)
 ```
 
 | label                           | playName                                  | firstAuthor               | corpus |        d | bag                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|:----|:-----|:----|:-|--:|:----------------------------------------------------|
+|:--------------------------------|:------------------------------------------|:--------------------------|:-------|---------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Adélaïde_2                      | maintenon-conversations                   | Maintenon                 | fre    | 313.5666 | elle_la_foi_messager_cultiver_retourne_éléonore_attend_considération_moeurs_laffaire_personneslà_bonne_ingratitude_laugmenter_rendais_adoucir_nadoucisse_protègent_torts_appelé_chères_pourrionsnous_sable_compreniez_sacheter_soublie_peut_bienfait_délassements_horreur_impraticables_intéresser_prémédité_reçoivent_remettre_songent_soyonsle                                                                                                           |
 | Alcidon_5                       | desmarets-visionnaires                    | Desmarets de Saint-Sorlin | fre    | 240.4804 | delle_rebuter_ferez_lysandre_mest_sil_contenter_questce_promesse_richesse_est_dieux_bienveillance_préférable_retirezvous_croyais_lappeler_maisons_vaillance_alliance_défense_entendu_lamitié_lépouvante_osentelles_pourvoir_précipice_refuge_vouloir_gendre                                                                                                                                                                                                |
 | Alciron_1                       | urfe-sylvanire                            | d’Urfé                    | fre    | 250.5882 | tirinte_crime_glace_supplices_aidemoi_forfait_selon_tribunal_prudence_désordres_présenté_lui_ménandre_approche_finesses_genoux_personnes_tiensla_crimes_fuseau_misères_pressé_relevonsla_souriait_suivi_la_bourbiers_fontelles_lauteur_loccasion_remettrai_souhaité_torpille                                                                                                                                                                               |
@@ -261,11 +292,9 @@ knitr::kable(labs)
 df_fin %>% select(d,label,n,gender,corpus,eigenvector) %>% filter(gender %in% c("MALE","FEMALE")) %>% unique() %>% ggplot(aes(log(n),d,color=gender)) + geom_point(size=0.5,alpha=0.5) + geom_smooth(method="gam",se=F) + facet_wrap(~corpus)  +theme_minimal() + scale_color_paletteer_d("wesanderson::Darjeeling1")
 ```
 
-    ## `geom_smooth()` using formula 'y ~ s(x, bs = "cs")'
+![](03_analysis_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-![](03_analysis_files/figure-markdown_github/unnamed-chunk-3-1.png)
-
-### Shakespeare
+### Shakespeare’s characters
 
 Most distinctive characters for old fella Shake. Now, after
 standardizing curves at rank 100 and oversampling character, the
@@ -284,7 +313,7 @@ df_fin %>% filter(corpus=="shake") %>% select(d,char_id,label,n,gender,eigenvect
   scale_x_continuous(limits=c(150,400),expand = c(0, 0)) 
 ```
 
-![](03_analysis_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](03_analysis_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ### Female vs. male keywords all
 
@@ -292,32 +321,7 @@ df_fin %>% filter(corpus=="shake") %>% select(d,char_id,label,n,gender,eigenvect
 library(tidylo)
 allstars <- read_tsv("data/allstars_clean.tsv") %>% 
   mutate(gender = ifelse(gender == "MAE","MALE",gender))
-```
 
-    ## Warning: Missing column names filled in: 'X1' [1]
-
-    ## 
-    ## ── Column specification ────────────────────────────────────────────────────────
-    ## cols(
-    ##   X1 = col_double(),
-    ##   id = col_character(),
-    ##   label = col_character(),
-    ##   isGroup = col_logical(),
-    ##   gender = col_character(),
-    ##   text = col_character(),
-    ##   betweenness = col_double(),
-    ##   degree = col_double(),
-    ##   closeness = col_double(),
-    ##   eigenvector = col_double(),
-    ##   weightedDegree = col_double(),
-    ##   corpus = col_character(),
-    ##   playName = col_character(),
-    ##   yearNormalized = col_double(),
-    ##   firstAuthor = col_character(),
-    ##   cleanText = col_character()
-    ## )
-
-``` r
 a_tok <- allstars %>%
   unnest_tokens(input=cleanText, output=word) %>%
   group_by(corpus) %>%
@@ -351,11 +355,6 @@ for (i in 1:length(a_tok)) {
 }
 ```
 
-    ## Selecting by log_odds_weighted
-
-    ## Selecting by log_odds_weightedSelecting by log_odds_weightedSelecting by
-    ## log_odds_weighted
-
 Let’s look at 20 most distinctive words in each corpus.  
 These are weird: women words look fine, but men words are full of
 toponyms and proper nouns. Is it a bug or a feature? If a feature,
@@ -364,7 +363,7 @@ outside characters etc.? Would be consistent with “loving”/“feeling”
 niche for women chars. Still, might be some log-odds failure that i
 don’t see.
 
-**French:**
+#### French
 
 ``` r
 fr <- list_df[[1]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -415,7 +414,7 @@ knitr::kable(fr)
 | MALE   | monsir      |     42 |          3.915252 | fre    |
 | MALE   | phylazie    |     42 |          3.915252 | fre    |
 
-**German: **
+#### German
 
 ``` r
 ger <- list_df[[2]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -466,7 +465,7 @@ knitr::kable(ger)
 | MALE   | tullus      |     46 |          3.659991 | ger    |
 | MALE   | torrigiano  |     45 |          3.619989 | ger    |
 
-**Russian:**
+#### Russian
 
 ``` r
 rus <- list_df[[3]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -519,7 +518,7 @@ knitr::kable(rus)
 | MALE   | согдай                   |    27 |          2.898004 | rus    |
 | MALE   | трагедии                 |    27 |          2.898004 | rus    |
 
-**Shakespeare:**
+#### Shakespeare
 
 ``` r
 shk <- list_df[[4]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -612,13 +611,10 @@ for (i in 1:length(a_tok)) {
 }
 ```
 
-    ## Selecting by log_odds_weightedSelecting by log_odds_weightedSelecting by
-    ## log_odds_weightedSelecting by log_odds_weighted
-
 Using words that are spoken both by men and women give clear picture:
 women are family, men are duty & servitude.
 
-**French (ONLY UNION WORDS):**
+#### French (UNION)
 
 ``` r
 fr <- list_df[[1]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -669,7 +665,7 @@ knitr::kable(fr)
 | MALE   | boire       |    583 |          3.635087 | fre    |
 | MALE   | soldats     |   1051 |          3.593072 | fre    |
 
-**German (ONLY UNION WORDS): **
+#### German (UNION)
 
 ``` r
 ger <- list_df[[2]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -720,7 +716,7 @@ knitr::kable(ger)
 | MALE   | hm        |   1252 |          3.374887 | ger    |
 | MALE   | majestät  |   1201 |          3.254876 | ger    |
 
-**Russian (ONLY UNION WORDS):**
+#### Russian (UNION)
 
 ``` r
 rus <- list_df[[3]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -771,7 +767,7 @@ knitr::kable(rus)
 | MALE   | по                 |  4120 |          2.784849 | rus    |
 | MALE   | слышал             |   305 |          2.750183 | rus    |
 
-**Shakespeare (ONLY UNION WORDS):**
+#### Shakespeare (UNION)
 
 ``` r
 shk <- list_df[[4]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
@@ -841,7 +837,7 @@ loo_df <- list_df %>% bind_rows()
 write_tsv(loo_df,file="data/culled_gender_log_odds_top200.tsv")
 ```
 
-## Character unmasking
+## Character unmasking \[deprecated\]
 
 The small part of supervised “unmasking” by character. The same idea:
 look at how quickly accuracy (SVM, leave-one-out) curves deteriorate
@@ -854,7 +850,7 @@ not enough data for too much resources.
 df_res %>% select(char_id,label,round,acc) %>% ggplot(aes(round,acc,color=label)) + geom_path() + theme_minimal() + scale_color_paletteer_d("basetheme::brutal") + facet_wrap(~label)
 ```
 
-![](03_analysis_files/figure-markdown_github/unnamed-chunk-17-1.png)
+![](03_analysis_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 First 30 removed features for Cleo in SVM unmasking:
 
@@ -940,44 +936,15 @@ knitr::kable(df1[1:30,])
 | imperious     |          2.023386 |
 | juice         |          2.023386 |
 
-## Formal models
+## Formal modeling
 
 ``` r
 library(brms)
-```
 
-    ## Loading required package: Rcpp
-
-    ## Loading 'brms' package (version 2.16.1). Useful instructions
-    ## can be found by typing help('brms'). A more detailed introduction
-    ## to the package is available through vignette('brms_overview').
-
-    ## 
-    ## Attaching package: 'brms'
-
-    ## The following object is masked from 'package:stats':
-    ## 
-    ##     ar
-
-``` r
 #d_df <- df_fin %>% left_join(meta,by="playName") %>% select(d,label,n,gender,corpus,yearNormalized,firstAuthor,normalizedGenre,eigenvector) %>% filter(gender %in% c("MALE","FEMALE")) %>% unique()
 
 d_df <- read_csv("data/consolidated_energy.csv")
 ```
-
-    ## Warning: Missing column names filled in: 'X1' [1]
-
-    ## 
-    ## ── Column specification ────────────────────────────────────────────────────────
-    ## cols(
-    ##   .default = col_double(),
-    ##   Char = col_character(),
-    ##   Play = col_character(),
-    ##   gender = col_character(),
-    ##   firstAuthor = col_character(),
-    ##   corpus = col_character()
-    ## )
-    ## ℹ Use `spec()` for the full column specifications.
 
 What is the influence of character’s gender on distinctiveness scores
 across traditions, conditioned on share of dialogue they have (sample
@@ -1299,7 +1266,7 @@ knitr::kable(df_loo2,digits = 2)
 ```
 
 |                                                          | elpd_diff | se_diff |
-|:-----------------------------------------------------|---------:|-------:|
+|:---------------------------------------------------------|----------:|--------:|
 | G \* corpus + corpus \*(S + I(S^2)) + (1\|Play)          |      0.00 |    0.00 |
 | G \* corpus + corpus \* (logS + I(logS^2)) + (1 \| Play) |   -209.15 |   45.34 |
 | G \* corpus + corpus \* logS + (1 \| Play)               |   -278.79 |   64.83 |
@@ -1314,16 +1281,6 @@ relationship, log-transformed D.
 
 ``` r
 library(tidybayes)
-```
-
-    ## 
-    ## Attaching package: 'tidybayes'
-
-    ## The following objects are masked from 'package:brms':
-    ## 
-    ##     dstudent_t, pstudent_t, qstudent_t, rstudent_t
-
-``` r
 library(modelr)
 
 
@@ -1376,13 +1333,6 @@ character size (dialogue share of 0.21).
 
 ``` r
 library(showtext)
-```
-
-    ## Loading required package: sysfonts
-
-    ## Loading required package: showtextdb
-
-``` r
 #showtext::font_add_google("Abel", "fnt")
 #showtext::showtext_auto()
 
@@ -1413,7 +1363,7 @@ post_est %>% left_join(labs,by="corpus") %>% ggplot(aes(exp(.epred),)) +
 )
 ```
 
-![](03_analysis_files/figure-markdown_github/posterior%20plot%20grand%20mean-1.png)
+![](03_analysis_files/figure-gfm/posterior%20plot%20grand%20mean-1.png)<!-- -->
 
 ``` r
 ggsave("posterior_grand_means.png",width = 5,height = 5,units ="in",dpi = 600)
@@ -1430,12 +1380,7 @@ post_marg <- d %>%
   add_epred_draws(m7ldq,allow_new_levels=T,ndraws = 6000) %>% 
   group_by(corpus, G) %>% 
   summarize(Q2.5=quantile(.epred,0.025),Q97.5=quantile(.epred,0.975),.epred=mean(.epred))
-```
 
-    ## `summarise()` has grouped output by 'corpus'. You can override using the
-    ## `.groups` argument.
-
-``` r
 post_marg %>% 
   left_join(labs) %>% 
   ggplot(aes(G, exp(.epred))) +
@@ -1467,16 +1412,8 @@ post_marg %>%
 ) + labs(title="Posterior predictions, marginal of plays",y="Distinctiveness",x=NULL)
 ```
 
-    ## Joining, by = "corpus"
-
-    ## Warning: Ignoring unknown parameters: height
-
-    ## Warning: Removed 5 rows containing missing values (geom_point).
-
-![](03_analysis_files/figure-markdown_github/posterior%20plot%20marginal%20of%20plays-1.png)
+![](03_analysis_files/figure-gfm/posterior%20plot%20marginal%20of%20plays-1.png)<!-- -->
 
 ``` r
 ggsave("posterior_marginal_means.png",width = 5,height = 5,unit="in")
 ```
-
-    ## Warning: Removed 5 rows containing missing values (geom_point).
