@@ -28,7 +28,9 @@ Here is an example: Cleo girl has more distinctive words with values
 above the Anthony. Her area-under-curve would be of higher value.
 
 ``` r
-df_fin %>% filter(playName=="antony-and-cleopatra") %>% filter(label %in% c("Antony_1", "Cleopatra_1")) %>%  ggplot(aes(rank,log_odds_weighted,color=label)) + geom_path() + theme_minimal() + scale_color_paletteer_d("wesanderson::Darjeeling1") + labs(x="word distinctivness rank")
+df_fin %>% 
+  filter(playName=="antony-and-cleopatra") %>% 
+  filter(label %in% c("Antony_1", "Cleopatra_1")) %>%  ggplot(aes(rank,log_odds_weighted,color=label)) + geom_path() + theme_minimal() + scale_color_paletteer_d("wesanderson::Darjeeling1") + labs(x="word distinctivness rank")
 ```
 
 ![](03_analysis_files/figure-markdown_github/unnamed-chunk-1-1.png)
@@ -282,8 +284,9 @@ df_fin %>% filter(corpus=="shake") %>% select(d,char_id,label,n,gender,eigenvect
   scale_x_continuous(limits=c(150,400),expand = c(0, 0)) 
 ```
 
-![](03_analysis_files/figure-markdown_github/unnamed-chunk-4-1.png) \###
-Female vs. male keywords all
+![](03_analysis_files/figure-markdown_github/unnamed-chunk-4-1.png)
+
+### Female vs. male keywords all
 
 ``` r
 library(tidylo)
@@ -315,12 +318,22 @@ allstars <- read_tsv("data/allstars_clean.tsv") %>%
     ## )
 
 ``` r
-a_tok <- allstars %>% unnest_tokens(input=cleanText, output=word) %>% group_by(corpus) %>% group_split()
+a_tok <- allstars %>%
+  unnest_tokens(input=cleanText, output=word) %>%
+  group_by(corpus) %>%
+  group_split()
+
 
 list_df <- vector(mode="list",length=length(a_tok))
 
 for (i in 1:length(a_tok)) {
   cr=a_tok[[i]]$corpus %>% unique()
+  
+#  f_words <- fr_t %>% filter(gender=="FEMALE") %>% pull(word) %>% unique()
+#  m_words <- fr_t %>% filter(gender=="MALE") %>% pull(word) %>% unique()
+  
+#  union <- intersect(f_words,m_words)
+
   
   fr_t <- a_tok[[i]] %>% filter(gender != "UNKNOWN") %>% 
   group_by(gender) %>%
@@ -558,6 +571,257 @@ knitr::kable(shk)
 | MALE   | delicate  |   22 |          2.356359 | shake  |
 | MALE   | island    |   22 |          2.356359 | shake  |
 
+### Female vs. male keywords, union
+
+``` r
+library(tidylo)
+#allstars <- read_tsv("data/allstars_clean.tsv") %>% 
+#  mutate(gender = ifelse(gender == "MAE","MALE",gender))
+
+# #a_tok <- allstars %>%
+#   unnest_tokens(input=cleanText, output=word) %>%
+#   group_by(corpus) %>%
+#   group_split()
+# 
+
+list_df <- vector(mode="list",length=length(a_tok))
+
+for (i in 1:length(a_tok)) {
+  cr=a_tok[[i]]$corpus %>% unique()
+  
+  f_words <- a_tok[[i]] %>% filter(gender=="FEMALE") %>% pull(word) %>% unique()
+  m_words <- a_tok[[i]] %>% filter(gender=="MALE") %>% pull(word) %>% unique()
+  
+  union <- intersect(f_words,m_words)
+
+  
+  fr_t <- a_tok[[i]] %>% filter(gender != "UNKNOWN",
+                                word %in% union) %>% 
+  group_by(gender) %>%
+# sample_n(500000,replace=T) %>%
+  count(gender,word) %>% 
+  bind_log_odds(gender,word,n)
+
+  fr_top <- fr_t %>%
+  group_by(gender) %>%
+  top_n(200) %>% 
+  arrange(gender, -log_odds_weighted) %>% mutate(corpus=cr)
+  
+  list_df[[i]] <- fr_top
+
+}
+```
+
+    ## Selecting by log_odds_weightedSelecting by log_odds_weightedSelecting by
+    ## log_odds_weightedSelecting by log_odds_weighted
+
+Using words that are spoken both by men and women give clear picture:
+women are family, men are duty & servitude.
+
+**French (ONLY UNION WORDS):**
+
+``` r
+fr <- list_df[[1]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(fr)
+```
+
+| gender | word        |      n | log_odds_weighted | corpus |
+|:-------|:------------|-------:|------------------:|:-------|
+| FEMALE | vous        |  88367 |         10.922341 | fre    |
+| FEMALE | époux       |   2423 |          9.449338 | fre    |
+| FEMALE | mère        |   3007 |          8.785122 | fre    |
+| FEMALE | amant       |   2359 |          7.620155 | fre    |
+| FEMALE | mari        |   1512 |          7.575350 | fre    |
+| FEMALE | tante       |    751 |          7.313183 | fre    |
+| FEMALE | hélas       |   3323 |          7.278556 | fre    |
+| FEMALE | coeur       |  11467 |          7.218449 | fre    |
+| FEMALE | rivale      |    438 |          7.202716 | fre    |
+| FEMALE | ne          |  48364 |          6.941403 | fre    |
+| FEMALE | malheureuse |    730 |          6.863201 | fre    |
+| FEMALE | quil        |  16404 |          6.527935 | fre    |
+| FEMALE | mon         |  35529 |          6.323795 | fre    |
+| FEMALE | me          |  34482 |          5.892135 | fre    |
+| FEMALE | maman       |    403 |          5.592060 | fre    |
+| FEMALE | frère       |   2627 |          5.372104 | fre    |
+| FEMALE | fâchée      |    287 |          5.358094 | fre    |
+| FEMALE | père        |   6178 |          5.290088 | fre    |
+| FEMALE | obligée     |    233 |          5.160761 | fre    |
+| FEMALE | sûre        |    457 |          5.120304 | fre    |
+| MALE   | diable      |   2052 |          7.548416 | fre    |
+| MALE   | la          | 115947 |          7.246034 | fre    |
+| MALE   | ami         |   3976 |          6.233176 | fre    |
+| MALE   | les         |  63923 |          6.039888 | fre    |
+| MALE   | parbleu     |    835 |          5.998755 | fre    |
+| MALE   | maître      |   5075 |          5.347651 | fre    |
+| MALE   | morbleu     |    567 |          4.738232 | fre    |
+| MALE   | des         |  40774 |          4.542901 | fre    |
+| MALE   | amis        |   2402 |          4.423713 | fre    |
+| MALE   | morgué      |    418 |          4.402767 | fre    |
+| MALE   | serviteur   |    617 |          4.291651 | fre    |
+| MALE   | belle       |   4263 |          4.273433 | fre    |
+| MALE   | vin         |    938 |          4.086148 | fre    |
+| MALE   | un          |  65714 |          4.074854 | fre    |
+| MALE   | heureux     |   3963 |          3.830322 | fre    |
+| MALE   | leur        |  10915 |          3.681728 | fre    |
+| MALE   | rome        |   2149 |          3.680988 | fre    |
+| MALE   | peuple      |   2295 |          3.651905 | fre    |
+| MALE   | boire       |    583 |          3.635087 | fre    |
+| MALE   | soldats     |   1051 |          3.593072 | fre    |
+
+**German (ONLY UNION WORDS): **
+
+``` r
+ger <- list_df[[2]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(ger)
+```
+
+| gender | word      |      n | log_odds_weighted | corpus |
+|:-------|:----------|-------:|------------------:|:-------|
+| FEMALE | ach       |   5228 |         17.000605 | ger    |
+| FEMALE | o         |   6761 |         11.173215 | ger    |
+| FEMALE | du        |  29294 |          9.869245 | ger    |
+| FEMALE | vater     |   4218 |          9.530538 | ger    |
+| FEMALE | mutter    |   2891 |          9.295571 | ger    |
+| FEMALE | er        |  22471 |          9.113452 | ger    |
+| FEMALE | mich      |  19701 |          8.613309 | ger    |
+| FEMALE | liebe     |   3907 |          8.251331 | ger    |
+| FEMALE | mama      |    571 |          7.881221 | ger    |
+| FEMALE | papa      |    570 |          7.286438 | ger    |
+| FEMALE | nein      |   4706 |          7.073051 | ger    |
+| FEMALE | dat       |   1059 |          7.060409 | ger    |
+| FEMALE | mein      |  12106 |          6.850281 | ger    |
+| FEMALE | herz      |   3130 |          6.812226 | ger    |
+| FEMALE | gemahl    |    420 |          6.754782 | ger    |
+| FEMALE | gott      |   4176 |          6.455362 | ger    |
+| FEMALE | geliebter |    283 |          6.382453 | ger    |
+| FEMALE | kind      |   2338 |          6.314491 | ger    |
+| FEMALE | ihn       |   8134 |          6.235133 | ger    |
+| FEMALE | lieber    |   2281 |          6.028521 | ger    |
+| MALE   | der       | 114936 |          8.410959 | ger    |
+| MALE   | die       | 120529 |          6.166370 | ger    |
+| MALE   | teufel    |   2396 |          5.682913 | ger    |
+| MALE   | und       | 137359 |          4.749821 | ger    |
+| MALE   | ein       |  54227 |          4.568084 | ger    |
+| MALE   | des       |  20107 |          4.425695 | ger    |
+| MALE   | in        |  59348 |          4.220280 | ger    |
+| MALE   | den       |  53775 |          4.210832 | ger    |
+| MALE   | kerl      |   1464 |          4.175063 | ger    |
+| MALE   | kaiser    |   1347 |          3.791389 | ger    |
+| MALE   | ihr       |  36694 |          3.778224 | ger    |
+| MALE   | euch      |  15859 |          3.703769 | ger    |
+| MALE   | auf       |  32517 |          3.698915 | ger    |
+| MALE   | dem       |  31597 |          3.571038 | ger    |
+| MALE   | wir       |  26400 |          3.495490 | ger    |
+| MALE   | könig     |   3117 |          3.482915 | ger    |
+| MALE   | sache     |   2147 |          3.401119 | ger    |
+| MALE   | also      |   5735 |          3.383479 | ger    |
+| MALE   | hm        |   1252 |          3.374887 | ger    |
+| MALE   | majestät  |   1201 |          3.254876 | ger    |
+
+**Russian (ONLY UNION WORDS):**
+
+``` r
+rus <- list_df[[3]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(rus)
+```
+
+| gender | word               |     n | log_odds_weighted | corpus |
+|:-------|:-------------------|------:|------------------:|:-------|
+| FEMALE | ах                 |  2134 |         10.615768 | rus    |
+| FEMALE | сама               |   662 |          7.466309 | rus    |
+| FEMALE | батюшка            |   597 |          7.016355 | rus    |
+| FEMALE | рада               |   242 |          6.089573 | rus    |
+| FEMALE | думала             |   202 |          5.840789 | rus    |
+| FEMALE | он                 |  5268 |          5.337862 | rus    |
+| FEMALE | хотела             |   219 |          5.292427 | rus    |
+| FEMALE | вы                 |  6625 |          5.142030 | rus    |
+| FEMALE | видела             |   173 |          4.887178 | rus    |
+| FEMALE | сказала            |   234 |          4.813223 | rus    |
+| FEMALE | знала              |   166 |          4.772802 | rus    |
+| FEMALE | слышала            |   139 |          4.730165 | rus    |
+| FEMALE | мой                |  2245 |          4.653637 | rus    |
+| FEMALE | была               |   674 |          4.631384 | rus    |
+| FEMALE | виновата           |   154 |          4.629598 | rus    |
+| FEMALE | уж                 |  2672 |          4.506946 | rus    |
+| FEMALE | должна             |   307 |          4.388746 | rus    |
+| FEMALE | говорила           |   164 |          4.322428 | rus    |
+| FEMALE | могла              |   227 |          4.205737 | rus    |
+| FEMALE | говорите           |   394 |          3.962232 | rus    |
+| MALE   | в                  | 23687 |          4.638528 | rus    |
+| MALE   | брат               |   988 |          4.177212 | rus    |
+| MALE   | сам                |  1937 |          4.015236 | rus    |
+| MALE   | черт               |   563 |          3.838121 | rus    |
+| MALE   | ваше               |  1268 |          3.770683 | rus    |
+| MALE   | позвольте          |   832 |          3.595252 | rus    |
+| MALE   | был                |  2308 |          3.431583 | rus    |
+| MALE   | рад                |   518 |          3.364096 | rus    |
+| MALE   | государь           |   742 |          3.304009 | rus    |
+| MALE   | ее                 |  2708 |          3.031995 | rus    |
+| MALE   | должен             |   916 |          3.015210 | rus    |
+| MALE   | превосходительство |   369 |          2.955875 | rus    |
+| MALE   | хотел              |   595 |          2.893118 | rus    |
+| MALE   | думал              |   334 |          2.884964 | rus    |
+| MALE   | помилуйте          |   466 |          2.882391 | rus    |
+| MALE   | царь               |   543 |          2.859047 | rus    |
+| MALE   | на                 | 13351 |          2.818203 | rus    |
+| MALE   | и                  | 37336 |          2.785276 | rus    |
+| MALE   | по                 |  4120 |          2.784849 | rus    |
+| MALE   | слышал             |   305 |          2.750183 | rus    |
+
+**Shakespeare (ONLY UNION WORDS):**
+
+``` r
+shk <- list_df[[4]] %>% group_by(gender) %>% top_n(20,log_odds_weighted)
+
+knitr::kable(shk)
+```
+
+| gender | word     |     n | log_odds_weighted | corpus |
+|:-------|:---------|------:|------------------:|:-------|
+| FEMALE | husband  |   137 |         4.2371431 | shake  |
+| FEMALE | you      |  2606 |         3.2977347 | shake  |
+| FEMALE | alas     |    96 |         3.0545398 | shake  |
+| FEMALE | love     |   438 |         2.6303412 | shake  |
+| FEMALE | husbands |    33 |         2.3910452 | shake  |
+| FEMALE | me       |  1364 |         2.2886740 | shake  |
+| FEMALE | romeo    |    59 |         2.2858673 | shake  |
+| FEMALE | lysander |    27 |         2.2348173 | shake  |
+| FEMALE | willow   |    20 |         2.1370052 | shake  |
+| FEMALE | pisanio  |    19 |         2.0691963 | shake  |
+| FEMALE | sister   |    62 |         1.9788899 | shake  |
+| FEMALE | nerissa  |    15 |         1.9302528 | shake  |
+| FEMALE | yours    |    68 |         1.8440060 | shake  |
+| FEMALE | o        |   488 |         1.8392408 | shake  |
+| FEMALE | pray     |   183 |         1.8001741 | shake  |
+| FEMALE | mother   |    74 |         1.7857193 | shake  |
+| FEMALE | nurse    |    35 |         1.7728229 | shake  |
+| FEMALE | i        |  3406 |         1.7470566 | shake  |
+| FEMALE | woman    |    90 |         1.7141532 | shake  |
+| FEMALE | malvolio |    19 |         1.7057371 | shake  |
+| MALE   | the      | 13337 |         3.1875799 | shake  |
+| MALE   | of       |  7981 |         1.8584946 | shake  |
+| MALE   | this     |  3628 |         1.7695127 | shake  |
+| MALE   | sir      |  1820 |         1.6787990 | shake  |
+| MALE   | and      | 12243 |         1.6781261 | shake  |
+| MALE   | we       |  1679 |         1.6412173 | shake  |
+| MALE   | king     |   587 |         1.5460747 | shake  |
+| MALE   | our      |  1388 |         1.4120784 | shake  |
+| MALE   | their    |   963 |         1.3087625 | shake  |
+| MALE   | duke     |   269 |         1.2499358 | shake  |
+| MALE   | three    |   222 |         1.1076370 | shake  |
+| MALE   | her      |  2409 |         1.0667446 | shake  |
+| MALE   | to       |  9541 |         0.9944790 | shake  |
+| MALE   | whom     |   248 |         0.9906240 | shake  |
+| MALE   | lordship |    87 |         0.9676718 | shake  |
+| MALE   | in       |  5522 |         0.9538840 | shake  |
+| MALE   | stand    |   303 |         0.9478749 | shake  |
+| MALE   | noble    |   303 |         0.9221658 | shake  |
+| MALE   | ha       |   127 |         0.9089444 | shake  |
+| MALE   | dog      |    90 |         0.8897595 | shake  |
+
 ``` r
 p_fr <- fr_top %>%
  arrange(gender, log_odds_weighted) %>%
@@ -573,7 +837,8 @@ p_fr <- fr_top %>%
 
 loo_df <- list_df %>% bind_rows()
 
-write_tsv(loo_df,file="data/gender_log_odds_top200.tsv")
+#write_tsv(loo_df,file="data/gender_log_odds_top200.tsv")
+write_tsv(loo_df,file="data/culled_gender_log_odds_top200.tsv")
 ```
 
 ## Character unmasking
@@ -589,7 +854,7 @@ not enough data for too much resources.
 df_res %>% select(char_id,label,round,acc) %>% ggplot(aes(round,acc,color=label)) + geom_path() + theme_minimal() + scale_color_paletteer_d("basetheme::brutal") + facet_wrap(~label)
 ```
 
-![](03_analysis_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](03_analysis_files/figure-markdown_github/unnamed-chunk-17-1.png)
 
 First 30 removed features for Cleo in SVM unmasking:
 
@@ -679,87 +944,539 @@ knitr::kable(df1[1:30,])
 
 ``` r
 library(brms)
+```
 
+    ## Loading required package: Rcpp
+
+    ## Loading 'brms' package (version 2.16.1). Useful instructions
+    ## can be found by typing help('brms'). A more detailed introduction
+    ## to the package is available through vignette('brms_overview').
+
+    ## 
+    ## Attaching package: 'brms'
+
+    ## The following object is masked from 'package:stats':
+    ## 
+    ##     ar
+
+``` r
 #d_df <- df_fin %>% left_join(meta,by="playName") %>% select(d,label,n,gender,corpus,yearNormalized,firstAuthor,normalizedGenre,eigenvector) %>% filter(gender %in% c("MALE","FEMALE")) %>% unique()
 
 d_df <- read_csv("data/consolidated_energy.csv")
 ```
 
+    ## Warning: Missing column names filled in: 'X1' [1]
+
+    ## 
+    ## ── Column specification ────────────────────────────────────────────────────────
+    ## cols(
+    ##   .default = col_double(),
+    ##   Char = col_character(),
+    ##   Play = col_character(),
+    ##   gender = col_character(),
+    ##   firstAuthor = col_character(),
+    ##   corpus = col_character()
+    ## )
+    ## ℹ Use `spec()` for the full column specifications.
+
 What is the influence of character’s gender on distinctiveness scores
 across traditions, conditioned on share of dialogue they have (sample
 size)? We aim at the multilevel multiple regression with partial pooling
-of estimates per each individual author:
+of estimates per each individual play. We allow interaction by corpus to
+have one cross-linguistic model that makes compatible predictions for
+different traditions.
 
-    D ~ Gender * Corpus + Size + (1 + Gender + Corpus |Author)
+We assume D is following normal distribution (it is a harsh
+simplification, because D is squeezed to 0, so allow some posterior
+distribution values to be below 0, but we can live with it in this
+context). We also use quadratic term for Size, because the relationship
+between D and Size is U-shaped and non-linear.
 
-However, we also build smaller models to show that their predictions are
-worse (cross validation)
+    Dinstinctivness ~ Gender * Corpus + Size * Corpus + I(Size^2) + (1|Play)
 
-\`\`
+We also build smaller models to show that their predictions are worse
+(cross validation).
+
+**NB** Some models are too large to be uploaded to github. Be prepared
+fitting them if you ever want to run this stuff.
+
+Without log-trasnformation:
 
 ``` r
-d <- d_df %>% mutate(D=VersusOther50,
-            S=PctDialog,
-            logD=log(D),
-            logS=log(S),
+library(patchwork)
+
+
+
+
+d <- d_df %>%
+  filter(gender != "UNKNOWN") %>% 
+  mutate(D=VersusOther50, # distinctiveness
+            S=PctDialog, # char size
+            logD=log(D), # log D
+            logS=log(S), # log S
+            sD=scale(D), # standardize D
+            sS=scale(S), # standardize S
             G=gender)
 
 
 ## baseline D ~ G*corpus
-m1 <- brm(formula = D ~ G*corpus,
-          data=d,
-          cores = 4,file = )
+m1_dg <- brm(formula = D ~ G*corpus,
+             data=d,
+             cores = 4,
+             chains=4,
+             file = "models/m1_dg")
+
+## multiple regression: add effect of Size
+m2_dgs <- brm(formula = D ~ G*corpus + S,
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m2_dgs")
+
+## multiple multilevel: allow intercept estimates for authors
+m3_dgsa <- brm(formula = D ~ G*corpus + S + (1|firstAuthor),
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m3_dgsa")
+
+## multiple multilevel 1.1: size by corpus interaction
+m3.1_dgsac <- brm(formula = D ~ G*corpus + S*corpus + (1|firstAuthor),
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m3.1_dgsac")
+
+## multiple multilevel: use estimates for individual plays instead of authors (shake corpus = 1 author)
+m3.2_dgpsc <- brm(formula = D ~ G*corpus + S*corpus + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m3.2_dgpsc")
+
+
+## multiple multilevel 2: allow Gender diffs for authors, too
+m4_dgsag <- brm(formula = D ~ G*corpus + S + (1 + G|firstAuthor),
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m4_dgsag")
+## multiple multilevel 3: allow Gender and corpus diffs for authors (might be stupid)
+m5_dgsagc <- brm(formula = D ~ G*corpus + S + (1 + G + corpus|firstAuthor),
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m5_dgsagc")
+
+## multiple multilevel 4, quadratic term for size (since D~S is U-shaped)
+m6_dgsaq <- brm(formula = D ~ G*corpus + S + I(S^2) + (1|firstAuthor),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 2000,
+             max_treedepth=15,
+             family="gaussian",
+             file = "models/m6_dgsaq")
+
+## FIN multiple multilevel final: allowing corpus diff for quadratic S, group effect for plays
+m7_dgsci <- brm(formula = D ~ G*corpus + corpus*(S + I(S^2))  + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 3000,
+             family="gaussian",
+             file = "models/m7_dgsci")
 ```
+
+Models for logged / scaled data. A technical decision: less influence of
+outliers, model samples better, chains do not act super crazy.
 
 ``` r
-plot(d$n,d$d)
+## log S, log D model, linear S~D would be enough 
+m7l <- brm(formula = logD ~ G*corpus + corpus*logS  + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 3000,
+             family="gaussian",
+             file = "models/m7l")
 
-pp_check(m1_gender_size)
-summary(m1_gender_size)
-conditional_effects(m1_gender_size, "gender:corpus")
+## log D and log S, quadratic term for S~D
+m7lq <- brm(formula = logD ~ G*corpus + corpus*(logS + I(logS^2))  + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 3000,
+             family="gaussian",
+             file = "models/m7lq")
+
+## only D is log-transformed, linear rel
+m7ld <- brm(formula = logD ~ G*corpus + corpus*S  + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 3000,
+             family="gaussian",
+             file = "models/m7ld")
+
+
+## only D is log-transformed, quadratic term
+m7ldq <- brm(formula = logD ~ G*corpus + corpus*(S + I(S^2))  + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 3000,
+             family="gaussian",
+             file = "models/m7ldq")
+
+## all models with group-level effects are better, but allowing random slopes for authors was, indeed, stupid. The difference between the most heavy model and intercept-only model is small
 ```
+
+Cross-validation. No D transformation.
 
 ``` r
-m2 <- brm(formula = d ~ gender*corpus + gender*n,data=d,cores = 4)
+## outliers do kick our ass a little (pareto k), but let's power through them
+
+## saving the results of cross-validation for quicker knitting
+
+#loo_res <- loo(m1_dg, m2_dgs, m3_dgsa,m3.1_dgsac, m3.2_dgpsc,m4_dgsag, m5_dgsagc,m6_dgsaq,m7_dgsci)
+
+#loo_log <- loo(m7l, m7lq, m7ldq,m7ld)
+loo_res <- readRDS("models/loo_res.rds")
+loo_log <- readRDS("models/loo_log.rds")
+#saveRDS(loo_res, "models/loo_res.rds")
+#saveRDS(loo_log, "models/loo_log.rds")
+rn <- c("G\\*corpus + corpus\\*(S + I(S^2))  + (1|Play)", 
+        "G\\*corpus + S\\*corpus + (1|Play)",
+        "G\\*corpus + S + I(S^2) + (1|firstAuthor)",
+        "G\\*corpus + S\\*corpus + (1|firstAuthor)",
+        "G\\*corpus + S + (1 + G + corpus|firstAuthor)",
+        "G\\*corpus + S\\*corpus + (1|Play)",
+        "G\\*corpus + S + (1 + G|firstAuthor)",
+        "G\\*corpus + S",
+        "G\\*corpus"
+        )
+df_loo1 <- loo_res$diffs[,1:2]
+rownames(df_loo1) <- rn
+knitr::kable(df_loo1,format = "html",digits = 2)
 ```
+
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+elpd_diff
+</th>
+<th style="text-align:right;">
+se_diff
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+G\*corpus + corpus\*(S + I(S^2)) + (1\|Play)
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+G\*corpus + S\*corpus + (1\|Play)
+</td>
+<td style="text-align:right;">
+-5.94
+</td>
+<td style="text-align:right;">
+136.47
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+G\*corpus + S + I(S^2) + (1\|firstAuthor)
+</td>
+<td style="text-align:right;">
+-84.90
+</td>
+<td style="text-align:right;">
+68.28
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+G\*corpus + S\*corpus + (1\|firstAuthor)
+</td>
+<td style="text-align:right;">
+-106.84
+</td>
+<td style="text-align:right;">
+310.13
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+G\*corpus + S + (1 + G + corpus\|firstAuthor)
+</td>
+<td style="text-align:right;">
+-131.52
+</td>
+<td style="text-align:right;">
+319.46
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+G\*corpus + S\*corpus + (1\|Play)
+</td>
+<td style="text-align:right;">
+-132.62
+</td>
+<td style="text-align:right;">
+320.68
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+G\*corpus + S + (1 + G\|firstAuthor)
+</td>
+<td style="text-align:right;">
+-138.56
+</td>
+<td style="text-align:right;">
+315.16
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+G\*corpus + S
+</td>
+<td style="text-align:right;">
+-759.61
+</td>
+<td style="text-align:right;">
+267.87
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+G\*corpus
+</td>
+<td style="text-align:right;">
+-811.52
+</td>
+<td style="text-align:right;">
+200.83
+</td>
+</tr>
+</tbody>
+</table>
+
+Cross-validation. Log-transformed D.
 
 ``` r
-pp_check(m2)
-summary(m2)
-conditional_effects(m2)
+rn <- c("G \\* corpus + corpus\\ *(S + I(S^2))  + (1|Play)",
+        "G \\* corpus + corpus \\* (logS + I(logS^2)) + (1 | Play) ",
+        "G \\* corpus + corpus \\* logS + (1 | Play) ",
+        "G * corpus + corpus * S + (1 | Play) "
+        )
+
+df_loo2 <- loo_log$diffs[,1:2]
+rownames(df_loo2) <- rn
+
+knitr::kable(df_loo2,digits = 2)
 ```
+
+|                                                          | elpd_diff | se_diff |
+|:-----------------------------------------------------|---------:|-------:|
+| G \* corpus + corpus \*(S + I(S^2)) + (1\|Play)          |      0.00 |    0.00 |
+| G \* corpus + corpus \* (logS + I(logS^2)) + (1 \| Play) |   -209.15 |   45.34 |
+| G \* corpus + corpus \* logS + (1 \| Play)               |   -278.79 |   64.83 |
+| G \* corpus + corpus \* S + (1 \| Play)                  |   -577.87 |   89.16 |
+
+### Posterior predictions
+
+We predict global average D (“grand mean”) across genders for median
+character size (dialogue share of 0.21), using final `m7ldq` model:
+group-level effects for plays, quadratic term for corpus\*S
+relationship, log-transformed D.
 
 ``` r
-d_zeroshake <- d %>% filter(corpus != "shake")
-
-m3 <- brm(formula = d ~ gender*corpus*n + (1 + gender|firstAuthor),data=d_zeroshake,cores = 4)
-
-pp_check(m3)
-summary(m3)
-conditional_effects(m3)
+library(tidybayes)
 ```
+
+    ## 
+    ## Attaching package: 'tidybayes'
+
+    ## The following objects are masked from 'package:brms':
+    ## 
+    ##     dstudent_t, pstudent_t, qstudent_t, rstudent_t
 
 ``` r
-ranef(m3, groups="firstAuthor", probs = 0.5)
+library(modelr)
 
-d_zeroshake$firstAuthor %>% unique() %>% length()
 
-m3 %>%
-  tidybayes::spread_draws(r_firstAuthor[,genderMAlE]) #%>%
-  # add the grand mean to the group-specific deviations
-  mutate(mu = b_cw_Intercept + r_site__cw) %>%
-  ungroup() %>%
-  mutate(site = str_replace_all(site, "[.]", " ")) %>% 
-  
-  # plot
-  ggplot(aes(x = mu, y = reorder(site, mu))) +
-  geom_vline(xintercept = fixef(k_fit_brms)[1, 1], color = "#839496", size = 1) +
-  geom_vline(xintercept = fixef(k_fit_brms)[1, 3:4], color = "#839496", linetype = 2) +
-  geom_halfeyeh(.width = .5, size = 2/3, fill = "#859900") +
-  labs(x = expression("Cottonwood litterfall (g/m^2)"),
-       y = "BEMP sites ordered by mean predicted litterfall") +
-  theme(panel.grid   = element_blank(),
-        axis.ticks.y = element_blank(),
-        axis.text.y  = element_text(hjust = 0),
-        text = element_text(family = "Ubuntu")) 
+
+## model fits (grand means) for average character size
+# fits <- conditional_effects(m7ldq,"G:corpus")
+# fits$`G:corpus` %>% ggplot(aes(G, estimate__,color=G)) + 
+#   geom_point() + 
+#   geom_errorbar(aes(ymin=lower__,ymax=upper__),width=0.1) + 
+#   facet_wrap(~corpus)
+plt <- paletteer::paletteer_d("ggsci::category10_d3")
+
+## predict for median char size (marginal of plays)
+m <- median(d$S)
+
+set.seed(1989)
+post_est <- d %>%
+  data_grid(corpus,G,S=m,Play=NA) %>%
+  add_epred_draws(m7ldq,allow_new_levels=T,re_formula = NA,ndraws = 6000) %>% 
+  group_by(corpus, G) #%>% 
+  #summarize(Q2.5=quantile(.epred,0.025),Q97.5=quantile(.epred,0.975),.epred=mean(.epred)) 
+labs <- tibble(corpus=post_est$corpus %>% unique(),labs= c("French","German", "Russian", "Shakespeare"))
 ```
+
+Difference between genders, directly from posterior prediction:
+
+``` r
+## calculate diffs directly from posterior
+
+set.seed(1989)
+g_diff <- post_est %>%
+  select(corpus,G,.epred) %>%
+  mutate(id=row_number(),.epred=exp(.epred)) %>%
+  pivot_wider(names_from = "G",values_from = ".epred") %>% 
+  mutate(diff = FEMALE - MALE) %>% group_by(corpus) %>%
+  summarize(Q2.5=quantile(diff,0.025),Q97.5=quantile(diff,0.975),.epred=mean(diff)) %>% rename(mean_diff=.epred) %>%
+  select(corpus,mean_diff, Q2.5, Q97.5)
+knitr::kable(g_diff,digits = 3)
+```
+
+| corpus | mean_diff |  Q2.5 | Q97.5 |
+|:-------|----------:|------:|------:|
+| fre    |     0.009 | 0.006 | 0.011 |
+| ger    |     0.017 | 0.014 | 0.020 |
+| rus    |     0.024 | 0.015 | 0.034 |
+| shake  |     0.012 | 0.005 | 0.021 |
+
+We predict global average D (“grand mean”) across genders for median
+character size (dialogue share of 0.21).
+
+``` r
+library(showtext)
+```
+
+    ## Loading required package: sysfonts
+
+    ## Loading required package: showtextdb
+
+``` r
+#showtext::font_add_google("Abel", "fnt")
+#showtext::showtext_auto()
+
+post_est %>% left_join(labs,by="corpus") %>% ggplot(aes(exp(.epred),)) +
+  geom_density(aes(fill=G,color=G),alpha=0.6) +
+  facet_wrap(~labs) + labs(title="Posterior predictions, estimates of global grand mean",x="Distinctiveness",y="Density") +
+  scale_fill_manual(values = c(plt[2],plt[1])) +
+  scale_color_manual(values = c(plt[2],plt[1])) +
+  theme_bw() +
+  theme(
+    panel.border = element_blank(),
+    legend.position='none',
+    plot.title = element_text(hjust = 0.5, size=46),
+    axis.line.x=element_line(size=0.2),
+    axis.line.y=element_line(size=0.2),
+    axis.ticks.x=element_line(size=0.2),
+    axis.ticks.y=element_line(size=0.2),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(size=34),
+    axis.text = element_text(size=30,family="fnt"),
+    text=element_text(size=24, family="fnt"),
+    strip.text.x=element_text(size=50, family="fnt",color='white',margin = margin(0.05, 0, 0.05, 0, "cm")),
+    strip.background=element_rect(color='black',fill='black'),
+    panel.spacing = unit(0.6, "lines"),
+    plot.margin=unit(c(0.01,0.01,0.01,0.01), "cm"),
+    axis.text.x=element_text( hjust = 0.5)
+)
+```
+
+![](03_analysis_files/figure-markdown_github/posterior%20plot%20grand%20mean-1.png)
+
+``` r
+ggsave("posterior_grand_means.png",width = 5,height = 5,units ="in",dpi = 600)
+```
+
+Here we calculate posterior means that are marginal of plays which will
+show model’s uncertainty about D variation from play to play.
+
+``` r
+## predict for median char size (marginal of plays) & median play (totally counterfactual)
+set.seed(1989)
+post_marg <- d %>%
+  data_grid(corpus,G,S=m,Play=NA) %>%
+  add_epred_draws(m7ldq,allow_new_levels=T,ndraws = 6000) %>% 
+  group_by(corpus, G) %>% 
+  summarize(Q2.5=quantile(.epred,0.025),Q97.5=quantile(.epred,0.975),.epred=mean(.epred))
+```
+
+    ## `summarise()` has grouped output by 'corpus'. You can override using the
+    ## `.groups` argument.
+
+``` r
+post_marg %>% 
+  left_join(labs) %>% 
+  ggplot(aes(G, exp(.epred))) +
+  geom_jitter(data=d %>% left_join(labs,by="corpus"),aes(y=D,color=G),alpha=0.3,size=0.7,shape=16) +
+  geom_point() + 
+  geom_errorbar(aes(ymin=exp(Q2.5),ymax=exp(Q97.5)),width=0.3,height=0) + facet_wrap(~labs) + 
+  scale_color_manual(values = c(plt[2],plt[1])) +
+   
+  ylim(0,0.3) +
+  theme_bw() +
+  theme(
+    panel.border = element_blank(),
+    legend.position='none',
+    plot.title = element_text(hjust = 0.5, size=40),
+    axis.line.x=element_line(size=0.2),
+    axis.line.y=element_line(size=0.2),
+    axis.ticks.x=element_line(size=0.2),
+    axis.ticks.y=element_line(size=0.2),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(size=30),
+    axis.text = element_text(size=28,family="fnt"),
+    text=element_text(size=24, family="fnt"),
+    strip.text.x=element_text(size=36, family="fnt",color='white',margin = margin(0.05, 0, 0.05, 0, "cm")),
+    strip.background=element_rect(color='black',fill='black'),
+    panel.spacing = unit(0.1, "lines"),
+    plot.margin=unit(c(0.01,0.01,0.01,0.01), "cm"),
+    axis.text.x=element_text( hjust = 0.5)
+) + labs(title="Posterior predictions, marginal of plays",y="Distinctiveness",x=NULL)
+```
+
+    ## Joining, by = "corpus"
+
+    ## Warning: Ignoring unknown parameters: height
+
+    ## Warning: Removed 5 rows containing missing values (geom_point).
+
+![](03_analysis_files/figure-markdown_github/posterior%20plot%20marginal%20of%20plays-1.png)
+
+``` r
+ggsave("posterior_marginal_means.png",width = 5,height = 5,unit="in")
+```
+
+    ## Warning: Removed 5 rows containing missing values (geom_point).

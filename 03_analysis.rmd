@@ -46,7 +46,9 @@ The main script for analysis is `03_logodds_curves.R`, functions sit in `src/loo
 Here is an example: Cleo girl has more distinctive words with values above the Anthony. Her area-under-curve would be of higher value.  
 
 ```{r}
-df_fin %>% filter(playName=="antony-and-cleopatra") %>% filter(label %in% c("Antony_1", "Cleopatra_1")) %>%  ggplot(aes(rank,log_odds_weighted,color=label)) + geom_path() + theme_minimal() + scale_color_paletteer_d("wesanderson::Darjeeling1") + labs(x="word distinctivness rank")
+df_fin %>% 
+  filter(playName=="antony-and-cleopatra") %>% 
+  filter(label %in% c("Antony_1", "Cleopatra_1")) %>%  ggplot(aes(rank,log_odds_weighted,color=label)) + geom_path() + theme_minimal() + scale_color_paletteer_d("wesanderson::Darjeeling1") + labs(x="word distinctivness rank")
 ```
 
 
@@ -270,7 +272,8 @@ p_fr <- fr_top %>%
 
 loo_df <- list_df %>% bind_rows()
 
-write_tsv(loo_df,file="data/gender_log_odds_top200.tsv")
+#write_tsv(loo_df,file="data/gender_log_odds_top200.tsv")
+write_tsv(loo_df,file="data/culled_gender_log_odds_top200.tsv")
 
 ```
 
@@ -305,7 +308,7 @@ knitr::kable(df1[1:30,])
 
 ## Formal models
 
-```{r energy dists,eval=F}
+```{r energy dists}
 library(brms)
 
 #d_df <- df_fin %>% left_join(meta,by="playName") %>% select(d,label,n,gender,corpus,yearNormalized,firstAuthor,normalizedGenre,eigenvector) %>% filter(gender %in% c("MALE","FEMALE")) %>% unique()
@@ -314,84 +317,332 @@ d_df <- read_csv("data/consolidated_energy.csv")
 
 ```
 
-What is the influence of character's gender on distinctiveness scores across traditions, conditioned on share of dialogue they have (sample size)? We aim at the multilevel multiple regression with partial pooling of estimates per each individual author:
+What is the influence of character's gender on distinctiveness scores across traditions, conditioned on share of dialogue they have (sample size)? We aim at the multilevel multiple regression with partial pooling of estimates per each individual play.  We allow interaction by corpus to have one cross-linguistic model that makes compatible predictions for different traditions.  
+
+We assume D is following normal distribution (it is a harsh simplification, because D is squeezed to 0, so allow some posterior distribution values to be below 0, but we can live with it in this context). We also use quadratic term for Size, because the relationship between D and Size is U-shaped and non-linear. 
 
 ```
-D ~ Gender * Corpus + Size + (1 + Gender + Corpus |Author)
+Dinstinctivness ~ Gender * Corpus + Size * Corpus + I(Size^2) + (1|Play)
 ```
 
-However, we also build smaller models to show that their predictions are worse (cross validation)
+We also build smaller models to show that their predictions are worse (cross validation).
 
-``
+**NB** Some models are too large to be uploaded to github. Be prepared fitting them if you ever want to run this stuff. 
 
-```{r,eval=F}
-d <- d_df %>% mutate(D=VersusOther50,
-            S=PctDialog,
-            logD=log(D),
-            logS=log(S),
+Without log-trasnformation:
+
+```{r}
+library(patchwork)
+
+
+
+
+d <- d_df %>%
+  filter(gender != "UNKNOWN") %>% 
+  mutate(D=VersusOther50, # distinctiveness
+            S=PctDialog, # char size
+            logD=log(D), # log D
+            logS=log(S), # log S
+            sD=scale(D), # standardize D
+            sS=scale(S), # standardize S
             G=gender)
 
 
 ## baseline D ~ G*corpus
-m1 <- brm(formula = D ~ G*corpus,
-          data=d,
-          cores = 4,file = )
+m1_dg <- brm(formula = D ~ G*corpus,
+             data=d,
+             cores = 4,
+             chains=4,
+             file = "models/m1_dg")
+
+## multiple regression: add effect of Size
+m2_dgs <- brm(formula = D ~ G*corpus + S,
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m2_dgs")
+
+## multiple multilevel: allow intercept estimates for authors
+m3_dgsa <- brm(formula = D ~ G*corpus + S + (1|firstAuthor),
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m3_dgsa")
+
+## multiple multilevel 1.1: size by corpus interaction
+m3.1_dgsac <- brm(formula = D ~ G*corpus + S*corpus + (1|firstAuthor),
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m3.1_dgsac")
+
+## multiple multilevel: use estimates for individual plays instead of authors (shake corpus = 1 author)
+m3.2_dgpsc <- brm(formula = D ~ G*corpus + S*corpus + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m3.2_dgpsc")
+
+
+## multiple multilevel 2: allow Gender diffs for authors, too
+m4_dgsag <- brm(formula = D ~ G*corpus + S + (1 + G|firstAuthor),
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m4_dgsag")
+## multiple multilevel 3: allow Gender and corpus diffs for authors (might be stupid)
+m5_dgsagc <- brm(formula = D ~ G*corpus + S + (1 + G + corpus|firstAuthor),
+             data=d,
+             cores = 4,
+             chains=4,
+             family="gaussian",
+             file = "models/m5_dgsagc")
+
+## multiple multilevel 4, quadratic term for size (since D~S is U-shaped)
+m6_dgsaq <- brm(formula = D ~ G*corpus + S + I(S^2) + (1|firstAuthor),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 2000,
+             max_treedepth=15,
+             family="gaussian",
+             file = "models/m6_dgsaq")
+
+## FIN multiple multilevel final: allowing corpus diff for quadratic S, group effect for plays
+m7_dgsci <- brm(formula = D ~ G*corpus + corpus*(S + I(S^2))  + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 3000,
+             family="gaussian",
+             file = "models/m7_dgsci")
 ```
 
+Models for logged / scaled data. A technical decision: less influence of outliers, model samples better, chains do not act super crazy.
 
-```{r,eval=F}
-plot(d$n,d$d)
+```{r}
+## log S, log D model, linear S~D would be enough 
+m7l <- brm(formula = logD ~ G*corpus + corpus*logS  + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 3000,
+             family="gaussian",
+             file = "models/m7l")
 
-pp_check(m1_gender_size)
-summary(m1_gender_size)
-conditional_effects(m1_gender_size, "gender:corpus")
+## log D and log S, quadratic term for S~D
+m7lq <- brm(formula = logD ~ G*corpus + corpus*(logS + I(logS^2))  + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 3000,
+             family="gaussian",
+             file = "models/m7lq")
 
+## only D is log-transformed, linear rel
+m7ld <- brm(formula = logD ~ G*corpus + corpus*S  + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 3000,
+             family="gaussian",
+             file = "models/m7ld")
+
+
+## only D is log-transformed, quadratic term
+m7ldq <- brm(formula = logD ~ G*corpus + corpus*(S + I(S^2))  + (1|Play),
+             data=d,
+             cores = 4,
+             chains=4,
+             iter = 3000,
+             family="gaussian",
+             file = "models/m7ldq")
+
+## all models with group-level effects are better, but allowing random slopes for authors was, indeed, stupid. The difference between the most heavy model and intercept-only model is small
 ```
-
-```{r,eval=F}
-m2 <- brm(formula = d ~ gender*corpus + gender*n,data=d,cores = 4)
-
-```
-
-```{r,eval=F}
-pp_check(m2)
-summary(m2)
-conditional_effects(m2)
-```
-
-```{r,eval=F}
-d_zeroshake <- d %>% filter(corpus != "shake")
-
-m3 <- brm(formula = d ~ gender*corpus*n + (1 + gender|firstAuthor),data=d_zeroshake,cores = 4)
-
-pp_check(m3)
-summary(m3)
-conditional_effects(m3)
-```
-
-
-```{r,eval=F}
-ranef(m3, groups="firstAuthor", probs = 0.5)
-
-d_zeroshake$firstAuthor %>% unique() %>% length()
-
-m3 %>%
-  tidybayes::spread_draws(r_firstAuthor[,genderMAlE]) #%>%
-  # add the grand mean to the group-specific deviations
-  mutate(mu = b_cw_Intercept + r_site__cw) %>%
-  ungroup() %>%
-  mutate(site = str_replace_all(site, "[.]", " ")) %>% 
   
-  # plot
-  ggplot(aes(x = mu, y = reorder(site, mu))) +
-  geom_vline(xintercept = fixef(k_fit_brms)[1, 1], color = "#839496", size = 1) +
-  geom_vline(xintercept = fixef(k_fit_brms)[1, 3:4], color = "#839496", linetype = 2) +
-  geom_halfeyeh(.width = .5, size = 2/3, fill = "#859900") +
-  labs(x = expression("Cottonwood litterfall (g/m^2)"),
-       y = "BEMP sites ordered by mean predicted litterfall") +
-  theme(panel.grid   = element_blank(),
-        axis.ticks.y = element_blank(),
-        axis.text.y  = element_text(hjust = 0),
-        text = element_text(family = "Ubuntu")) 
+  
+Cross-validation. No D transformation.
+
+```{r crossv vanilla}
+## outliers do kick our ass a little (pareto k), but let's power through them
+
+## saving the results of cross-validation for quicker knitting
+
+#loo_res <- loo(m1_dg, m2_dgs, m3_dgsa,m3.1_dgsac, m3.2_dgpsc,m4_dgsag, m5_dgsagc,m6_dgsaq,m7_dgsci)
+
+#loo_log <- loo(m7l, m7lq, m7ldq,m7ld)
+loo_res <- readRDS("models/loo_res.rds")
+loo_log <- readRDS("models/loo_log.rds")
+#saveRDS(loo_res, "models/loo_res.rds")
+#saveRDS(loo_log, "models/loo_log.rds")
+rn <- c("G\\*corpus + corpus\\*(S + I(S^2))  + (1|Play)", 
+        "G\\*corpus + S\\*corpus + (1|Play)",
+        "G\\*corpus + S + I(S^2) + (1|firstAuthor)",
+        "G\\*corpus + S\\*corpus + (1|firstAuthor)",
+        "G\\*corpus + S + (1 + G + corpus|firstAuthor)",
+        "G\\*corpus + S\\*corpus + (1|Play)",
+        "G\\*corpus + S + (1 + G|firstAuthor)",
+        "G\\*corpus + S",
+        "G\\*corpus"
+        )
+df_loo1 <- loo_res$diffs[,1:2]
+rownames(df_loo1) <- rn
+knitr::kable(df_loo1,format = "html",digits = 2)
+
+
+
+```
+
+Cross-validation. Log-transformed D.
+
+```{r crossv log}
+rn <- c("G \\* corpus + corpus\\ *(S + I(S^2))  + (1|Play)",
+        "G \\* corpus + corpus \\* (logS + I(logS^2)) + (1 | Play) ",
+        "G \\* corpus + corpus \\* logS + (1 | Play) ",
+        "G * corpus + corpus * S + (1 | Play) "
+        )
+
+df_loo2 <- loo_log$diffs[,1:2]
+rownames(df_loo2) <- rn
+
+knitr::kable(df_loo2,digits = 2)
+
+```
+
+
+### Posterior predictions
+
+We predict global average D ("grand mean") across genders for median character size (dialogue share of 0.21), using final `m7ldq` model: group-level effects for plays, quadratic term for corpus*S relationship, log-transformed D.
+
+```{r posterior predictions,eval=T}
+library(tidybayes)
+library(modelr)
+
+
+
+## model fits (grand means) for average character size
+# fits <- conditional_effects(m7ldq,"G:corpus")
+# fits$`G:corpus` %>% ggplot(aes(G, estimate__,color=G)) + 
+#   geom_point() + 
+#   geom_errorbar(aes(ymin=lower__,ymax=upper__),width=0.1) + 
+#   facet_wrap(~corpus)
+plt <- paletteer::paletteer_d("ggsci::category10_d3")
+
+## predict for median char size (marginal of plays)
+m <- median(d$S)
+
+set.seed(1989)
+post_est <- d %>%
+  data_grid(corpus,G,S=m,Play=NA) %>%
+  add_epred_draws(m7ldq,allow_new_levels=T,re_formula = NA,ndraws = 6000) %>% 
+  group_by(corpus, G) #%>% 
+  #summarize(Q2.5=quantile(.epred,0.025),Q97.5=quantile(.epred,0.975),.epred=mean(.epred)) 
+labs <- tibble(corpus=post_est$corpus %>% unique(),labs= c("French","German", "Russian", "Shakespeare"))
+```
+
+Difference between genders, directly from posterior prediction:
+
+```{r posterior difference,eval=T}
+## calculate diffs directly from posterior
+
+set.seed(1989)
+g_diff <- post_est %>%
+  select(corpus,G,.epred) %>%
+  mutate(id=row_number(),.epred=exp(.epred)) %>%
+  pivot_wider(names_from = "G",values_from = ".epred") %>% 
+  mutate(diff = FEMALE - MALE) %>% group_by(corpus) %>%
+  summarize(Q2.5=quantile(diff,0.025),Q97.5=quantile(diff,0.975),.epred=mean(diff)) %>% rename(mean_diff=.epred) %>%
+  select(corpus,mean_diff, Q2.5, Q97.5)
+knitr::kable(g_diff,digits = 3)
+```
+
+We predict global average D ("grand mean") across genders for median character size (dialogue share of 0.21).
+
+```{r posterior plot grand mean,eval=T}
+library(showtext)
+#showtext::font_add_google("Abel", "fnt")
+#showtext::showtext_auto()
+
+post_est %>% left_join(labs,by="corpus") %>% ggplot(aes(exp(.epred),)) +
+  geom_density(aes(fill=G,color=G),alpha=0.6) +
+  facet_wrap(~labs) + labs(title="Posterior predictions, estimates of global grand mean",x="Distinctiveness",y="Density") +
+  scale_fill_manual(values = c(plt[2],plt[1])) +
+  scale_color_manual(values = c(plt[2],plt[1])) +
+  theme_bw() +
+  theme(
+    panel.border = element_blank(),
+    legend.position='none',
+    plot.title = element_text(hjust = 0.5, size=46),
+    axis.line.x=element_line(size=0.2),
+    axis.line.y=element_line(size=0.2),
+    axis.ticks.x=element_line(size=0.2),
+    axis.ticks.y=element_line(size=0.2),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(size=34),
+    axis.text = element_text(size=30,family="fnt"),
+    text=element_text(size=24, family="fnt"),
+    strip.text.x=element_text(size=50, family="fnt",color='white',margin = margin(0.05, 0, 0.05, 0, "cm")),
+    strip.background=element_rect(color='black',fill='black'),
+    panel.spacing = unit(0.6, "lines"),
+    plot.margin=unit(c(0.01,0.01,0.01,0.01), "cm"),
+    axis.text.x=element_text( hjust = 0.5)
+)
+
+  
+ggsave("posterior_grand_means.png",width = 5,height = 5,units ="in",dpi = 600)
+```
+
+Here we calculate posterior means that are marginal of plays which will show model's uncertainty about D variation from play to play.
+
+```{r posterior plot marginal of plays,eval=T}
+
+
+
+## predict for median char size (marginal of plays) & median play (totally counterfactual)
+set.seed(1989)
+post_marg <- d %>%
+  data_grid(corpus,G,S=m,Play=NA) %>%
+  add_epred_draws(m7ldq,allow_new_levels=T,ndraws = 6000) %>% 
+  group_by(corpus, G) %>% 
+  summarize(Q2.5=quantile(.epred,0.025),Q97.5=quantile(.epred,0.975),.epred=mean(.epred))
+
+post_marg %>% 
+  left_join(labs) %>% 
+  ggplot(aes(G, exp(.epred))) +
+  geom_jitter(data=d %>% left_join(labs,by="corpus"),aes(y=D,color=G),alpha=0.3,size=0.7,shape=16) +
+  geom_point() + 
+  geom_errorbar(aes(ymin=exp(Q2.5),ymax=exp(Q97.5)),width=0.3,height=0) + facet_wrap(~labs) + 
+  scale_color_manual(values = c(plt[2],plt[1])) +
+   
+  ylim(0,0.3) +
+  theme_bw() +
+  theme(
+    panel.border = element_blank(),
+    legend.position='none',
+    plot.title = element_text(hjust = 0.5, size=40),
+    axis.line.x=element_line(size=0.2),
+    axis.line.y=element_line(size=0.2),
+    axis.ticks.x=element_line(size=0.2),
+    axis.ticks.y=element_line(size=0.2),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title = element_text(size=30),
+    axis.text = element_text(size=28,family="fnt"),
+    text=element_text(size=24, family="fnt"),
+    strip.text.x=element_text(size=36, family="fnt",color='white',margin = margin(0.05, 0, 0.05, 0, "cm")),
+    strip.background=element_rect(color='black',fill='black'),
+    panel.spacing = unit(0.1, "lines"),
+    plot.margin=unit(c(0.01,0.01,0.01,0.01), "cm"),
+    axis.text.x=element_text( hjust = 0.5)
+) + labs(title="Posterior predictions, marginal of plays",y="Distinctiveness",x=NULL)
+
+ggsave("posterior_marginal_means.png",width = 5,height = 5,unit="in")
 ```
 
